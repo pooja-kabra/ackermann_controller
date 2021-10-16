@@ -6,17 +6,22 @@ class Sensor {
     public:
     // -- Getters
     double getActualHeading();
+    double getActualSpeed();
 
-    //--constructors
-    Sensor(double actualHeading=1, double actualSpeed=1) : _actualHeading{actualHeading}, _actualSpeed{actualSpeed}{std::cout<<"Constructor for Sensor class called"<<std::endl;};
+    // -- Setters
+    void setActualHeading(double);
+    void setActualSpeed(double);
 
-    //--Destructor
-    ~Sensor() { std::cout<<"Destructor for Sensor class called"<<std::endl;}
+    // //--constructors
+    // Sensor(double actualHeading=1, double actualSpeed=1) : actual_heading_{actualHeading}, actual_speed_{actualSpeed}{std::cout<<"Constructor for Sensor class called"<<std::endl;};
+
+    // //--Destructor
+    // ~Sensor() { std::cout<<"Destructor for Sensor class called"<<std::endl;}
 
     private:
     // --Atributes
-    double _actualHeading;
-    double _actualSpeed;
+    double actual_heading_;
+    double actual_speed_;
 
 }; // Class Sensor
 } // namespace ackermann
