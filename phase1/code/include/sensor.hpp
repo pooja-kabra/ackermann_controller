@@ -12,11 +12,11 @@ class Sensor {
     void setActualHeading(double);
     void setActualSpeed(double);
 
-    // //--constructors
-    // Sensor(double actualHeading=1, double actualSpeed=1) : actual_heading_{actualHeading}, actual_speed_{actualSpeed}{std::cout<<"Constructor for Sensor class called"<<std::endl;};
+    //--constructors
+    Sensor(double actualHeading=1, double actualSpeed=1) : actual_heading_{actualHeading}, actual_speed_{actualSpeed}{std::cout<<"Constructor for Sensor class called"<<std::endl;};
 
-    // //--Destructor
-    // ~Sensor() { std::cout<<"Destructor for Sensor class called"<<std::endl;}
+    //--Destructor
+    ~Sensor() { std::cout<<"Destructor for Sensor class called"<<std::endl;}
 
     private:
     // --Atributes
