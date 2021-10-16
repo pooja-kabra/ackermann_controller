@@ -1,8 +1,8 @@
 #include <iostream>
-#include "../include/lib.hpp"
+#include "../include/sensor.hpp"
+#include "sensor.cpp"
 
 int main()
 {
-    dummy();
     return 0;
 }
