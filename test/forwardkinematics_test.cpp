@@ -17,7 +17,7 @@ TEST(test_forwardKinematics_1, check_set_heading_error) {
 /**
  * Document
  */
-TEST(test_forwardKinematics_1, check_set_heading_error) {
+TEST(test_forwardKinematics_2, check_set_heading_error) {
   fk.setSpeedError(27.54);
   EXPECT_EQ(fk.getSpeedError(), 27.54);
 
