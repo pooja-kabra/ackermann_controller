@@ -5,8 +5,11 @@ add_executable(
     main.cpp
     robotkinematics_test.cpp
     sensor_test.cpp
+    controller_test.cpp
     ../app/sensor.cpp
     ../app/robotkinematics.cpp
+    ../app/controller.cpp
+
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
