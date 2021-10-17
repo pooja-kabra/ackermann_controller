@@ -3,15 +3,27 @@
 
 namespace ackermann{
 
-class ForwardKinamatics {
+class ForwardKinematics {
     public:
+    // --methods
+    double calculateHeadingError();
+    double calculateSpeedError();
+
+    // --setters
+    void setHeadingError(double);
+    void setSpeedError(double);
+    
+    // --getters
+    double getHeadingError();
+    double getSpeedError();
+
     // --constructors
-    ForwardKinamatics(double heading_error = 0, double speed_error = 0) : heading_error_{heading_error}, speed_error_{speed_error} {
+    ForwardKinematics(double heading_error = 0, double speed_error = 0) : heading_error_{heading_error}, speed_error_{speed_error} {
         std::cout<<"Constructor for Forwardkinematics class called"<<std::endl;
     }
 
     // --destructors
-    ~ForwardKinamatics(){
+    ~ForwardKinematics(){
         std::cout<<"Destructor for Forwardkinematics class called"<<std::endl;
     }
 
