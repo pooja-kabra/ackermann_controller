@@ -4,6 +4,7 @@
 namespace ackermann{
 
 class Controller {
+    public:
     // --setters
     void setGoalHeading(double goalHeading);
     void setGoalSpeed(double goalSpeed);
@@ -24,7 +25,7 @@ class Controller {
         std::cout<<"Destructor for Controller class called"<<std::endl;
     }
 
-
+    // --attributes
     private:
     double goal_heading_;
     double goal_speed_;
