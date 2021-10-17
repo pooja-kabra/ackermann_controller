@@ -1,6 +1,6 @@
 /**
  * @file sensor_test.cpp
- * @author Pooja Kabra
+ * @author Pooja Kabra, Markose Jacob
  * @brief 
  * @version 0.1
  * @date 2021-10-16
