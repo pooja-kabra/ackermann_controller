@@ -5,6 +5,9 @@
 // #include "robotkinematics.cpp"
 #include "../include/controller.hpp"
 // #include "controller.cpp"
+#include "../include/forwardkinematics.hpp"
+// #include "forwardkinematics.cpp"
+
 
 
 int main()
