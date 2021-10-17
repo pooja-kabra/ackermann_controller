@@ -3,8 +3,10 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
+    robotkinematics_test.cpp
     sensor_test.cpp
     ../app/sensor.cpp
+    ../app/robotkinematics.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
