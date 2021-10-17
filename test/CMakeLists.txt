@@ -6,7 +6,7 @@ add_executable(
     robotkinematics_test.cpp
     sensor_test.cpp
     controller_test.cpp
-    forwardkinematics.cpp
+    forwardkinematics_test.cpp
     ../app/sensor.cpp
     ../app/robotkinematics.cpp
     ../app/controller.cpp
