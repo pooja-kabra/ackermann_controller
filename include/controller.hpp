@@ -4,6 +4,7 @@
 namespace ackermann{
 
 class Controller {
+    public:
     // --setters
     void setGoalHeading(double goalHeading);
     void setGoalSpeed(double goalSpeed);
