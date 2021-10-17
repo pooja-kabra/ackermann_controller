@@ -1,10 +1,10 @@
 #include <iostream>
 #include "../include/sensor.hpp"
-#include "sensor.cpp"
+// #include "sensor.cpp"
 #include "../include/robotkinematics.hpp"
-#include "robotkinematics.cpp"
+// #include "robotkinematics.cpp"
 #include "../include/controller.hpp"
-#include "controller.cpp"
+// #include "controller.cpp"
 
 
 int main()
