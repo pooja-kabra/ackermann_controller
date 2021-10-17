@@ -8,6 +8,7 @@ class Controller {
     // --setters
     void setGoalHeading(double goalHeading);
     void setGoalSpeed(double goalSpeed);
+    // need to write solve method
     
     // --getters
     double getGoalHeading();
