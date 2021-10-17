@@ -1,37 +1,37 @@
 #include "../include/robotkinematics.hpp"
 
-double ackermann::RobotKinamatics::getTrackLength(){
+double ackermann::RobotKinematics::getTrackLength(){
     return track_length_;
 }
 
-double ackermann::RobotKinamatics::getWheelBase(){
+double ackermann::RobotKinematics::getWheelBase(){
     return wheel_base_;
 }
 
-double ackermann::RobotKinamatics::getWheelRadius(){
+double ackermann::RobotKinematics::getWheelRadius(){
     return wheel_radius_;
 }
 
-double ackermann::RobotKinamatics::getTuringRadius(){
+double ackermann::RobotKinematics::getTuringRadius(){
     return turning_radius_;
 }
 
-double ackermann::RobotKinamatics::getInnerWheelHeading(){
+double ackermann::RobotKinematics::getInnerWheelHeading(){
     return inner_wheel_heading_;
 }
 
-double ackermann::RobotKinamatics::getOutterWheelHeading(){
+double ackermann::RobotKinematics::getOutterWheelHeading(){
     return outter_wheel_heading_;
 }
 
-double ackermann::RobotKinamatics::getOutterWheelSpeed(){
+double ackermann::RobotKinematics::getOutterWheelSpeed(){
     return outter_wheel_speed_;
 }
 
-double ackermann::RobotKinamatics::getInnerWheelSpped(){
+double ackermann::RobotKinematics::getInnerWheelSpeed(){
     return inner_wheel_speed_;
 }
 
-double ackermann::RobotKinamatics::getTheataMax(){
+double ackermann::RobotKinematics::getTheataMax(){
     return theata_max_;
 }
