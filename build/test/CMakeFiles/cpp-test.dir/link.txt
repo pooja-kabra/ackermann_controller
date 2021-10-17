@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -g  -rdynamic CMakeFiles/cpp-test.dir/main.cpp.o CMakeFiles/cpp-test.dir/robotkinematics_test.cpp.o CMakeFiles/cpp-test.dir/sensor_test.cpp.o CMakeFiles/cpp-test.dir/__/app/sensor.cpp.o CMakeFiles/cpp-test.dir/__/app/robotkinematics.cpp.o  -o cpp-test ../vendor/googletest/googletest/libgtest.a -lpthread 
