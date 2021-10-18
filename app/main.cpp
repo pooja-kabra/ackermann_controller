@@ -1,22 +1,28 @@
+/**
+ * @file main.cpp
+ * @author Markose Jacob, Pooja Kabra
+ * @brief 
+ * @version 0.1
+ * @date 2021-10-16
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <iostream>
 #include "../include/sensor.hpp"
-// #include "sensor.cpp"
-#include "../include/robotkinematics.hpp"
-// #include "robotkinematics.cpp"
+#include "../include/robot.hpp"
 #include "../include/controller.hpp"
-// #include "controller.cpp"
 #include "../include/forwardkinematics.hpp"
-// #include "forwardkinematics.cpp"
 
 
 
-int main()
-{
+int main() {
     ackermann::Sensor sensor;
-    ackermann::RobotKinematics rk;
+    ackermann::Robot r;
     sensor.setActualHeading(30.5);
     sensor.setActualSpeed(100.56);
-    std::cout<<sensor.getActualHeading()<<std::endl;
-    std::cout<<sensor.getActualSpeed()<<std::endl;
+    std::cout << sensor.getActualHeading() << std::endl;
+    std::cout << sensor.getActualSpeed() << std::endl;
     return 0;
 }

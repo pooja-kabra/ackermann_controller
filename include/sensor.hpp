@@ -1,29 +1,51 @@
+/**
+ * @file sensor.hpp
+ * @author Markose Jacob, Pooja Kabra
+ * @brief This file declares the sensor that senses the Robot's 
+ *        heading in the global frame and linear speed
+ * @version 0.1
+ * @date 2021-10-16
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #pragma once
 #include <iostream>
-namespace ackermann{
-
+namespace ackermann {
+/**
+ * @brief Sensor class
+ * 
+ */
 class Sensor {
-    public:
-    // -- Getters
+ public:
+    /**
+     * @brief Getters and setters for the heading angle of the robot in the robot frame and its linear speed
+     * 
+     */ 
     double getActualHeading();
     double getActualSpeed();
-
-    // -- Setters
     void setActualHeading(double);
     void setActualSpeed(double);
 
-    //--constructors
-    Sensor(double actualHeading=1, double actualSpeed=1) : actual_heading_{actualHeading}, actual_speed_{actualSpeed}{
-        std::cout<<"Constructor for Sensor class called"<<std::endl;
+    /**
+     * @brief Create an object of Sensor class
+     */ 
+    explicit Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
+    actual_speed_{actualSpeed} {
+        std::cout << "Constructor for Sensor class called" << std::endl;
         };
 
-    //--Destructor
-    ~Sensor() { std::cout<<"Destructor for Sensor class called"<<std::endl;}
+    /**
+     * @brief Destroy an object of Sensor class
+     */ 
+    ~Sensor() {
+        std::cout << "Destructor for Sensor class called" << std::endl;
+    }
 
-    private:
-    // --Atributes
-    double actual_heading_;
-    double actual_speed_;
+ private:
+    double actual_heading_;  // heading angle of the robot in the global frame
+    double actual_speed_;  // linear speed of the robot
 
-}; // Class Sensor
-} // namespace ackermann
+};
+}  // namespace ackermann
