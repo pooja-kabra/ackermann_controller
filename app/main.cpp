@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @author Markose Jacob, Pooja Kabra
- * @brief 
+ * @brief Defines the main file. The program starts from here.
  * @version 0.1
  * @date 2021-10-16
  * 

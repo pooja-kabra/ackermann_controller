@@ -5,9 +5,7 @@
  *        to calculate error in heading of the robot in robot frame and its linear speed
  * @version 0.1
  * @date 2021-10-16
- * 
  * @copyright Copyright (c) 2021
- * 
  */
 
 #include "../include/forwardkinematics.hpp"
