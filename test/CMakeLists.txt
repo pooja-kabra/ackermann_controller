@@ -3,12 +3,12 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
-    robotkinematics_test.cpp
+    robot_test.cpp
     sensor_test.cpp
     controller_test.cpp
     forwardkinematics_test.cpp
     ../app/sensor.cpp
-    ../app/robotkinematics.cpp
+    ../app/robot.cpp
     ../app/controller.cpp
     ../app/forwardkinematics.cpp
 
