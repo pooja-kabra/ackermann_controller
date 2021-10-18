@@ -42,7 +42,7 @@ class Controller {
      *
      * @param double
      */
-    void ackermann::Controller::solve();
+    void solve();
 
     /**
      * @brief Create an object of the controller class

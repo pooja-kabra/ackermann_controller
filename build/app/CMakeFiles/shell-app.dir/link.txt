@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -g  -rdynamic CMakeFiles/shell-app.dir/main.cpp.o CMakeFiles/shell-app.dir/sensor.cpp.o CMakeFiles/shell-app.dir/robot.cpp.o CMakeFiles/shell-app.dir/controller.cpp.o CMakeFiles/shell-app.dir/forwardkinematics.cpp.o  -o shell-app 

@@ -10,9 +10,9 @@
  */
 
 #include <gtest/gtest.h>
-#include "../include/robotkinematics.hpp"
+#include "../include/robot.hpp"
 
-ackermann::RobotKinematics rk(5,6,7,8);
+ackermann::Robot rk(5, 6, 7, 8);
 
 /**
  * document
@@ -20,16 +20,14 @@ ackermann::RobotKinematics rk(5,6,7,8);
 TEST(test_robotkinematics_1, check_set_inner_wheel_heading) {
   rk.setInnerWheelHeading(20.22);
   EXPECT_EQ(rk.getInnerWheelHeading(), 20.22);
-
 }
 
 /**
  *document
  */
 TEST(test_robotkinematics_2, check_set_outter_wheel_heading) {
-  rk.setOutterWheelHeading(40.52);
-  EXPECT_EQ(rk.getOutterWheelHeading(), 40.52);
-
+  rk.setOuterWheelHeading(40.52);
+  EXPECT_EQ(rk.getOuterWheelHeading(), 40.52);
 }
 
 /**
@@ -38,16 +36,14 @@ TEST(test_robotkinematics_2, check_set_outter_wheel_heading) {
 TEST(test_robotkinematics_3, check_set_inner_wheel_speed) {
   rk.setInnerWheelSpeed(10.85);
   EXPECT_EQ(rk.getInnerWheelSpeed(), 10.85);
-
 }
 
 /**
  * document
  */
 TEST(test_robotkinematics_4, check_set_outter_wheel_speed) {
-  rk.setOutterWheelSpeed(14.87);
-  EXPECT_EQ(rk.getOutterWheelSpeed(), 14.87);
-
+  rk.setOuterWheelSpeed(14.87);
+  EXPECT_EQ(rk.getOuterWheelSpeed(), 14.87);
 }
 
 /**
@@ -75,12 +71,12 @@ TEST(test_robotkinematics_7, check_get_wheel_radius) {
  * document
  */
 TEST(test_robotkinematics_8, check_get_turning_radius) {
-  EXPECT_EQ(rk.getTuringRadius(), 8);
+  EXPECT_EQ(rk.getTurningRadius(), 8);
 }
 
 /**
  * document
  */
 TEST(test_robotkinematics_9, check_get_theata_max) {
-  EXPECT_EQ(rk.getTheataMax(), 45);
+  EXPECT_EQ(rk.getThetaMax(), 45);
 }
