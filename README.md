@@ -9,7 +9,5 @@ https://docs.google.com/spreadsheets/d/1yhOUowKENOIwfs4re1dwxyGSYlhCP-KEqHWIA955
 
 # To Do
 1) Add the new methods in forwardkinematics to UML
-2) Fix cpp lint and check and Doxygen comments for unit test files
-3) Generate documentations
-4) update readme
+2) update readme
 
