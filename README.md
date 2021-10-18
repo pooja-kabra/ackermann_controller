@@ -8,7 +8,7 @@ below is the link to the google spreadsheet which contains our product backlog
 https://docs.google.com/spreadsheets/d/1yhOUowKENOIwfs4re1dwxyGSYlhCP-KEqHWIA955CD0/edit#gid=0
 
 # To Do
-1) Add the new methods in forwardkinematics to UML
+1) work on implementation
 
 # Group members
 1) Markose Jacob
