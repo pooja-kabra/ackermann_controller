@@ -1,4 +1,4 @@
-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/**
+/**
  * @file sensor.hpp
  * @author Markose Jacob, Pooja Kabra
  * @brief This file declares the sensor that senses the Robot's 
@@ -33,14 +33,14 @@ class Sensor {
      */ 
     explicit Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
     actual_speed_{actualSpeed} {
-        std::cout << "Constructor for Sensor class called" << std::endl;
+        // std::cout << "Constructor for Sensor class called" << std::endl;
         };
 
     /**
      * @brief Destroy an object of Sensor class
      */ 
     ~Sensor() {
-        std::cout << "Destructor for Sensor class called" << std::endl;
+        // std::cout << "Destructor for Sensor class called" << std::endl;
     }
 
  private:

@@ -1,11 +1,11 @@
-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**
+/**
  * @file robot.cpp
  * @author Markose Jacob, Pooja Kabra
  * @brief This file defines the Robot class
  * @version 0.1
  * @date 2021-10-16
  * @copyright Copyright (c) 2021
- *//
+ */
 
 #include "../include/robot.hpp"
 
@@ -82,12 +82,30 @@ double ackermann::Robot::getOuterWheelSpeed() {
 }
 
 /**
- * @brief Get the maximum angle wheel can turn with respect to robot axis
+ * @brief Get the maximum angle wheel can turn with respect to robot axis in degrees
  * 
  * @return double
  */
 double ackermann::Robot::getThetaMax() {
     return theta_max_;
+}
+
+/**
+ * @brief Get the maximum speed with which the robot can move in km/hr
+ * 
+ * @return double
+ */
+double ackermann::Robot::getSpeedMax() {
+    return speed_max_;
+}
+
+/**
+ * @brief Get the Center of Mass offset of the car
+ * 
+ * @return double
+ */
+double ackermann::Robot::getComOffset() {
+    return com_offset_;
 }
 
 /**
@@ -124,5 +142,4 @@ void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed) {
  */
 void ackermann::Robot::setOuterWheelSpeed(double outer_wheel_speed) {
     outer_wheel_speed_ = outer_wheel_speed;
-
 }

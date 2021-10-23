@@ -14,9 +14,13 @@
 #include "../include/robot.hpp"
 #include "../include/controller.hpp"
 #include "../include/forwardkinematics.hpp"
-// #include "sensor.cpp"
-
-
+#include "../include/inversekinematics.hpp"
+#include "controller.cpp"
+#include "forwardkinematics.cpp"
+#include "inversekinematics.cpp"
+#include "sensor.cpp"
+#include "robot.cpp"
+#define PI 3.14159265
 
 
 int main() {
@@ -36,11 +40,9 @@ int main() {
     ackermann::Controller control(goal_heading,goal_speed,0.5,0.001,0.01,0.1,robo,sen,forkin,inkin,3,0.27);
     std::cout<<"\n \n"<<std::endl;
     control.solve();
-    std::cout<<"\n \n"<<std::endl;    ackermann::Sensor sensor;
-    ackermann::Robot r;
-    sensor.setActualHeading(30.5);
-    sensor.setActualSpeed(100.56);
-    std::cout << sensor.getActualHeading() << std::endl;
-    std::cout << sensor.getActualSpeed() << std::endl;
+    std::cout<<"\n \n"<<std::endl;
+    // std::cout<<"The heading of the robot is : "<<sen.getActualHeading()<<std::endl;
+    // std::cout<<"The Speed of the robot is : "<<sen.getActualSpeed()<<std::endl;
+
     return 0;
 }
