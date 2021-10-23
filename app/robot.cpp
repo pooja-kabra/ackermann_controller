@@ -1,11 +1,11 @@
-/**
+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**
  * @file robot.cpp
  * @author Markose Jacob, Pooja Kabra
  * @brief This file defines the Robot class
  * @version 0.1
  * @date 2021-10-16
  * @copyright Copyright (c) 2021
- */
+ *//
 
 #include "../include/robot.hpp"
 
@@ -124,4 +124,5 @@ void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed) {
  */
 void ackermann::Robot::setOuterWheelSpeed(double outer_wheel_speed) {
     outer_wheel_speed_ = outer_wheel_speed;
+
 }
