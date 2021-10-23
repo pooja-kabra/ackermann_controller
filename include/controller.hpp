@@ -11,6 +11,10 @@
 
 #pragma once
 #include <iostream>
+#include "robot.hpp"
+#include "sensor.hpp"
+#include "../include/inversekinematics.hpp"
+#include "../include/forwardkinematics.hpp"
 
 namespace ackermann {
 /**
