@@ -9,6 +9,14 @@
 
 #include "../include/robot.hpp"
 
+double ackermann::Robot::getInsMaxRot() {
+    return ins_rot_max_;
+}
+
+double ackermann::Robot::getInsSpeedMax() {
+    return ins_speed_max_;
+}
+
 /**
  * @brief Get the Track length of the Robot
  * 

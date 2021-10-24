@@ -11,8 +11,8 @@
 
 #pragma once
 #include <iostream>
-#include "robot.hpp"
-#include "sensor.hpp"
+#include "../include/robot.hpp"
+#include "../include/sensor.hpp"
 #include "../include/inversekinematics.hpp"
 #include "../include/forwardkinematics.hpp"
 
@@ -33,6 +33,12 @@ class Controller {
     double getGoalHeading();
     double getGoalSpeed();
 
+    Robot car;
+    Sensor sensor;
+    ForwardKinematics fk;
+    InverseKinematics ik;
+    char direction;
+
     /**
      * @brief Getters for controller gains
      */ 
@@ -48,16 +54,14 @@ class Controller {
      */
     void solve();
 
+    Controller(){
+        std::cout << "" << std::endl;
+    };
+
     /**
      * @brief Create an object of the controller class
      */ 
-    // explicit Controller(double goal_heading = 0, double goal_speed = 0, double kp = 0.01, double ki = 0.03, double kd = 0.01,
-    // double time_step = 0.2, Robot car1 = (0,0,0,0,0,0,0,0,0), Sensor sensor1 = (0,0), ForwardKinematics fk1, InverseKinematics ik1) :
-    // goal_heading_{goal_heading}, goal_speed_{goal_speed}, kp_{kp}, ki_{ki}, kd_{kd}, time_step_{time_step},
-    // car{car1}, sensor{sensor1}, fk{fk1}, ik{ik1} {
-    //     std::cout << "Constructor for Controller class called" << std::endl;
-    // };
-    Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, Sensor sen, ForwardKinematics forkin, InverseKinematics inkin, double instantaneous_rotation, double instantaneous_speed) {
+    explicit Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, Sensor sen, ForwardKinematics forkin, InverseKinematics inkin, double instantaneous_rotation, double instantaneous_speed) {
         // std::cout << "Constructor for Controller class called" << std::endl;
         goal_heading_ = goal_heading;
         goal_speed_ = goal_speed;
@@ -81,11 +85,7 @@ class Controller {
         // std::cout << "Destructor for Controller class called" << std::endl;
     }
 
-    Robot car;
-    Sensor sensor;
-    ForwardKinematics fk;
-    InverseKinematics ik;
-    char direction;
+    
 
 
 

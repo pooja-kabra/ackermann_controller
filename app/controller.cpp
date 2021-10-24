@@ -9,6 +9,7 @@
 
 #include "../include/controller.hpp"
 
+
 /**
  * @brief This method makes the output heading angle of the robot in the robot frame
  *        and its linear speed converge to goal values
@@ -18,6 +19,7 @@
 void ackermann::Controller::solve() {
     bool flag1 = true;
     bool flag2 = true;
+    char direction = 'u';
     double pid_heading, pid_speed, cumilative_error_heading,cumilative_error_speed, pre_error_heading, pre_error_speed,i;
     pid_heading = 0;
     pid_speed = 0;
@@ -28,9 +30,9 @@ void ackermann::Controller::solve() {
     i = 0;
 
     while((flag1 == true) || (flag2 == true )){
-        // if(i>10){
-        //     break;
-        // }
+        if(i>3){
+            break;
+        }
         i = i+1;
         std::cout<<"\n"<<std::endl;
         std::cout<<"iteration - "<<i<<std::endl;
@@ -52,6 +54,17 @@ void ackermann::Controller::solve() {
         // std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
         fk.setSpeedError(fk.calculateSpeedError(goal_speed_,sensor.getActualSpeed()));
         // std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
+
+        // Checking if its a left or right turn
+        if (fk.getHeadingError() > 0){
+            direction = 'l';
+        }
+        else if(fk.getHeadingError() < 0){
+            direction = 'r';
+        }
+        else{
+            direction = 's';
+        }
 
         if(fk.getHeadingError()<0.02 && fk.getHeadingError() > -0.02){
             // std::cout<<"Heading error threshold reached. Done!!!!!!!!0"<<std::endl;
@@ -117,16 +130,22 @@ void ackermann::Controller::solve() {
 
         // Calculating IK to find heading for each of the front wheels
         // ik.calculateWheelHeadings(sensor.getActualHeading(),sensor.getActualSpeed(), time_step_, car);
-        ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, car,theta_1,theta_2);
+
+        std::cout<<"pid heading : "<<pid_heading<<std::endl;
+        std::cout<<"pid speed : "<<pid_speed<<std::endl;
+        double inner; double outer;
+        inner = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car).inner; //)theta_1,theta_2);
+        outer = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car).outer;
+        std::cout << "inner heading is: " << inner << " and " << "outer heading is: " << outer << std::endl; 
 
         // Calculating IK to find speed for each of the front wheels
-        ik.calculateWheelSpeeds(pid_heading,pid_speed, time_step_, car,v_r,v_l);
+        ik.calculateWheelSpeeds(pid_heading,pid_speed, time_step_,direction, car); //v_r,v_l);
 
-        calculateNewRobotHeadingandSpeed(,theta_1,theta_2,v_r,v_l, speed_increment, theta_increment);
+        // calculateNewRobotHeadingandSpeed(,theta_1,theta_2,v_r,v_l, speed_increment, theta_increment);
 
 
-        sensor.setActualSpeed(sensor.getActualSpeed()+speed_increment);
-        sensor.setActualHeading(sensor.getActualHeading()+theta_increment);
+        // sensor.setActualSpeed(sensor.getActualSpeed()+speed_increment);
+        // sensor.setActualHeading(sensor.getActualHeading()+theta_increment);
 
 
 

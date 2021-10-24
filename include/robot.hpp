@@ -38,6 +38,8 @@ class Robot {
     double getThetaMax();
     double getSpeedMax();
     double getComOffset();
+    double getInsMaxRot();
+    double getInsSpeedMax();  //change this
 
     /**
      * @brief Construct a new Robot object
@@ -45,10 +47,10 @@ class Robot {
      */
     Robot(double track_length = 2, double wheel_base = 4, double wheel_radius = 0.3,
     double turning_radius = 0, double inner_wheel_heading = 0, double outer_wheel_heading = 0,
-    double inner_wheel_speed = 0, double outer_wheel_speed = 0, double theta_max = 45, double speed_max = 16.667, double com_offset = 1) :
+    double inner_wheel_speed = 0, double outer_wheel_speed = 0, double theta_max = 45, double speed_max = 16.667, double com_offset = 1, double ins_rot_max = 3, double ins_spped_max = 1) :
     track_length_{track_length}, wheel_base_{wheel_base}, wheel_radius_{wheel_radius}, turning_radius_{turning_radius},
     inner_wheel_heading_{inner_wheel_heading}, outer_wheel_heading_{outer_wheel_heading},
-    inner_wheel_speed_{inner_wheel_speed}, outer_wheel_speed_{outer_wheel_speed}, theta_max_{theta_max}, speed_max_{speed_max}, com_offset_{com_offset} {
+    inner_wheel_speed_{inner_wheel_speed}, outer_wheel_speed_{outer_wheel_speed}, theta_max_{theta_max}, speed_max_{speed_max}, com_offset_{com_offset}, ins_rot_max_{ins_rot_max}, ins_speed_max_{ins_spped_max} {
         // std::cout << "Constructor for Robot class called " <<std::endl;
     };
 
@@ -72,5 +74,7 @@ class Robot {
     double theta_max_;  // maximum angle wheel can turn with respect to robot axis
     double speed_max_;
     double com_offset_;
+    double ins_rot_max_;  // change this
+    double ins_speed_max_;  //change this
 };
 }   // namespace ackermann

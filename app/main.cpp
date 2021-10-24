@@ -15,12 +15,12 @@
 #include "../include/controller.hpp"
 #include "../include/forwardkinematics.hpp"
 #include "../include/inversekinematics.hpp"
-#include "controller.cpp"
-#include "forwardkinematics.cpp"
-#include "inversekinematics.cpp"
-#include "sensor.cpp"
-#include "robot.cpp"
-#define PI 3.14159265
+// #include "controller.cpp"
+// #include "forwardkinematics.cpp"
+// #include "inversekinematics.cpp"
+// #include "sensor.cpp"
+// #include "robot.cpp"
+
 
 
 int main() {
@@ -36,8 +36,8 @@ int main() {
     ackermann::Robot robo;
     ackermann::Sensor sen(0,0);
     ackermann::ForwardKinematics forkin(0,0);
-    ackermann::InverseKinematics inkin;
-    ackermann::Controller control(goal_heading,goal_speed,0.5,0.001,0.01,0.1,robo,sen,forkin,inkin,3,0.27);
+    ackermann::InverseKinematics inkin(goal_heading, goal_speed);
+    ackermann::Controller control(goal_heading,goal_speed,0.5,0.001,0.01,0.1,robo,sen,forkin,inkin,3,1);
     std::cout<<"\n \n"<<std::endl;
     control.solve();
     std::cout<<"\n \n"<<std::endl;

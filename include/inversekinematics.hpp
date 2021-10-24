@@ -24,17 +24,22 @@ class InverseKinematics {
  public:
 
 
+    struct headings{
+        double inner = 0;
+        double outer = 0;
+    };
+
     /**
      * @brief Calculates the individual wheel angular speeds
      * 
      */
-    void calculateWheelHeadings(double,double,double,Robot&);
+    headings calculateWheelHeadings(double actual_heading,double actual_speed,double dt, char direction, Robot& car);
 
     /**
      * @brief Calculates the individual wheel speeds
      * 
      */
-    void calculateWheelSpeeds(double,double,double,Robot&);
+    void calculateWheelSpeeds(double actual_heading, double actual_speed, double dt, char direction,  Robot& car);
 
     // /**
     //  * @brief Calculates the wheel angles w.r.t. robot axis
@@ -42,7 +47,7 @@ class InverseKinematics {
     //  */
     // void calculateWheelAngles();
 
-
+    // InverseKinematics();
     /**
      * @brief Create an object of Inverse Kinematics class
      */ 
@@ -51,9 +56,9 @@ class InverseKinematics {
         // std::cout << "Constructor for Inverse kinematics class called" << std::endl;
     }
 
-    void setRobot(Robot car){
-        car1 = car;
-    }
+    // void setRobot(Robot car){
+    //     car1 = car;
+    // }
 
 
     // InverseKinematics(double desired_heading = 0, double desired_speed = 0, Robot car){
@@ -69,7 +74,7 @@ class InverseKinematics {
     ~InverseKinematics() {
         // std::cout << "Destructor for Inverse kinematics class called" << std::endl;
     }
-    Robot car1;
+    // Robot car1;
 
  private:
     double desired_heading_;
