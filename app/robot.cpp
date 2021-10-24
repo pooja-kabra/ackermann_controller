@@ -9,14 +9,6 @@
 
 #include "../include/robot.hpp"
 
-double ackermann::Robot::getInsMaxRot() {
-    return ins_rot_max_;
-}
-
-double ackermann::Robot::getInsSpeedMax() {
-    return ins_speed_max_;
-}
-
 /**
  * @brief Get the Track length of the Robot
  * 
@@ -90,6 +82,43 @@ double ackermann::Robot::getOuterWheelSpeed() {
 }
 
 /**
+ * @brief Get angular speed of inner wheel in rps
+ * 
+ * @return double
+ */
+double ackermann::Robot::getInnerWheelRps(){
+
+}
+
+/**
+ * @brief Set angular speed of inner wheel in rps
+ * 
+ * @param double
+ */
+void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps){
+
+}
+
+/**
+ * @brief Get angular speed of outer wheel in rps
+ * 
+ * @return double
+ */
+double ackermann::Robot::getOuterWheelRps(){
+
+}
+
+/**
+ * @brief Set angular speed of outer wheel in rps
+ * 
+ * @param double
+ */
+void ackermann::Robot::setOuterWheelRps(double outer_wheel_rps){
+
+}
+
+
+/**
  * @brief Get the maximum angle wheel can turn with respect to robot axis in degrees
  * 
  * @return double
@@ -103,8 +132,26 @@ double ackermann::Robot::getThetaMax() {
  * 
  * @return double
  */
-double ackermann::Robot::getSpeedMax() {
-    return speed_max_;
+double ackermann::Robot::getRpsMax() {
+    return rps_max_;
+}
+
+/**
+ * @brief Get the maximum angle wheel can turn with respect to robot axis in a sec
+ * 
+ * @return double
+ */
+double ackermann::Robot::getThetaIncrPerSecMax(){
+    return theta_inc_per_sec_max_;
+}
+
+/**
+ * @brief Get the maximum the wheel motor rps can increase in a sec
+ * 
+ * @return double
+ */
+double ackermann::Robot::getRpsIncrPerSecMax(){
+    return rps_incr_per_sec_max_;
 }
 
 /**

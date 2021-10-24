@@ -61,7 +61,7 @@ class Controller {
     /**
      * @brief Create an object of the controller class
      */ 
-    explicit Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, Sensor sen, ForwardKinematics forkin, InverseKinematics inkin, double instantaneous_rotation, double instantaneous_speed) {
+    explicit Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, Sensor sen, ForwardKinematics forkin, InverseKinematics inkin) {
         // std::cout << "Constructor for Controller class called" << std::endl;
         goal_heading_ = goal_heading;
         goal_speed_ = goal_speed;
@@ -73,8 +73,7 @@ class Controller {
         sensor = sen;
         fk = forkin;
         ik = inkin;
-        max_instantaneous_wheel_rotation_ = instantaneous_rotation;
-        max_instantaneous_speed_increment_ = instantaneous_speed;
+
     };
 
 
@@ -96,7 +95,6 @@ class Controller {
     double ki_;  // proportional gain
     double kd_;
     double time_step_;
-    double max_instantaneous_wheel_rotation_;
-    double max_instantaneous_speed_increment_;
+
 };
 }  // namespace ackermann

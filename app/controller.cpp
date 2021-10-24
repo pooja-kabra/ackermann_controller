@@ -30,7 +30,7 @@ void ackermann::Controller::solve() {
     i = 0;
 
     while((flag1 == true) || (flag2 == true )){
-        if(i>3){
+        if(i>5){
             break;
         }
         i = i+1;
@@ -69,6 +69,8 @@ void ackermann::Controller::solve() {
         if(fk.getHeadingError()<0.02 && fk.getHeadingError() > -0.02){
             // std::cout<<"Heading error threshold reached. Done!!!!!!!!0"<<std::endl;
             flag1 = false;
+            // std::cout<<"yayy"<<sensor.getActualHeading()<<std::endl;
+            // break;
         }
         if(fk.getSpeedError()<0.10 && fk.getSpeedError() > -0.10){
             // std::cout<<"speed error threshold reached. Done!!!!!!!!0"<<std::endl;
@@ -81,6 +83,7 @@ void ackermann::Controller::solve() {
             pid_heading = kp_*(fk.getHeadingError()) + cumilative_error_heading*ki_ + (fk.getHeadingError()-pre_error_heading)*kd_;
             // std::cout<<"PID output for heading : "<<pid_heading<<std::endl;
             pre_error_heading = fk.getHeadingError();
+            std::cout<<"Still entering here with flag1 = " <<flag1<<std::endl;
         }
 
         // Calculating PID output for speed
@@ -131,19 +134,29 @@ void ackermann::Controller::solve() {
         // Calculating IK to find heading for each of the front wheels
         // ik.calculateWheelHeadings(sensor.getActualHeading(),sensor.getActualSpeed(), time_step_, car);
 
-        std::cout<<"pid heading : "<<pid_heading<<std::endl;
-        std::cout<<"pid speed : "<<pid_speed<<std::endl;
-        double inner; double outer;
-        inner = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car).inner; //)theta_1,theta_2);
-        outer = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car).outer;
-        std::cout << "inner heading is: " << inner << " and " << "outer heading is: " << outer << std::endl; 
+        // std::cout<<"pid heading : "<<pid_heading<<std::endl;
+        // std::cout<<"pid speed : "<<pid_speed<<std::endl;
+        double head_inner_increment; double head_outer_increment;
 
+        ackermann::InverseKinematics::headings head_res_increment;
+        head_res_increment = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car, sensor); //)theta_1,theta_2);
+        head_inner_increment = head_res_increment.inner;
+        head_outer_increment = head_res_increment.outer;
+        // outer = ik.calculateWheelHeadings(pid_heading,pid_speed, time_step_, direction, car, sensor).outer;
+        std::cout << "inner heading increment is: " << head_inner_increment << " and " << "outer heading increment is: " << head_outer_increment << std::endl; 
+
+        double spd_inner_increment; double spd_outer_increment;
+        ackermann::InverseKinematics::speed spd_res_increment;
         // Calculating IK to find speed for each of the front wheels
-        ik.calculateWheelSpeeds(pid_heading,pid_speed, time_step_,direction, car); //v_r,v_l);
+        spd_res_increment = ik.calculateWheelSpeeds(pid_heading,pid_speed, time_step_,direction, car, sensor); //v_r,v_l);
+        spd_inner_increment = spd_res_increment.inner_speed;
+        spd_outer_increment = spd_res_increment.outer_speed;
+        std::cout << "inner speed increment is: " << spd_inner_increment << " and " << "outer speed increment is: " << spd_outer_increment << std::endl; 
+        // std::cout<<"sensor heading : "<<sensor.getActualHeading()<<std::endl;
+        // std::cout<<"sensor speed : "<<sensor.getActualSpeed()<<std::endl;
+        ik.calculateNewRobotHeadingandSpeed(head_inner_increment, head_outer_increment, spd_inner_increment, spd_outer_increment);
 
-        // calculateNewRobotHeadingandSpeed(,theta_1,theta_2,v_r,v_l, speed_increment, theta_increment);
-
-
+        
         // sensor.setActualSpeed(sensor.getActualSpeed()+speed_increment);
         // sensor.setActualHeading(sensor.getActualHeading()+theta_increment);
 

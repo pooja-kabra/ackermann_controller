@@ -15,7 +15,7 @@
 #include "../include/controller.hpp"
 #include "../include/forwardkinematics.hpp"
 #include "../include/inversekinematics.hpp"
-// #include "controller.cpp"
+// #include "controller.cpp"direction
 // #include "forwardkinematics.cpp"
 // #include "inversekinematics.cpp"
 // #include "sensor.cpp"
@@ -37,7 +37,7 @@ int main() {
     ackermann::Sensor sen(0,0);
     ackermann::ForwardKinematics forkin(0,0);
     ackermann::InverseKinematics inkin(goal_heading, goal_speed);
-    ackermann::Controller control(goal_heading,goal_speed,0.5,0.001,0.01,0.1,robo,sen,forkin,inkin,3,1);
+    ackermann::Controller control(goal_heading,goal_speed,0.5,0.1,0.1,0.1,robo,sen,forkin,inkin);
     std::cout<<"\n \n"<<std::endl;
     control.solve();
     std::cout<<"\n \n"<<std::endl;

@@ -13,6 +13,7 @@
 #pragma once
 #include <iostream>
 #include "../include/robot.hpp"
+#include "../include/sensor.hpp"
 
 namespace ackermann {
 
@@ -29,6 +30,11 @@ class InverseKinematics {
         double outer = 0;
     };
 
+    struct speed{
+        double inner_speed = 0;
+        double outer_speed = 0;
+    };
+
     /**
      * @brief Calculates the individual wheel angular speeds
      * 
@@ -39,7 +45,14 @@ class InverseKinematics {
      * @brief Calculates the individual wheel speeds
      * 
      */
-    void calculateWheelSpeeds(double actual_heading, double actual_speed, double dt, char direction,  Robot& car);
+    speed calculateWheelSpeeds(double actual_heading, double actual_speed, double dt, char direction,  Robot& car);
+
+    /**
+     * @brief Calculates the new heading and speed in global frame
+     * 
+     */
+    void calculateNewRobotHeadingandSpeed(double inner_heading_incr,
+    double outer_heading_incr, double inner_speed_incr, double outer_speed_incr, Sensor& sensor);
 
     // /**
     //  * @brief Calculates the wheel angles w.r.t. robot axis
@@ -60,13 +73,11 @@ class InverseKinematics {
     //     car1 = car;
     // }
 
-
     // InverseKinematics(double desired_heading = 0, double desired_speed = 0, Robot car){
     //     desired_heading_ = desired_heading;
     //     desired_speed_ = desired_speed;
     //     car1 = car;
     // }
-
 
     /**
      * @brief Destroys an object of Inverse Kinematics class
@@ -81,4 +92,3 @@ class InverseKinematics {
     double desired_speed_;
 };
 }  // namespace ackermann
-
