@@ -6,71 +6,71 @@
 
 #IncludeRegexTransform: 
 
-/home/poo/808x/ackermann_controller/app/controller.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/controller.cpp
 ../include/controller.hpp
-/home/poo/808x/ackermann_controller/include/controller.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/controller.hpp
 
-/home/poo/808x/ackermann_controller/app/forwardkinematics.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/forwardkinematics.cpp
 ../include/forwardkinematics.hpp
-/home/poo/808x/ackermann_controller/include/forwardkinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp
 
-/home/poo/808x/ackermann_controller/app/inversekinematics.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/inversekinematics.cpp
 ../include/inversekinematics.hpp
-/home/poo/808x/ackermann_controller/include/inversekinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp
 math.h
 -
 
-/home/poo/808x/ackermann_controller/app/main.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/main.cpp
 iostream
 -
 ../include/sensor.hpp
-/home/poo/808x/ackermann_controller/include/sensor.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp
 ../include/robot.hpp
-/home/poo/808x/ackermann_controller/include/robot.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp
 ../include/controller.hpp
-/home/poo/808x/ackermann_controller/include/controller.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/controller.hpp
 ../include/forwardkinematics.hpp
-/home/poo/808x/ackermann_controller/include/forwardkinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp
 ../include/inversekinematics.hpp
-/home/poo/808x/ackermann_controller/include/inversekinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp
 
-/home/poo/808x/ackermann_controller/app/robot.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/robot.cpp
 ../include/robot.hpp
-/home/poo/808x/ackermann_controller/include/robot.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp
 
-/home/poo/808x/ackermann_controller/app/sensor.cpp
+/home/markose/ackermann_phase_2/ackermann_controller/app/sensor.cpp
 ../include/sensor.hpp
-/home/poo/808x/ackermann_controller/include/sensor.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp
 
-/home/poo/808x/ackermann_controller/include/controller.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/controller.hpp
 iostream
 -
 ../include/robot.hpp
-/home/poo/808x/ackermann_controller/include/robot.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp
 ../include/sensor.hpp
-/home/poo/808x/ackermann_controller/include/sensor.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp
 ../include/inversekinematics.hpp
-/home/poo/808x/ackermann_controller/include/inversekinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp
 ../include/forwardkinematics.hpp
-/home/poo/808x/ackermann_controller/include/forwardkinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp
 
-/home/poo/808x/ackermann_controller/include/forwardkinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp
 iostream
 -
 
-/home/poo/808x/ackermann_controller/include/inversekinematics.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp
 iostream
 -
 ../include/robot.hpp
-/home/poo/808x/ackermann_controller/include/robot.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp
 ../include/sensor.hpp
-/home/poo/808x/ackermann_controller/include/sensor.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp
 
-/home/poo/808x/ackermann_controller/include/robot.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp
 iostream
 -
 
-/home/poo/808x/ackermann_controller/include/sensor.hpp
+/home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp
 iostream
 -
 

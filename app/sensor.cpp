@@ -17,7 +17,8 @@
  * 
  * @return double
  */
-double ackermann::Sensor::getActualHeading() {
+double ackermann::Sensor::getActualHeading()
+{
     return actual_heading_;
 }
 
@@ -26,7 +27,8 @@ double ackermann::Sensor::getActualHeading() {
  * 
  * @return double
  */
-double ackermann::Sensor::getActualSpeed() {
+double ackermann::Sensor::getActualSpeed()
+{
     return actual_speed_;
 }
 
@@ -35,7 +37,8 @@ double ackermann::Sensor::getActualSpeed() {
  *    
  * @param double
  */
-void ackermann::Sensor::setActualHeading(double actual_heading) {
+void ackermann::Sensor::setActualHeading(double actual_heading)
+{
     // std::cout << "setActualHeading called" << std::endl;
     actual_heading_ = actual_heading;
 }
@@ -45,7 +48,8 @@ void ackermann::Sensor::setActualHeading(double actual_heading) {
  *    
  * @param double
  */
-void ackermann::Sensor::setActualSpeed(double actual_speed) {
+void ackermann::Sensor::setActualSpeed(double actual_speed)
+{
     // std::cout << "setActualSpeed called" << std::endl;
     actual_speed_ = actual_speed;
 }
