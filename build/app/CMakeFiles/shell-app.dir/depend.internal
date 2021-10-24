@@ -15,6 +15,7 @@ app/CMakeFiles/shell-app.dir/inversekinematics.cpp.o
  /home/poo/808x/ackermann_controller/app/inversekinematics.cpp
  /home/poo/808x/ackermann_controller/include/inversekinematics.hpp
  /home/poo/808x/ackermann_controller/include/robot.hpp
+ /home/poo/808x/ackermann_controller/include/sensor.hpp
 app/CMakeFiles/shell-app.dir/main.cpp.o
  /home/poo/808x/ackermann_controller/app/main.cpp
  /home/poo/808x/ackermann_controller/include/controller.hpp

@@ -48,6 +48,14 @@ class Robot {
 
     double inner = 0;
     double outer = 0;
+    double xl;  // x1-coordinate of Robot in global frame
+    double yl;  // y1-coordinate of Robot in global frame
+    double xr;  // x2-coordinate of Robot in global frame
+    double yr;  // y2-coordinate of Robot in global frame
+    double xldot;  // x1 dot-coordinate of Robot in global frame
+    double xrdot;  // x2 dot-coordinate of Robot in global frame
+    double yldot;  // y1 dot-coordinate of Robot in global frame
+    double yrdot;  // y2 dot-coordinate of Robot in global frame
 
     /**
      * @brief Construct a new Robot object
@@ -57,14 +65,14 @@ class Robot {
     double turning_radius = 0, double inner_wheel_heading = 0, double outer_wheel_heading = 0,
     double inner_wheel_speed = 0, double outer_wheel_speed = 0, double inner_wheel_rps = 0,
     double outer_wheel_rps = 0, double theta_max = 45, double rps_max = 16.667, 
-    double theta_inc_per_sec_max = 15, double rps_incr_per_sec_max = 1, double com_offset = 1) :
+    double theta_inc_per_sec_max = 15, double rps_incr_per_sec_max = 1, double com_offset = 1, double xl1 = 0,  double yl1 = 0,  double xr1 = 0,  double yr1 = -2, double xldot1 = 0,  double yldot1 = 0,  double xrdot1 = 0,  double yrdot1 = 0) :
 
     track_length_{track_length}, wheel_base_{wheel_base}, wheel_radius_{wheel_radius}, turning_radius_{turning_radius},
     inner_wheel_heading_{inner_wheel_heading}, outer_wheel_heading_{outer_wheel_heading},
     inner_wheel_speed_{inner_wheel_speed}, outer_wheel_speed_{outer_wheel_speed}, 
     inner_wheel_rps_{inner_wheel_rps}, outer_wheel_rps_{outer_wheel_rps},
     theta_max_{theta_max}, rps_max_{rps_max}, theta_inc_per_sec_max_{theta_inc_per_sec_max}, 
-    rps_incr_per_sec_max_{rps_incr_per_sec_max} ,com_offset_{com_offset} {
+    rps_incr_per_sec_max_{rps_incr_per_sec_max} ,com_offset_{com_offset}, xl{xl1}, yl{yl1}, xr{xr1}, yr{yr1}, xldot{xldot1}, yldot{yldot1}, xrdot{xrdot1}, yrdot{yrdot1} {
         // std::cout << "Constructor for Robot class called " <<std::endl;
     };
 
@@ -81,10 +89,6 @@ class Robot {
     double wheel_base_;  // wheel base (distance between two axles)
     double wheel_radius_;  // wheel radius
     double turning_radius_;  // desired turning radius
-    double xl_;  // x1-coordinate of Robot in global frame
-    double yl_;  // y1-coordinate of Robot in global frame
-    double xr_;  // x2-coordinate of Robot in global frame
-    double yr_;  // y2-coordinate of Robot in global frame
     double inner_wheel_heading_;  // inner wheel angle with respect to robot axis
     double outer_wheel_heading_;  // outer wheel angle with respect to robot axis
     double inner_wheel_speed_;  // linear speed of inner wheel in m/s

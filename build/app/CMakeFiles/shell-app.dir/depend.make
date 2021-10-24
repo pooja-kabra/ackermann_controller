@@ -14,6 +14,7 @@ app/CMakeFiles/shell-app.dir/forwardkinematics.cpp.o: ../include/forwardkinemati
 app/CMakeFiles/shell-app.dir/inversekinematics.cpp.o: ../app/inversekinematics.cpp
 app/CMakeFiles/shell-app.dir/inversekinematics.cpp.o: ../include/inversekinematics.hpp
 app/CMakeFiles/shell-app.dir/inversekinematics.cpp.o: ../include/robot.hpp
+app/CMakeFiles/shell-app.dir/inversekinematics.cpp.o: ../include/sensor.hpp
 
 app/CMakeFiles/shell-app.dir/main.cpp.o: ../app/main.cpp
 app/CMakeFiles/shell-app.dir/main.cpp.o: ../include/controller.hpp

@@ -14,6 +14,7 @@ test/CMakeFiles/cpp-test.dir/__/app/forwardkinematics.cpp.o: ../include/forwardk
 test/CMakeFiles/cpp-test.dir/__/app/inversekinematics.cpp.o: ../app/inversekinematics.cpp
 test/CMakeFiles/cpp-test.dir/__/app/inversekinematics.cpp.o: ../include/inversekinematics.hpp
 test/CMakeFiles/cpp-test.dir/__/app/inversekinematics.cpp.o: ../include/robot.hpp
+test/CMakeFiles/cpp-test.dir/__/app/inversekinematics.cpp.o: ../include/sensor.hpp
 
 test/CMakeFiles/cpp-test.dir/__/app/robot.cpp.o: ../app/robot.cpp
 test/CMakeFiles/cpp-test.dir/__/app/robot.cpp.o: ../include/robot.hpp
@@ -99,6 +100,7 @@ test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../test/../vendor/goo
 test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../test/../vendor/googletest/googletest/include/gtest/internal/gtest-type-util.h
 test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../include/inversekinematics.hpp
 test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../include/robot.hpp
+test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../include/sensor.hpp
 test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o: ../test/inversekinematics_test.cpp
 
 test/CMakeFiles/cpp-test.dir/main.cpp.o: ../test/../vendor/googletest/googletest/include/gtest/gtest-death-test.h

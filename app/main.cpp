@@ -41,8 +41,6 @@ int main() {
     std::cout<<"\n \n"<<std::endl;
     control.solve();
     std::cout<<"\n \n"<<std::endl;
-    // std::cout<<"The heading of the robot is : "<<sen.getActualHeading()<<std::endl;
-    // std::cout<<"The Speed of the robot is : "<<sen.getActualSpeed()<<std::endl;
 
     return 0;
 }

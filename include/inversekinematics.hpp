@@ -52,7 +52,7 @@ class InverseKinematics {
      * 
      */
     void calculateNewRobotHeadingandSpeed(double inner_heading_incr,
-    double outer_heading_incr, double inner_speed_incr, double outer_speed_incr, Sensor& sensor);
+    double outer_heading_incr, double inner_speed_incr, double outer_speed_incr, Sensor& sensor, Robot& car, double dt);
 
     // /**
     //  * @brief Calculates the wheel angles w.r.t. robot axis

@@ -10,17 +10,11 @@
 
 #include "../include/forwardkinematics.hpp"
 
-
-// need to write calculteHeadingError and calculateSpeedError method
-
 /**
  * @brief Calculates the error in heading angle of the robot in the robot frame
  * 
  */
 double ackermann::ForwardKinematics::calculateHeadingError(double desired_heading, double actual_heading) {
-    // double heading_error = desired_heading - actual_heading;
-    // setHeadingError(heading_error);
-    // return heading_error;
     setHeadingError(desired_heading - actual_heading);
     return heading_error_;
 }

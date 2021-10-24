@@ -15,6 +15,7 @@ test/CMakeFiles/cpp-test.dir/__/app/inversekinematics.cpp.o
  /home/poo/808x/ackermann_controller/app/inversekinematics.cpp
  /home/poo/808x/ackermann_controller/include/inversekinematics.hpp
  /home/poo/808x/ackermann_controller/include/robot.hpp
+ /home/poo/808x/ackermann_controller/include/sensor.hpp
 test/CMakeFiles/cpp-test.dir/__/app/robot.cpp.o
  /home/poo/808x/ackermann_controller/app/robot.cpp
  /home/poo/808x/ackermann_controller/include/robot.hpp
@@ -100,6 +101,7 @@ test/CMakeFiles/cpp-test.dir/inversekinematics_test.cpp.o
  ../test/../vendor/googletest/googletest/include/gtest/internal/gtest-type-util.h
  /home/poo/808x/ackermann_controller/include/inversekinematics.hpp
  /home/poo/808x/ackermann_controller/include/robot.hpp
+ /home/poo/808x/ackermann_controller/include/sensor.hpp
  /home/poo/808x/ackermann_controller/test/inversekinematics_test.cpp
 test/CMakeFiles/cpp-test.dir/main.cpp.o
  ../test/../vendor/googletest/googletest/include/gtest/gtest-death-test.h

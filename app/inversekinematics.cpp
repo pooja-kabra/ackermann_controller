@@ -19,8 +19,6 @@
 ackermann::InverseKinematics::headings
 ackermann::InverseKinematics::calculateWheelHeadings(double actual_heading, double actual_speed, double dt, char direction, Robot& car) {
     double inner=0,outer=0;
-    // setRobot(car);
-    // std::cout<<"Actual heading ::::::: "<<actual_heading<<std::endl;
     if (direction = 'l'){
         //inner wheel heading
         inner = atan2(2*car.getWheelBase()*sin(actual_heading*PI/180), 2*car.getWheelBase()*cos(actual_heading*PI/180) - car.getTrackLength()*sin(actual_heading*PI/180));
@@ -30,16 +28,11 @@ ackermann::InverseKinematics::calculateWheelHeadings(double actual_heading, doub
         outer = atan2(2*car.getWheelBase()*sin(actual_heading*PI/180), 2*car.getWheelBase()*cos(actual_heading*PI/180) + car.getTrackLength()*sin(actual_heading*PI/180));
         outer = outer*180/PI;
 
-
-        // std::cout<<"Inner heading : "<<inner<<std::endl;
-        // std::cout<<"compared againt : "<<car.getInsMaxRot()*dt<<std::endl;
         if(inner > car.getThetaIncrPerSecMax()*dt ){
             inner = car.getThetaIncrPerSecMax()*dt;
             actual_heading = ((PI/2) - atan2((1/tan(inner * (PI/180)) + (car.getTrackLength()/2*car.getWheelBase())), 1)) * 180/PI;
-            // std::cout<<"actual heading : "<<actual_heading<<std::endl;
             outer = atan2(2*car.getWheelBase()*sin(actual_heading*PI/180), 2*car.getWheelBase()*cos(actual_heading*PI/180) + car.getTrackLength()*sin(actual_heading*PI/180));
             outer = outer*180/PI;
-            // std::cout<<"New outer heading : "<<outer<<std::endl;
         }
     }
     
@@ -53,15 +46,12 @@ ackermann::InverseKinematics::calculateWheelHeadings(double actual_heading, doub
         outer = outer*180/PI;
 
 
-        // std::cout<<"outer heading : "<<outer<<std::endl;
-        // std::cout<<"compared againt : "<<car.getInsMaxRot()*dt<<std::endl;
+
         if(outer > car.getThetaIncrPerSecMax()*dt ){
             outer = car.getThetaIncrPerSecMax()*dt;
             actual_heading = ((PI/2) - atan2((1/tan(inner * (PI/180)) - (car.getTrackLength()/2*car.getWheelBase())), 1)) * 180/PI;
-            // std::cout<<"actual heading : "<<actual_heading<<std::endl;
             inner = atan2(2*car.getWheelBase()*sin(actual_heading*PI/180), 2*car.getWheelBase()*cos(actual_heading*PI/180) - car.getTrackLength()*sin(actual_heading*PI/180));
             inner = outer*180/PI;
-            // std::cout<<"New inner heading : "<<inner<<std::endl;
         }
     }
 
@@ -88,30 +78,16 @@ ackermann::InverseKinematics::calculateWheelSpeeds(double actual_heading, double
     double r=0, angular_speed =0, iws=0, ows = 0, iww = 0, oww = 0;
     double rps_max = dt * car.getRpsMax();
     double wheel_r = car.getWheelRadius();
-    // std::cout<<"rps_max   : "<<rps_max<<std::endl;
 
     // Turning radius
     r = (car.getWheelBase()/sin(actual_heading*PI/180));
-    // std::cout<<"Get wheel base : "<<car.getWheelBase()<<std::endl;
-	// std::cout<<"Heading : "<<actual_heading<<std::endl;
-    // std::cout<<"turning radius : "<<r<<std::endl;
     angular_speed = actual_speed/r;
-    // std::cout<<"angular speed : "<<angular_speed<<std::endl;
     iws = angular_speed * (car.getWheelBase()/(sin(car.getInnerWheelHeading()*PI/180)));
     ows = angular_speed * (car.getWheelBase()/(sin(car.getOuterWheelHeading()*PI/180)));
-    // std::cout << "Inner wheel speed : "<<iws<<std::endl;
-    // std::cout << "Outer wheel speed : "<<ows<<std::endl;
 
     iww = iws / wheel_r;  // angular speed in rps for left wheel
     oww = ows / wheel_r;  // angular speed in rps for right wheel
-    // std::cout <<"Turn::: " << direction <<std::endl;
     if(direction == 'r'){
-        // std::cout <<"Turn is r" <<std::endl;
-        // std::cout<<"anglar speed ::: "<<angular_speed<<std::endl;
-        // std::cout<<"wheel base ::: "<<car.getWheelBase()<<std::endl;
-        // std::cout<<"Inner wheel heading ::: "<<car.getInnerWheelHeading()<<std::endl;
-        // std::cout<<"Outer wheel heading ::: "<<car.getOuterWheelHeading()<<std::endl;
-
         if (iww > rps_max) {
             iww = rps_max;
             iws = rps_max*wheel_r;
@@ -134,17 +110,15 @@ ackermann::InverseKinematics::calculateWheelSpeeds(double actual_heading, double
 
     else{
         // std::cout <<"Going straight" <<std::endl;
-        if(angular_speed > rps_max)
+        if(angular_speed > rps_max){
             angular_speed = rps_max;
             actual_speed = angular_speed*r;
-        
+        }
         oww = angular_speed;
         iww = angular_speed;
         iws = actual_speed;
         ows = actual_speed;
     }
-
-
 
     car.setInnerWheelRps(car.getInnerWheelRps() + iww);
     car.setOuterWheelRps(car.getOuterWheelRps() + oww);
@@ -163,6 +137,33 @@ ackermann::InverseKinematics::calculateWheelSpeeds(double actual_heading, double
     }
 
 void ackermann::InverseKinematics::calculateNewRobotHeadingandSpeed(double inner_heading_incr,
-double outer_heading_incr, double inner_speed_incr, double outer_speed_incr, Robot& car, Sensor& sensor) {
-    double xl_curr = 0, yl_curr = 0, xr_curr = 0, yr_curr = 0, xl_next = 0, yl_next = 0, xr_next = 0, yr_next = 0;
+double outer_heading_incr, double inner_speed_incr, double outer_speed_incr, Sensor& sensor,  Robot& car, double dt) {
+    double dist_left = 0;
+    double dist_right = 0;
+    double theta = 0;
+    dist_left = car.getInnerWheelSpeed() * dt; 
+    dist_right = car.getOuterWheelSpeed() * dt;
+    std::cout<<"left wheel dis : "<<dist_left<<std::endl;
+    std::cout<<"right wheel dis : "<<dist_right<<std::endl;
+    car.yldot = sin(inner_heading_incr) * dist_left + car.yl;
+    car.xldot = cos(inner_heading_incr) * dist_left + car.xl;
+    car.xrdot = cos(outer_heading_incr) * dist_right + car.xr;
+    car.yrdot = sin(outer_heading_incr) * dist_right + car.yr;
+    std::cout<<"yldot : "<<car.yldot<<std::endl;
+    std::cout<<"xldot : "<<car.xldot<<std::endl;
+    std::cout<<"yrdot : "<<car.yrdot<<std::endl;
+    std::cout<<"xrdot : "<<car.xrdot<<std::endl;
+    theta  = 180 - 180/PI*atan2(car.xrdot - car.xldot, car.yrdot - car.yldot);
+    std::cout<<"Slope : "<<theta<<std::endl;
+    car.yl = car.yldot;
+    car.xr = car.xrdot;
+    car.xl = car.xldot;
+    car.yr = car.yrdot;
+
+    sensor.setActualHeading(theta);
+
+    double robot_speed = (car.getInnerWheelSpeed() + car.getOuterWheelSpeed())/2;
+    sensor.setActualSpeed(robot_speed);
+
+
 }

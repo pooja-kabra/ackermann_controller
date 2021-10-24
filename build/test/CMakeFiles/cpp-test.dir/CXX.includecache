@@ -321,6 +321,8 @@ iostream
 -
 ../include/robot.hpp
 /home/poo/808x/ackermann_controller/include/robot.hpp
+../include/sensor.hpp
+/home/poo/808x/ackermann_controller/include/sensor.hpp
 
 /home/poo/808x/ackermann_controller/include/robot.hpp
 iostream
