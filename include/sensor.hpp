@@ -12,40 +12,42 @@
 
 #pragma once
 #include <iostream>
-namespace ackermann {
-/**
+namespace ackermann
+{
+    /**
  * @brief Sensor class
  * 
  */
-class Sensor {
- public:
-    /**
+    class Sensor
+    {
+    public:
+        /**
      * @brief Getters and setters for the heading angle of the robot in the robot frame and its linear speed
      * 
-     */ 
-    double getActualHeading();
-    double getActualSpeed();
-    void setActualHeading(double);
-    void setActualSpeed(double);
+     */
+        double getActualHeading();
+        double getActualSpeed();
+        void setActualHeading(double);
+        void setActualSpeed(double);
 
-    /**
+        /**
      * @brief Create an object of Sensor class
-     */ 
-    explicit Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
-    actual_speed_{actualSpeed} {
-        // std::cout << "Constructor for Sensor class called" << std::endl;
-        };
+     */
+        explicit Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
+                                                                            actual_speed_{actualSpeed} {
+                                                                                // std::cout << "Constructor for Sensor class called" << std::endl;
+                                                                            };
 
-    /**
+        /**
      * @brief Destroy an object of Sensor class
-     */ 
-    ~Sensor() {
-        // std::cout << "Destructor for Sensor class called" << std::endl;
-    }
+     */
+        ~Sensor()
+        {
+            // std::cout << "Destructor for Sensor class called" << std::endl;
+        }
 
- private:
-    double actual_heading_;  // heading angle of the robot in the global frame
-    double actual_speed_;  // linear speed of the robot
-
-};
-}  // namespace ackermann
+    private:
+        double actual_heading_; // heading angle of the robot in the global frame
+        double actual_speed_;   // linear speed of the robot
+    };
+} // namespace ackermann

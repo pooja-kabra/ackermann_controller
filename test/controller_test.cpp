@@ -21,7 +21,8 @@ ackermann::Controller controller;
  * @brief Testing getters and setters for goal_heading
  * @return none
  **/
-TEST(test_controller_1, check_set_goal_heading) {
+TEST(test_controller_1, check_set_goal_heading)
+{
   controller.setGoalHeading(70.3);
   EXPECT_EQ(controller.getGoalHeading(), 70.3);
 }
@@ -30,7 +31,8 @@ TEST(test_controller_1, check_set_goal_heading) {
  * @brief Testing getters and setters for goal_speed
  * @return none
  **/
-TEST(test_controller_2, check_set_goal_speed) {
+TEST(test_controller_2, check_set_goal_speed)
+{
   controller.setGoalSpeed(34.36);
   EXPECT_EQ(controller.getGoalSpeed(), 34.36);
 }
@@ -39,7 +41,8 @@ TEST(test_controller_2, check_set_goal_speed) {
  * @brief Testing getters for Ki
  * @return none
  **/
-TEST(test_controller_3, check_get_Ki) {
+TEST(test_controller_3, check_get_Ki)
+{
   EXPECT_EQ(controller.getKi(), 0.01);
 }
 
@@ -47,6 +50,7 @@ TEST(test_controller_3, check_get_Ki) {
  * @brief Testing getters for Kp
  * @return none
  **/
-TEST(test_controller_4, check_get_Kp) {
+TEST(test_controller_4, check_get_Kp)
+{
   EXPECT_EQ(controller.getKp(), 0.03);
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /home/poo/808x/ackermann_controller/test
+# Install script for directory: /home/markose/ackermann_phase_2/ackermann_controller/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
