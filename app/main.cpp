@@ -15,11 +15,9 @@
 #include "../include/controller.hpp"
 #include "../include/forwardkinematics.hpp"
 #include "../include/inversekinematics.hpp"
-// #include "controller.cpp"direction
-// #include "forwardkinematics.cpp"
-// #include "inversekinematics.cpp"
-// #include "sensor.cpp"
-// #include "robot.cpp"
+#include "../include/pbPlots.hpp"
+#include "../include/supportLib.hpp"
+
 
 int main() {
     double goal_heading, goal_speed;
@@ -45,6 +43,20 @@ int main() {
     std::cout << "\n \n" << std::endl;
     control.solve();
     std::cout << "\n \n" << std::endl;
+
+
+
+    // RGBABitmapImageReference *imageRef1 = CreateRGBABitmapImageReference();
+    // DrawScatterPlot(imageRef1, 600, 400, &sen.time_record, &sen.actual_heading_record);
+    // std::vector<double> *pngData1 = ConvertToPNG(imageRef1->image);
+    // WriteToFile(pngData1, "plot1.png");
+    // DeleteImage(imageRef1->image);
+
+    // RGBABitmapImageReference *imageRef2 = CreateRGBABitmapImageReference();
+    // DrawScatterPlot(imageRef2, 600, 400, &sen.time_record, &sen.actual_speed_record);
+    // std::vector<double> *pngData2 = ConvertToPNG(imageRef1->image);
+    // WriteToFile(pngData2, "plot2.png");
+    // DeleteImage(imageRef2->image);
 
     return 0;
 }

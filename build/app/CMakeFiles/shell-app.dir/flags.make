@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -Wpedantic -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/markose/ackermann_phase_2/ackermann_controller/include 
+CXX_INCLUDES = -I/home/poo/808x/ackermann_controller/include 
 

@@ -12,6 +12,7 @@
 
 #include "../include/inversekinematics.hpp"
 #include <math.h>
+#include <time.h>
 #define PI 3.14159265
 
 ackermann::InverseKinematics::headings
@@ -169,4 +170,10 @@ void ackermann::InverseKinematics::calculateNewRobotHeadingandSpeed(double inner
     sensor.setActualSpeed(robot_speed);
     std::cout<<"Actual heading of robot is : "<<sensor.getActualHeading()<<std::endl;
     std::cout<<"Actual speed of robot is : "<<sensor.getActualSpeed()<<std::endl;
+
+    sensor.actual_heading_record.push_back(sensor.getActualHeading());
+    sensor.actual_speed_record.push_back(sensor.getActualSpeed());
+    sensor.time_record.push_back(clock());
+
+    
 }

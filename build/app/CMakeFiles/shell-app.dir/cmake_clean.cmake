@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shell-app.dir/controller.cpp.o"
   "CMakeFiles/shell-app.dir/forwardkinematics.cpp.o"
   "CMakeFiles/shell-app.dir/inversekinematics.cpp.o"
+  "CMakeFiles/shell-app.dir/pbPlots.cpp.o"
+  "CMakeFiles/shell-app.dir/supportLib.cpp.o"
   "shell-app.pdb"
   "shell-app"
 )

@@ -12,6 +12,7 @@
 
 #pragma once
 #include <iostream>
+#include <vector>
 namespace ackermann
 {
     /**
@@ -47,7 +48,11 @@ namespace ackermann
         }
 
     private:
-        double actual_heading_; // heading angle of the robot in the global frame
+        double actual_heading_;  // heading angle of the robot in the global frame
         double actual_speed_;   // linear speed of the robot
+    public:
+        std::vector<double> actual_heading_record;
+        std::vector<double> actual_speed_record;
+        std::vector<double> time_record;
     };
-} // namespace ackermann
+}  // namespace ackermann

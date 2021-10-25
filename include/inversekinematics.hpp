@@ -12,11 +12,15 @@
 
 #pragma once
 #include <iostream>
+#include <vector>
 #include "../include/robot.hpp"
 #include "../include/sensor.hpp"
 
+
+
 namespace ackermann
 {
+
 
     /**
  * @brief Inverse Kinematics class
