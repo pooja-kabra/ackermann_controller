@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: File List</title>
+<title>Ackermann Steering Controller: File List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -51,20 +44,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('files.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,16 +66,18 @@ $(document).ready(function(){initNavTree('files.html','');});
 <div class="textblock">Here is a list of all documented files with brief descriptions:</div><div class="directory">
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span><span onclick="javascript:toggleLevel(4);">4</span><span onclick="javascript:toggleLevel(5);">5</span><span onclick="javascript:toggleLevel(6);">6</span><span onclick="javascript:toggleLevel(7);">7</span><span onclick="javascript:toggleLevel(8);">8</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span id="img_0_" class="iconfopen" onclick="toggleFolder('0_')">&#160;</span><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html" target="_self">app</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="forwardkinematics_8cpp.html" target="_self">forwardkinematics.cpp</a></td><td class="desc">This file defines the Forward Kinematics class. It provides functions to calculate error in heading of the robot in robot frame and its linear speed </td></tr>
-<tr id="row_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="inversekinematics_8cpp.html" target="_self">inversekinematics.cpp</a></td><td class="desc">This file defines the Inverse Kinematics class, it calculates individual wheel angular speeds and wheel angles w.r.t. robot axisIt provides functions </td></tr>
+<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="forwardkinematics_8cpp.html" target="_self">forwardkinematics.cpp</a></td><td class="desc">This is where we are calculating the error between the traget heading and speed against the robots global heading and speed </td></tr>
+<tr id="row_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="inversekinematics_8cpp.html" target="_self">inversekinematics.cpp</a></td><td class="desc">This class uses the Ackermann method to calculte the headings and speed for each of the front wheels which taking into consideration the physical limits of the robot. It then calculates the global heading and linear speed for the robot </td></tr>
 <tr id="row_0_2_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="robot_8cpp.html" target="_self">robot.cpp</a></td><td class="desc">This file defines the Robot class </td></tr>
-<tr id="row_0_3_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="sensor_8cpp.html" target="_self">sensor.cpp</a></td><td class="desc">This file defines the sensor that senses the Robot's heading in the robot frame and linear speed </td></tr>
+<tr id="row_0_3_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="sensor_8cpp.html" target="_self">sensor.cpp</a></td><td class="desc">This is where the actual sensors of the robot will be added to. For now this class stores the actual heading and speed of the robot in global frame </td></tr>
 <tr id="row_1_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9660;</span><span id="img_1_" class="iconfopen" onclick="toggleFolder('1_')">&#160;</span><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html" target="_self">include</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="controller_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="controller_8hpp.html" target="_self">controller.hpp</a></td><td class="desc">This file defines the controller class </td></tr>
-<tr id="row_1_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="forwardkinematics_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="forwardkinematics_8hpp.html" target="_self">forwardkinematics.hpp</a></td><td class="desc">This file declares the Forward Kinematics class </td></tr>
-<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="inversekinematics_8hpp_source.html"><span class="icondoc"></span></a><b>inversekinematics.hpp</b></td><td class="desc"></td></tr>
-<tr id="row_1_3_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="robot_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="robot_8hpp.html" target="_self">robot.hpp</a></td><td class="desc">This file declares the Robot class </td></tr>
-<tr id="row_1_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="sensor_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="sensor_8hpp.html" target="_self">sensor.hpp</a></td><td class="desc">This file declares the sensor that senses the Robot's heading in the global frame and linear speed </td></tr>
+<tr id="row_1_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="controller_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="controller_8hpp.html" target="_self">controller.hpp</a></td><td class="desc">This is the core of the software which makes use of other classes to calculate the headings and wheel speeds for the front wheels. We first find the error in heading and speeds and the use a PID controller to calculate the increment needed. Using this we use the Ackermann method to calculate the heading and speeds for the front wheels. Finally using the wheel headings and speed we calculate the speed and heading of the robot in global frame </td></tr>
+<tr id="row_1_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="forwardkinematics_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="forwardkinematics_8hpp.html" target="_self">forwardkinematics.hpp</a></td><td class="desc">This is where we are calculating the error between the traget heading and speed against the robots global heading and speed </td></tr>
+<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="inversekinematics_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="inversekinematics_8hpp.html" target="_self">inversekinematics.hpp</a></td><td class="desc">This class uses the Ackermann method to calculte the headings and speed for each of the front wheels which taking into consideration the physical limits of the robot. It then calculates the global heading and linear speed for the robot </td></tr>
+<tr id="row_1_3_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="pb_plots_8hpp_source.html"><span class="icondoc"></span></a><b>pbPlots.hpp</b></td><td class="desc"></td></tr>
+<tr id="row_1_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="robot_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="robot_8hpp.html" target="_self">robot.hpp</a></td><td class="desc">This class contains all the physical parametes of the robot as well and stores the heading and speed for the fornt wheels </td></tr>
+<tr id="row_1_5_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="sensor_8hpp_source.html"><span class="icondoc"></span></a><a class="el" href="sensor_8hpp.html" target="_self">sensor.hpp</a></td><td class="desc">This is where the actual sensors of the robot will be added to. For now this class stores the actual heading and speed of the robot in global frame </td></tr>
+<tr id="row_1_6_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="support_lib_8hpp_source.html"><span class="icondoc"></span></a><b>supportLib.hpp</b></td><td class="desc"></td></tr>
 <tr id="row_2_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="toggleFolder('2_')">&#9660;</span><span id="img_2_" class="iconfopen" onclick="toggleFolder('2_')">&#160;</span><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html" target="_self">test</a></td><td class="desc"></td></tr>
 <tr id="row_2_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="controller__test_8cpp.html" target="_self">controller_test.cpp</a></td><td class="desc">Unit tests for controller class </td></tr>
 <tr id="row_2_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icondoc"></span><a class="el" href="forwardkinematics__test_8cpp.html" target="_self">forwardkinematics_test.cpp</a></td><td class="desc">Unit tests for ForwardKinematics class </td></tr>
@@ -176,14 +157,11 @@ $(document).ready(function(){initNavTree('files.html','');});
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

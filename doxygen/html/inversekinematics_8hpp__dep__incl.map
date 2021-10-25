@@ -1,0 +1,6 @@
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp" name="/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp">
+<area shape="rect" id="node2" href="$controller_8hpp.html" title="This is the core of the software which makes use of other classes to calculate the headings and wheel..." alt="" coords="5,109,212,165"/>
+<area shape="rect" id="node4" href="$inversekinematics_8cpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="236,109,443,165"/>
+<area shape="rect" id="node5" href="$inversekinematics__test_8cpp.html" title="This file tests the Inverse Kinematics class, checks if it calculates individual wheel angular speeds..." alt="" coords="467,109,678,165"/>
+<area shape="rect" id="node3" href="$controller__test_8cpp.html" title="Unit tests for controller class. " alt="" coords="5,213,212,269"/>
+</map>

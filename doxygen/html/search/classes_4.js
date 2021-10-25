@@ -18,5 +18,6 @@ var searchData=
   ['divisiblebyimpl',['DivisibleByImpl',['../classtesting_1_1gmock__matchers__test_1_1_divisible_by_impl.html',1,'testing::gmock_matchers_test']]],
   ['dobothaction',['DoBothAction',['../classtesting_1_1internal_1_1_do_both_action.html',1,'testing::internal']]],
   ['dodefaultaction',['DoDefaultAction',['../classtesting_1_1internal_1_1_do_default_action.html',1,'testing::internal']]],
-  ['dummymatchresultlistener',['DummyMatchResultListener',['../classtesting_1_1internal_1_1_dummy_match_result_listener.html',1,'testing::internal']]]
+  ['dummymatchresultlistener',['DummyMatchResultListener',['../classtesting_1_1internal_1_1_dummy_match_result_listener.html',1,'testing::internal']]],
+  ['dynamicarraynumbers',['DynamicArrayNumbers',['../struct_dynamic_array_numbers.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classackermann_1_1_sensor.html#a82c56e435c9ac88e1ac258283889f1d3" title="Set the heading angle of the robot in the robot frame. " alt="" coords="109,5,252,47"/>
-<area shape="rect" id="node3" href="$classackermann_1_1_sensor.html#ae6479b7cdbb4c1dfe708756fabb58792" title="Getters and setters for the heading angle of the robot in the robot frame and its linear speed..." alt="" coords="109,71,252,112"/>
+<area shape="rect" id="node2" href="$classackermann_1_1_sensor.html#a82c56e435c9ac88e1ac258283889f1d3" title="Setter function to set the actual heading of the robot in global frame. " alt="" coords="109,5,252,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_sensor.html#ae6479b7cdbb4c1dfe708756fabb58792" title="Getter function to get the actual heading of the robot in global frame. " alt="" coords="109,71,252,112"/>
 </map>

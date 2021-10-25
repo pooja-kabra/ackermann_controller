@@ -1,0 +1,4 @@
+<map id="ackermann::Robot::getTrackLength" name="ackermann::Robot::getTrackLength">
+<area shape="rect" id="node2" href="$classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d" title="Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method..." alt="" coords="241,5,444,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="492,5,643,47"/>
+</map>

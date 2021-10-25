@@ -9,6 +9,8 @@ var searchData=
   ['castandappendtransform',['CastAndAppendTransform',['../structtesting_1_1internal_1_1_cast_and_append_transform.html',1,'testing::internal']]],
   ['catchcxxexceptionstest',['CatchCxxExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_cxx_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
   ['catchsehexceptionstest',['CatchSehExceptionsTest',['../classgtest__catch__exceptions__test_1_1_catch_seh_exceptions_test.html',1,'gtest_catch_exceptions_test']]],
+  ['characterreference',['CharacterReference',['../struct_character_reference.html',1,'']]],
+  ['chunk',['Chunk',['../struct_chunk.html',1,'']]],
   ['class',['Class',['../classcpp_1_1ast_1_1_class.html',1,'cpp::ast']]],
   ['clientloginerror',['ClientLoginError',['../classupload_1_1_client_login_error.html',1,'upload']]],
   ['codelocation',['CodeLocation',['../structtesting_1_1internal_1_1_code_location.html',1,'testing::internal']]],

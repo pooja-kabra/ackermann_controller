@@ -1,0 +1,5 @@
+<map id="ackermann::Controller" name="ackermann::Controller">
+<area shape="rect" id="node2" href="$classackermann_1_1_inverse_kinematics.html" title="Inverse Kinematics class. " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_robot.html" title="Robot class. " alt="" coords="233,5,362,32"/>
+<area shape="rect" id="node4" href="$classackermann_1_1_forward_kinematics.html" title="ForwardKinematics class. " alt="" coords="386,5,593,32"/>
+</map>

@@ -1,4 +1,5 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/app/inversekinematics.cpp" name="/home/markose/mid_term_proposal/ackermann_controller/app/inversekinematics.cpp">
-<area shape="rect" id="node2" href="$inversekinematics_8hpp_source.html" title="../include/inversekinematics.hpp" alt="" coords="5,109,215,136"/>
-<area shape="rect" id="node4" href="$robot_8hpp.html" title="This file declares the Robot class. " alt="" coords="95,184,229,211"/>
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/app/inversekinematics.cpp" name="/home/markose/ackermann_phase_2/ackermann_controller/app/inversekinematics.cpp">
+<area shape="rect" id="node2" href="$inversekinematics_8hpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="66,109,276,136"/>
+<area shape="rect" id="node5" href="$robot_8hpp.html" title="This class contains all the physical parametes of the robot as well and stores the heading and speed ..." alt="" coords="23,184,156,211"/>
+<area shape="rect" id="node6" href="$sensor_8hpp.html" title="This is where the actual sensors of the robot will be added to. For now this class stores the actual ..." alt="" coords="181,184,324,211"/>
 </map>

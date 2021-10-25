@@ -1,4 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classackermann_1_1_sensor.html#a1fb7f6d1f1c730750f06eeb12e7ccc8a" title="Set the linear speed of the robot. " alt="" coords="109,5,252,47"/>
-<area shape="rect" id="node3" href="$classackermann_1_1_sensor.html#a20636bd94e32a8d5fb84ad2da3df2fa4" title="Get the linear speed of the robot. " alt="" coords="109,71,252,112"/>
+<area shape="rect" id="node2" href="$classackermann_1_1_sensor.html#a1fb7f6d1f1c730750f06eeb12e7ccc8a" title="Setter function to set the actual speed of the robot in global frame. " alt="" coords="109,5,252,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_sensor.html#a20636bd94e32a8d5fb84ad2da3df2fa4" title="Getter function to get the actual linear speed of the robot in global frame. " alt="" coords="109,71,252,112"/>
 </map>

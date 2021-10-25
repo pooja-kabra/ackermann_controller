@@ -1,0 +1,5 @@
+<map id="ackermann::ForwardKinematics::setHeadingError" name="ackermann::ForwardKinematics::setHeadingError">
+<area shape="rect" id="node2" href="$classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="515,5,665,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba" title="Calculates the error in heading angle of the robot. " alt="" coords="260,35,467,76"/>
+<area shape="rect" id="node4" href="$forwardkinematics__test_8cpp.html#adf7ef51a0e313bf77878d25330c4c791" title="Testing getters and setters for heading_error. " alt="" coords="335,101,391,127"/>
+</map>

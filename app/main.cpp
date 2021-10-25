@@ -2,11 +2,17 @@
  * @file main.cpp
  * @author Markose Jacob, Pooja Kabra
  * @brief Defines the main file. The program starts from here.
- * @version 0.1
- * @date 2021-10-16
- * 
+ * @version 2.0
+ * @date 2021-10-24
  * @copyright Copyright (c) 2021
+ * @section DESCRIPTION
  * 
+ * Implemented Ackermann steering controller using a PID controller
+ * for Acme robotics.
+ * 
+ * Ackermann steering helps to reduce slippage as the robot make a turn.
+ * The controller gives indepedent wheel heading and wheel speed to each
+ * of the front wheels and hence the robot is able to make a smoother turn.
  */
 
 
@@ -40,11 +46,11 @@ int main() {
     ackermann::Sensor sen(0, 0);  // sensor
     ackermann::ForwardKinematics forkin(0, 0);  // fk
     ackermann::InverseKinematics inkin(goal_heading, goal_speed);  // ik
-    ackermann::Controller control(goal_heading, goal_speed, 0.5, 0.1, 0.1,  // controller
-    0.1, robo, forkin, inkin, 's');
+    ackermann::Controller control(goal_heading, goal_speed,
+    0.5, 0.1, 0.1, 0.1, robo, forkin, inkin, 's');  // controller
 
-    control.setGoalHeading(goal_heading);  // set goal heading for controller object
-    control.setGoalSpeed(goal_speed);  // set goal speed for controller object
+    control.setGoalHeading(goal_heading);  // set goal heading
+    control.setGoalSpeed(goal_speed);  // set goal speed
     control.solve(sen);  // controller object solves for convergence
 
     /* read plotting data from sensor */

@@ -1,4 +1,6 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/include/forwardkinematics.hpp" name="/home/markose/mid_term_proposal/ackermann_controller/include/forwardkinematics.hpp">
-<area shape="rect" id="node2" href="$forwardkinematics_8cpp.html" title="This file defines the Forward Kinematics class. It provides functions to calculate error in heading o..." alt="" coords="5,109,212,165"/>
-<area shape="rect" id="node3" href="$forwardkinematics__test_8cpp.html" title="Unit tests for ForwardKinematics class. " alt="" coords="236,109,448,165"/>
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp" name="/home/markose/ackermann_phase_2/ackermann_controller/include/forwardkinematics.hpp">
+<area shape="rect" id="node2" href="$controller_8hpp.html" title="This is the core of the software which makes use of other classes to calculate the headings and wheel..." alt="" coords="5,109,212,165"/>
+<area shape="rect" id="node4" href="$forwardkinematics_8cpp.html" title="This is where we are calculating the error between the traget heading and speed against the robots gl..." alt="" coords="236,109,443,165"/>
+<area shape="rect" id="node5" href="$forwardkinematics__test_8cpp.html" title="Unit tests for ForwardKinematics class. " alt="" coords="467,109,679,165"/>
+<area shape="rect" id="node3" href="$controller__test_8cpp.html" title="Unit tests for controller class. " alt="" coords="5,213,212,269"/>
 </map>

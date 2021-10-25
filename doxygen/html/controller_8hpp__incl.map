@@ -1,2 +1,6 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/include/controller.hpp" name="/home/markose/mid_term_proposal/ackermann_controller/include/controller.hpp">
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/include/controller.hpp" name="/home/markose/ackermann_phase_2/ackermann_controller/include/controller.hpp">
+<area shape="rect" id="node3" href="$robot_8hpp.html" title="This class contains all the physical parametes of the robot as well and stores the heading and speed ..." alt="" coords="205,184,338,211"/>
+<area shape="rect" id="node4" href="$sensor_8hpp.html" title="This is where the actual sensors of the robot will be added to. For now this class stores the actual ..." alt="" coords="464,184,607,211"/>
+<area shape="rect" id="node6" href="$inversekinematics_8hpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="316,109,525,136"/>
+<area shape="rect" id="node7" href="$forwardkinematics_8hpp.html" title="This is where we are calculating the error between the traget heading and speed against the robots gl..." alt="" coords="30,109,241,136"/>
 </map>

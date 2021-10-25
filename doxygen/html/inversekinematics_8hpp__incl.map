@@ -1,0 +1,4 @@
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp" name="/home/markose/ackermann_phase_2/ackermann_controller/include/inversekinematics.hpp">
+<area shape="rect" id="node4" href="$robot_8hpp.html" title="This class contains all the physical parametes of the robot as well and stores the heading and speed ..." alt="" coords="23,109,156,136"/>
+<area shape="rect" id="node5" href="$sensor_8hpp.html" title="This is where the actual sensors of the robot will be added to. For now this class stores the actual ..." alt="" coords="181,109,323,136"/>
+</map>

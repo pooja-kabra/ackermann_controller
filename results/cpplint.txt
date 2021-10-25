@@ -1,0 +1,10 @@
+$ cpplint supportLib.cpp main.cpp controller.cpp forwardkinematics.cpp inversekinematics.cpp robot.cpp sensor.cpp
+
+Done processing controller.cpp
+Done processing forwardkinematics.cpp
+Done processing inversekinematics.cpp
+Done processing main.cpp
+Done processing robot.cpp
+Done processing sensor.cpp
+Done processing supportLib.cpp
+

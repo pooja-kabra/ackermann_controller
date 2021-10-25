@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: Member List</title>
+<title>Ackermann Steering Controller: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,6 +57,11 @@ $(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_inverse_kinematics.html">InverseKinematics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ackermann::InverseKinematics Member List</div>  </div>
@@ -87,19 +70,17 @@ $(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.
 
 <p>This is the complete list of members for <a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a8c2c5a6673f8e519548c2a0a790f3774">calculateWheelAngles</a>()</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aa53c48c446e30f184b3a38cd16a381fa">calculateWheelSpeed</a>()</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a1b066623d81871d8ba7d717cf840a231">InverseKinematics</a>(Robot robot, double desired_heading, double desired_speed)</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aff55e17de53baaa526a3ca80a2169d79">~InverseKinematics</a>()</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a3d4b41caefb2238648fa7b6c95a79f37">calculateNewRobotHeadingandSpeed</a>(double inner_heading_incr, double outer_heading_incr, Sensor &amp;sensor, Robot &amp;car, double dt)</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d">calculateWheelHeadings</a>(double actual_heading, double dt, char direction, Robot &amp;car)</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8">calculateWheelSpeeds</a>(double actual_heading, double actual_speed, double dt, char direction, Robot &amp;car)</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aa23a0d28b96f15f7515fd92b21aa9acf">InverseKinematics</a>(double desired_heading=0, double desired_speed=0)</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aff55e17de53baaa526a3ca80a2169d79">~InverseKinematics</a>()</td><td class="entry"><a class="el" href="classackermann_1_1_inverse_kinematics.html">ackermann::InverseKinematics</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

@@ -1,0 +1,94 @@
+# Note
+We are using version 'Cppcheck 1.82' which has the bug of false positive and hence we get the message saying our functions are never used 
+
+1. main.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name main.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/main.cpp ...
+[include/controller.hpp:60]: (performance) Variable 'car' is assigned in constructor body. Consider performing initialization in initialization list.
+[include/controller.hpp:61]: (performance) Variable 'fk' is assigned in constructor body. Consider performing initialization in initialization list.
+[include/controller.hpp:62]: (performance) Variable 'ik' is assigned in constructor body. Consider performing initialization in initialization list.
+[include/controller.hpp:53]: (performance) Function parameter 'robo' should be passed by reference.
+1/2 files checked 90% done
+Checking test/main.cpp ...
+2/2 files checked 100% done
+
+2. controller.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name controller.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/controller.cpp ...
+[app/controller.cpp:129]: (style) The function 'getGoalHeading' is never used.
+[app/controller.cpp:138]: (style) The function 'getGoalSpeed' is never used.
+[app/controller.cpp:110]: (style) The function 'setGoalHeading' is never used.
+[app/controller.cpp:119]: (style) The function 'setGoalSpeed' is never used.
+[app/controller.cpp:18]: (style) The function 'solve' is never used.
+
+3. forwardkinematics.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name forwardkinematics.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/forwardkinematics.cpp ...
+[app/forwardkinematics.cpp:20]: (style) The function 'calculateHeadingError' is never used.
+[app/forwardkinematics.cpp:33]: (style) The function 'calculateSpeedError' is never used.
+[app/forwardkinematics.cpp:62]: (style) The function 'getHeadingError' is never used.
+[app/forwardkinematics.cpp:71]: (style) The function 'getSpeedError' is never used.
+[app/forwardkinematics.cpp:53]: (style) The function 'setSpeedError' is never used.
+
+4. inverseinematics.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name inversekinematics.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/inversekinematics.cpp ...
+[app/inversekinematics.cpp:221]: (style) The function 'calculateNewRobotHeadingandSpeed' is never used.
+[app/inversekinematics.cpp:29]: (style) The function 'calculateWheelHeadings' is never used.
+[app/inversekinematics.cpp:129]: (style) The function 'calculateWheelSpeeds' is never used.
+
+5. robot.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name robot.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/robot.cpp ...
+[app/robot.cpp:44]: (style) The function 'getInnerWheelHeading' is never used.
+[app/robot.cpp:80]: (style) The function 'getInnerWheelRps' is never used.
+[app/robot.cpp:62]: (style) The function 'getInnerWheelSpeed' is never used.
+[app/robot.cpp:53]: (style) The function 'getOuterWheelHeading' is never used.
+[app/robot.cpp:89]: (style) The function 'getOuterWheelRps' is never used.
+[app/robot.cpp:71]: (style) The function 'getOuterWheelSpeed' is never used.
+[app/robot.cpp:125]: (style) The function 'getRpsIncrPerSecMax' is never used.
+[app/robot.cpp:107]: (style) The function 'getRpsMax' is never used.
+[app/robot.cpp:116]: (style) The function 'getThetaIncrPerSecMax' is never used.
+[app/robot.cpp:98]: (style) The function 'getThetaMax' is never used.
+[app/robot.cpp:17]: (style) The function 'getTrackLength' is never used.
+[app/robot.cpp:26]: (style) The function 'getWheelBase' is never used.
+[app/robot.cpp:35]: (style) The function 'getWheelRadius' is never used.
+[app/robot.cpp:152]: (style) The function 'setInnerWheelHeading' is never used.
+[app/robot.cpp:134]: (style) The function 'setInnerWheelRps' is never used.
+[app/robot.cpp:170]: (style) The function 'setInnerWheelSpeed' is never used.
+[app/robot.cpp:161]: (style) The function 'setOuterWheelHeading' is never used.
+[app/robot.cpp:143]: (style) The function 'setOuterWheelRps' is never used.
+[app/robot.cpp:179]: (style) The function 'setOuterWheelSpeed' is never used.
+
+6. sensor.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name sensor.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/sensor.cpp ...
+[app/sensor.cpp:20]: (style) The function 'getActualHeading' is never used.
+[app/sensor.cpp:29]: (style) The function 'getActualSpeed' is never used.
+[app/sensor.cpp:38]: (style) The function 'setActualHeading' is never used.
+[app/sensor.cpp:48]: (style) The function 'setActualSpeed' is never used.
+
+7. supportLib.cpp
+
+$ cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name supportLib.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Checking app/supportLib.cpp ...
+[app/supportLib.cpp:29]: (style) The function 'ByteArrayToDoubleArray' is never used.
+[app/supportLib.cpp:20]: (style) The function 'WriteToFile' is never used.
+
+
+
+
+

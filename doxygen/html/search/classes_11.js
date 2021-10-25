@@ -4,6 +4,7 @@ var searchData=
   ['rangenode',['RangeNode',['../classpump_1_1_range_node.html',1,'pump']]],
   ['rawcodenode',['RawCodeNode',['../classpump_1_1_raw_code_node.html',1,'pump']]],
   ['re',['RE',['../classtesting_1_1internal_1_1_r_e.html',1,'testing::internal']]],
+  ['rectangle',['Rectangle',['../struct_rectangle.html',1,'']]],
   ['referenceorvaluewrapper',['ReferenceOrValueWrapper',['../classtesting_1_1internal_1_1_reference_or_value_wrapper.html',1,'testing::internal']]],
   ['referenceorvaluewrapper_3c_20t_20_26_20_3e',['ReferenceOrValueWrapper&lt; T &amp; &gt;',['../classtesting_1_1internal_1_1_reference_or_value_wrapper_3_01_t_01_6_01_4.html',1,'testing::internal']]],
   ['referencesbaroriszeroimpl',['ReferencesBarOrIsZeroImpl',['../classtesting_1_1gmock__matchers__test_1_1_references_bar_or_is_zero_impl.html',1,'testing::gmock_matchers_test']]],
@@ -29,5 +30,9 @@ var searchData=
   ['returnrefaction',['ReturnRefAction',['../classtesting_1_1internal_1_1_return_ref_action.html',1,'testing::internal']]],
   ['returnrefofcopyaction',['ReturnRefOfCopyAction',['../classtesting_1_1internal_1_1_return_ref_of_copy_action.html',1,'testing::internal']]],
   ['returnvoidaction',['ReturnVoidAction',['../classtesting_1_1internal_1_1_return_void_action.html',1,'testing::internal']]],
+  ['rgba',['RGBA',['../struct_r_g_b_a.html',1,'']]],
+  ['rgbabitmap',['RGBABitmap',['../struct_r_g_b_a_bitmap.html',1,'']]],
+  ['rgbabitmapimage',['RGBABitmapImage',['../struct_r_g_b_a_bitmap_image.html',1,'']]],
+  ['rgbabitmapimagereference',['RGBABitmapImageReference',['../struct_r_g_b_a_bitmap_image_reference.html',1,'']]],
   ['robot',['Robot',['../classackermann_1_1_robot.html',1,'ackermann']]]
 ];

@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: ackermann::Sensor Class Reference</title>
+<title>Ackermann Steering Controller: ackermann::Sensor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_sensor.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,9 +57,15 @@ $(document).ready(function(){initNavTree('classackermann_1_1_sensor.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_sensor.html">Sensor</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classackermann_1_1_sensor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ackermann::Sensor Class Reference</div>  </div>
@@ -96,25 +80,37 @@ $(document).ready(function(){initNavTree('classackermann_1_1_sensor.html','');})
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6479b7cdbb4c1dfe708756fabb58792"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#ae6479b7cdbb4c1dfe708756fabb58792">getActualHeading</a> ()</td></tr>
-<tr class="memdesc:ae6479b7cdbb4c1dfe708756fabb58792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getters and setters for the heading angle of the robot in the robot frame and its linear speed.  <a href="#ae6479b7cdbb4c1dfe708756fabb58792">More...</a><br /></td></tr>
+<tr class="memdesc:ae6479b7cdbb4c1dfe708756fabb58792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the actual heading of the robot in global frame.  <a href="#ae6479b7cdbb4c1dfe708756fabb58792">More...</a><br /></td></tr>
 <tr class="separator:ae6479b7cdbb4c1dfe708756fabb58792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20636bd94e32a8d5fb84ad2da3df2fa4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#a20636bd94e32a8d5fb84ad2da3df2fa4">getActualSpeed</a> ()</td></tr>
-<tr class="memdesc:a20636bd94e32a8d5fb84ad2da3df2fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the linear speed of the robot.  <a href="#a20636bd94e32a8d5fb84ad2da3df2fa4">More...</a><br /></td></tr>
+<tr class="memdesc:a20636bd94e32a8d5fb84ad2da3df2fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the actual linear speed of the robot in global frame.  <a href="#a20636bd94e32a8d5fb84ad2da3df2fa4">More...</a><br /></td></tr>
 <tr class="separator:a20636bd94e32a8d5fb84ad2da3df2fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c56e435c9ac88e1ac258283889f1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#a82c56e435c9ac88e1ac258283889f1d3">setActualHeading</a> (double)</td></tr>
-<tr class="memdesc:a82c56e435c9ac88e1ac258283889f1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the heading angle of the robot in the robot frame.  <a href="#a82c56e435c9ac88e1ac258283889f1d3">More...</a><br /></td></tr>
+<tr class="memdesc:a82c56e435c9ac88e1ac258283889f1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the actual heading of the robot in global frame.  <a href="#a82c56e435c9ac88e1ac258283889f1d3">More...</a><br /></td></tr>
 <tr class="separator:a82c56e435c9ac88e1ac258283889f1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb7f6d1f1c730750f06eeb12e7ccc8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#a1fb7f6d1f1c730750f06eeb12e7ccc8a">setActualSpeed</a> (double)</td></tr>
-<tr class="memdesc:a1fb7f6d1f1c730750f06eeb12e7ccc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the linear speed of the robot.  <a href="#a1fb7f6d1f1c730750f06eeb12e7ccc8a">More...</a><br /></td></tr>
+<tr class="memdesc:a1fb7f6d1f1c730750f06eeb12e7ccc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the actual speed of the robot in global frame.  <a href="#a1fb7f6d1f1c730750f06eeb12e7ccc8a">More...</a><br /></td></tr>
 <tr class="separator:a1fb7f6d1f1c730750f06eeb12e7ccc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d6240c9f53687649645782a31f60b35"><td class="memItemLeft" align="right" valign="top"><a id="a7d6240c9f53687649645782a31f60b35"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#a7d6240c9f53687649645782a31f60b35">Sensor</a> (double actualHeading=1, double actualSpeed=1)</td></tr>
-<tr class="memdesc:a7d6240c9f53687649645782a31f60b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object of <a class="el" href="classackermann_1_1_sensor.html" title="Sensor class. ">Sensor</a> class. <br /></td></tr>
+<tr class="memdesc:a7d6240c9f53687649645782a31f60b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classackermann_1_1_sensor.html" title="Sensor class. ">Sensor</a> class. <br /></td></tr>
 <tr class="separator:a7d6240c9f53687649645782a31f60b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe0d114f50a7f7d04c6ab41cf68963b"><td class="memItemLeft" align="right" valign="top"><a id="adbe0d114f50a7f7d04c6ab41cf68963b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_sensor.html#adbe0d114f50a7f7d04c6ab41cf68963b">~Sensor</a> ()</td></tr>
 <tr class="memdesc:adbe0d114f50a7f7d04c6ab41cf68963b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an object of <a class="el" href="classackermann_1_1_sensor.html" title="Sensor class. ">Sensor</a> class. <br /></td></tr>
 <tr class="separator:adbe0d114f50a7f7d04c6ab41cf68963b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a538ad597f231b7f4f279d9330a8ab7c3"><td class="memItemLeft" align="right" valign="top"><a id="a538ad597f231b7f4f279d9330a8ab7c3"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>actual_heading_record</b></td></tr>
+<tr class="separator:a538ad597f231b7f4f279d9330a8ab7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4c5d063613e60b1f069026b2409960"><td class="memItemLeft" align="right" valign="top"><a id="adf4c5d063613e60b1f069026b2409960"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>actual_speed_record</b></td></tr>
+<tr class="separator:adf4c5d063613e60b1f069026b2409960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25866f49bf8d726dd9cd637ce436243"><td class="memItemLeft" align="right" valign="top"><a id="ae25866f49bf8d726dd9cd637ce436243"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>time_record</b></td></tr>
+<tr class="separator:ae25866f49bf8d726dd9cd637ce436243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classackermann_1_1_sensor.html" title="Sensor class. ">Sensor</a> class. </p>
@@ -134,15 +130,24 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Getters and setters for the heading angle of the robot in the robot frame and its linear speed. </p>
+<p>Getter function to get the actual heading of the robot in global frame. </p>
 <p>Get the heading angle of the robot in the robot frame.</p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>actual_heading. double</dd>
+<dd>
+double </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classackermann_1_1_sensor_ae6479b7cdbb4c1dfe708756fabb58792_icgraph.png" border="0" usemap="#classackermann_1_1_sensor_ae6479b7cdbb4c1dfe708756fabb58792_icgraph" alt=""/></div>
 <map name="classackermann_1_1_sensor_ae6479b7cdbb4c1dfe708756fabb58792_icgraph" id="classackermann_1_1_sensor_ae6479b7cdbb4c1dfe708756fabb58792_icgraph">
-<area shape="rect" id="node2" href="sensor__test_8cpp.html#ad96d3815157280a7d745f7c36b1f5374" title="This test checks the setters and getters for actual heading of the robot. " alt="" coords="196,13,252,39"/>
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="196,5,347,47"/>
+<area shape="rect" id="node3" href="sensor__test_8cpp.html#ad96d3815157280a7d745f7c36b1f5374" title="This test checks the setters and getters for actual heading of the robot. " alt="" coords="243,71,299,98"/>
 </map>
 </div>
 
@@ -163,14 +168,24 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get the linear speed of the robot. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the actual linear speed of the robot in global frame. </p>
+<p>Get the linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>actual_speed. double</dd>
+<dd>
+double </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classackermann_1_1_sensor_a20636bd94e32a8d5fb84ad2da3df2fa4_icgraph.png" border="0" usemap="#classackermann_1_1_sensor_a20636bd94e32a8d5fb84ad2da3df2fa4_icgraph" alt=""/></div>
 <map name="classackermann_1_1_sensor_a20636bd94e32a8d5fb84ad2da3df2fa4_icgraph" id="classackermann_1_1_sensor_a20636bd94e32a8d5fb84ad2da3df2fa4_icgraph">
-<area shape="rect" id="node2" href="sensor__test_8cpp.html#a93c6a75da316910a07a8a65702da5b03" title="This test checks the setters and getters for actual speed of the robot. " alt="" coords="196,13,252,39"/>
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="196,5,347,47"/>
+<area shape="rect" id="node3" href="sensor__test_8cpp.html#a93c6a75da316910a07a8a65702da5b03" title="This test checks the setters and getters for actual speed of the robot. " alt="" coords="243,71,299,98"/>
 </map>
 </div>
 
@@ -192,7 +207,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the heading angle of the robot in the robot frame. </p>
+<p>Setter function to set the actual heading of the robot in global frame. </p>
+<p>Set the heading angle of the robot in the robot frame.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_heading</td><td>double. actual heading of robot in global frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
@@ -226,7 +249,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the linear speed of the robot. </p>
+<p>Setter function to set the actual speed of the robot in global frame. </p>
+<p>Set the linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_speed</td><td>double. actual speed of robot in global frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
@@ -245,19 +276,15 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/markose/mid_term_proposal/ackermann_controller/include/<a class="el" href="sensor_8hpp_source.html">sensor.hpp</a></li>
-<li>/home/markose/mid_term_proposal/ackermann_controller/app/<a class="el" href="sensor_8cpp.html">sensor.cpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/include/<a class="el" href="sensor_8hpp_source.html">sensor.hpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/app/<a class="el" href="sensor_8cpp.html">sensor.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_sensor.html">Sensor</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

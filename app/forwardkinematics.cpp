@@ -1,11 +1,14 @@
 /**
  * @file forwardkinematics.cpp
  * @author Markose Jacob, Pooja Kabra
- * @brief This file defines the Forward Kinematics class. It provides functions
- *        to calculate error in heading of the robot in robot frame and its linear speed
- * @version 0.1
- * @date 2021-10-16
+ * @version 2.0
+ * @date 2021-10-24
  * @copyright Copyright (c) 2021
+ * 
+ * @section ForwardKinematics class
+ * 
+ * @brief This is where we are calculating the error between the traget heading
+ * and speed against the robots global heading and speed
  */
 
 #include "../include/forwardkinematics.hpp"

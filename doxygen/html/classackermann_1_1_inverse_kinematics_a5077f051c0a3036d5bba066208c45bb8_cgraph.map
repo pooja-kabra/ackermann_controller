@@ -1,0 +1,5 @@
+<map id="ackermann::InverseKinematics::calculateWheelSpeeds" name="ackermann::InverseKinematics::calculateWheelSpeeds">
+<area shape="rect" id="node2" href="$classackermann_1_1_robot.html#a58810eb9ed72e8a3875e4dba8fe793a2" title="Getter function to get the maximum angular speed. " alt="" coords="265,5,469,32"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_robot.html#af9a599c7d4b875e8d1bb98345ed8be5f" title="Getter function to get the wheel radius of the robot. " alt="" coords="271,57,463,98"/>
+<area shape="rect" id="node4" href="$classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e" title="Getter function to get the wheel base of the robot. " alt="" coords="256,123,479,149"/>
+</map>
