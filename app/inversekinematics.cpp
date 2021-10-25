@@ -112,7 +112,8 @@ double dt, char direction, Robot &car) {
     headings head;
     head.inner = inner_inc;
     head.outer = outer_inc;
-
+    std::cout << "Inner wheel heading inc(deg): " << inner_inc << std::endl;
+    std::cout << "Outer wheel heading inc(deg): " << outer_inc << std::endl;
     return head;
 }
 
@@ -208,6 +209,8 @@ double actual_speed, double dt, char direction, Robot &car) {
     spd.inner_speed = iws_inc;
     spd.outer_speed = ows_inc;
 
+    std::cout << "Inner wheel speed inc(deg): " << iws_inc << std::endl;
+    std::cout << "Outer wheel speed inc(deg): " << ows_inc << std::endl;
     return spd;
 }
 

@@ -202,6 +202,7 @@ class Robot {
     ~Robot() {
     }
 
+
  private:
     double track_length_;           // track length (distance between two
                                     // wheels on an axle) in meters

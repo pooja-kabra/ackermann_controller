@@ -82,8 +82,9 @@ double ackermann::Robot::getOuterWheelSpeed() {
  * 
  * @return double
  */
-double ackermann::Robot::getInnerWheelRps() {
-    return rps_max_;
+double ackermann::Robot::getInnerWheelRps()
+{
+    return inner_wheel_rps_;
 }
 
 /**
@@ -132,7 +133,7 @@ double ackermann::Robot::getRpsIncrPerSecMax() {
 }
 
 /**
- * @brief Set the inner wheel angular velocity in rps
+ * @brief Set the inner wheel angular speed in rps
  *    
  * @param double
  */
@@ -141,7 +142,7 @@ void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps) {
 }
 
 /**
- * @brief Set the outer wheel angular velocity in rps
+ * @brief Set the outer wheel angular speed in rps
  *    
  * @param double
  */

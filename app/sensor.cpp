@@ -16,7 +16,7 @@
 #include "../include/sensor.hpp"
 
 /**
- * @brief Get the heading angle of the robot in the robot frame
+ * @brief Get the heading angle of the robot in the global frame
  * 
  * @return double
  */
@@ -34,7 +34,7 @@ double ackermann::Sensor::getActualSpeed() {
 }
 
 /**
- * @brief Set the heading angle of the robot in the robot frame
+ * @brief Set the heading angle of the robot in the global frame
  *    
  * @param double
  */
