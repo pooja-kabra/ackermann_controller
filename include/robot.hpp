@@ -45,7 +45,6 @@ namespace ackermann
         double getThetaIncrPerSecMax();
         double getRpsMax();
         double getRpsIncrPerSecMax();
-        double getComOffset();
 
         double inner = 0;
         double outer = 0;
@@ -62,6 +61,7 @@ namespace ackermann
      * @brief Construct a new Robot object
      * 
      */
+
         Robot(double track_length = 2, double wheel_base = 4, double wheel_radius = 0.3,
               double turning_radius = 0, double inner_wheel_heading = 0, double outer_wheel_heading = 0,
               double inner_wheel_speed = 0, double outer_wheel_speed = 0, double inner_wheel_rps = 0,

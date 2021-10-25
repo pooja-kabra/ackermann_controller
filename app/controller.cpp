@@ -57,8 +57,8 @@ void ackermann::Controller::solve() {
             direction = 's';
         }
 
-        // if (fk.getHeadingError() < 0.8 && fk.getHeadingError() > -0.8) {
-        if (fk.getHeadingError() < 0.2) {
+        if (fk.getHeadingError() < 0.8 && fk.getHeadingError() > -0.8) {
+        // if (fk.getHeadingError() < 0.2) {
             std::cout << "Heading error threshold reached. Done!" << std::endl;
             flag1 = false;
         }
@@ -149,22 +149,4 @@ double ackermann::Controller::getGoalHeading() {
  */
 double ackermann::Controller::getGoalSpeed() {
     return goal_speed_;
-}
-
-/**
- * @brief Get integral gain of controller
- * 
- * @return double
- */
-double ackermann::Controller::getKi() {
-    return ki_;
-}
-
-/**
- * @brief Get proportional gain of controller
- * 
- * @return double
- */
-double ackermann::Controller::getKp() {
-    return kp_;
 }
