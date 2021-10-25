@@ -24,6 +24,16 @@ Among other things, the bend geometry of a kart’s steering will lower the inne
 
 In this project, we implement an Ackerman Steering controller for a robot. We assume that it is four-wheeled and rear drive robot. The task is to make the robot attain the desired heading and speed in a fixed World Frame. 
 
+The only input we get from the user is the target heading and target speed. All other parameters are fixed such as dimensions for the robot and maximum turning angles and speed.
+
+We assume the robot is stationary and has zero heading with respect to global frame in the begining. Once the user inputs the target heading and speed we calculate the error in heading and speed using the forward kinematics class. This error is then fed to a PID controller which gives us the appropriate increment for heading and speed. Using this as input to our ackermann method we calculate the left wheel heading if its left turn and check if the angle of rotation is greater than 45 or if the rotation angle for each iteration is greater than the maximum, if this is the case then we cap the left wheeel heading. Using this we calculate the heading for the right wheel and vice versa for right turn. 
+
+Once we have the wheel headings. We calculate the linear speed for the two wheels using a similar approach to that of calulating wheel heading.
+
+Next based on the new heading and speed of the wheels we estimate the new position of the robot in global frame and we update the actual heading and speed for the robot.
+
+This process is repeated until have reached within the threshold error for heading and speed. If the heading is reached before we reach the required speed then we turn the wheels straight and keep moving forward till we have reached the required speed.
+
 System Input: goal heading(degree, world frame), goal speed(degree, world frame)
 System Output: inner wheel linear speed(m/s), outer wheel linear speed(m/s), inner wheel angle(degree, robot frame), outer wheel angle(degree, robot frame)
 
