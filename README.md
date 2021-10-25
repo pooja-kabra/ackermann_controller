@@ -1,6 +1,6 @@
 # Ackermann Steering Controller
-[![Build Status](https://app.travis-ci.com/pooja-kabra/ackermann_controller.svg?branch=second_phase)](https://app.travis-ci.com/pooja-kabra/ackermann_controller)
-[![Coverage Status](https://coveralls.io/repos/github/pooja-kabra/ackermann_controller/badge.svg?branch=second_phase)](https://coveralls.io/github/pooja-kabra/ackermann_controller?branch=second_phase)
+[![Build Status](https://app.travis-ci.com/pooja-kabra/ackermann_controller.png?branch=second_phase)](https://app.travis-ci.com/pooja-kabra/ackermann_controller)
+[![Coverage Status](https://coveralls.io/repos/github/pooja-kabra/ackermann_controller/badge.png?branch=second_phase)](https://coveralls.io/github/pooja-kabra/ackermann_controller?branch=second_phase)
 
 # Authors
 Markose Jacob - markj11@terpmail.umd.edu (Graduate Student in Robotics at the University of Maryland College Park, Dec 2021)
