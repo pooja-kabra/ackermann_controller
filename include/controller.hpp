@@ -34,10 +34,10 @@ namespace ackermann
         void setGoalSpeed(double goalSpeed);
         double getGoalHeading();
         double getGoalSpeed();
-        void solve();
+        void solve(Sensor &sen);
 
         Robot car;
-        Sensor sensor;
+        // Sensor sensor;
         ForwardKinematics fk;
         InverseKinematics ik;
         char direction;
@@ -49,7 +49,7 @@ namespace ackermann
         /**
      * @brief Create an object of the controller class
      */
-        Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, Sensor sen, ForwardKinematics forkin, InverseKinematics inkin, char dir)
+        Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, ForwardKinematics forkin, InverseKinematics inkin, char dir)
         {
             goal_heading_ = goal_heading;
             goal_speed_ = goal_speed;
@@ -58,7 +58,7 @@ namespace ackermann
             kd_ = kd;
             time_step_ = time_step;
             car = robo;
-            sensor = sen;
+            // sensor = sen;
             fk = forkin;
             ik = inkin;
             direction = dir;

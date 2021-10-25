@@ -15,7 +15,7 @@
  *
  * @param double
  */
-void ackermann::Controller::solve() {
+void ackermann::Controller::solve(Sensor &sen) {
     bool flag1 = true;
     bool flag2 = true;
     char direction = 'u';
@@ -42,10 +42,10 @@ void ackermann::Controller::solve() {
 
         // Calculating error
         fk.setHeadingError(fk.calculateHeadingError(goal_heading_,
-        sensor.getActualHeading()));
+        sen.getActualHeading()));
         std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
         fk.setSpeedError(fk.calculateSpeedError(goal_speed_,
-        sensor.getActualSpeed()));
+        sen.getActualSpeed()));
         std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
 
         // Checking if its a left or right turn
@@ -110,7 +110,7 @@ void ackermann::Controller::solve() {
                   << spd_outer_increment << std::endl;
 
         ik.calculateNewRobotHeadingandSpeed(head_inner_increment,
-        head_outer_increment, sensor, car, time_step_);
+        head_outer_increment, sen, car, time_step_);
     }
 }
 

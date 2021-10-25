@@ -34,7 +34,7 @@ namespace ackermann
         /**
      * @brief Create an object of Sensor class
      */
-        explicit Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
+        Sensor(double actualHeading = 1, double actualSpeed = 1) : actual_heading_{actualHeading},
                                                                             actual_speed_{actualSpeed} {
                                                                                 // std::cout << "Constructor for Sensor class called" << std::endl;
                                                                             };
