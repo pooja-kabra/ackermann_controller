@@ -17,5 +17,7 @@ var searchData=
   ['notmatcherimpl',['NotMatcherImpl',['../classtesting_1_1internal_1_1_not_matcher_impl.html',1,'testing::internal']]],
   ['notnullmatcher',['NotNullMatcher',['../classtesting_1_1internal_1_1_not_null_matcher.html',1,'testing::internal']]],
   ['nullaryconstructorclass',['NullaryConstructorClass',['../classtesting_1_1gmock__generated__actions__test_1_1_nullary_constructor_class.html',1,'testing::gmock_generated_actions_test']]],
-  ['nullaryfunctor',['NullaryFunctor',['../classtesting_1_1gmock__generated__actions__test_1_1_nullary_functor.html',1,'testing::gmock_generated_actions_test::NullaryFunctor'],['../classtesting_1_1gmock__more__actions__test_1_1_nullary_functor.html',1,'testing::gmock_more_actions_test::NullaryFunctor']]]
+  ['nullaryfunctor',['NullaryFunctor',['../classtesting_1_1gmock__generated__actions__test_1_1_nullary_functor.html',1,'testing::gmock_generated_actions_test::NullaryFunctor'],['../classtesting_1_1gmock__more__actions__test_1_1_nullary_functor.html',1,'testing::gmock_more_actions_test::NullaryFunctor']]],
+  ['numberarrayreference',['NumberArrayReference',['../struct_number_array_reference.html',1,'']]],
+  ['numberreference',['NumberReference',['../struct_number_reference.html',1,'']]]
 ];

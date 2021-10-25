@@ -1,3 +1,4 @@
 <map id="ackermann::Sensor::getActualSpeed" name="ackermann::Sensor::getActualSpeed">
-<area shape="rect" id="node2" href="$sensor__test_8cpp.html#a93c6a75da316910a07a8a65702da5b03" title="This test checks the setters and getters for actual speed of the robot. " alt="" coords="196,13,252,39"/>
+<area shape="rect" id="node2" href="$classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="196,5,347,47"/>
+<area shape="rect" id="node3" href="$sensor__test_8cpp.html#a93c6a75da316910a07a8a65702da5b03" title="This test checks the setters and getters for actual speed of the robot. " alt="" coords="243,71,299,98"/>
 </map>

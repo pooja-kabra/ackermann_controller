@@ -8,10 +8,13 @@ var searchData=
   ['setgoalspeed',['setGoalSpeed',['../classackermann_1_1_controller.html#ab1574b51e0466aefa5e4a91d80e4b9c2',1,'ackermann::Controller']]],
   ['setheadingerror',['setHeadingError',['../classackermann_1_1_forward_kinematics.html#a4b1a1287dfdaf7821fb96c0534cabbaf',1,'ackermann::ForwardKinematics']]],
   ['setinnerwheelheading',['setInnerWheelHeading',['../classackermann_1_1_robot.html#ab04ae0e309e4ac263d0d64d5dd2520d2',1,'ackermann::Robot']]],
+  ['setinnerwheelrps',['setInnerWheelRps',['../classackermann_1_1_robot.html#ace83a71544905970ffad120de7560e3f',1,'ackermann::Robot']]],
   ['setinnerwheelspeed',['setInnerWheelSpeed',['../classackermann_1_1_robot.html#a54b2a316e3fe338023b728867f9139e1',1,'ackermann::Robot']]],
   ['setouterwheelheading',['setOuterWheelHeading',['../classackermann_1_1_robot.html#a906dc6b8680bb97d36a6b0fc281349fb',1,'ackermann::Robot']]],
+  ['setouterwheelrps',['setOuterWheelRps',['../classackermann_1_1_robot.html#ad1a90000cc20a2586ac6d47a901316ab',1,'ackermann::Robot']]],
   ['setouterwheelspeed',['setOuterWheelSpeed',['../classackermann_1_1_robot.html#aaaf408169f1a2f2ba0dfc59944a2cbf6',1,'ackermann::Robot']]],
+  ['setspeederror',['setSpeedError',['../classackermann_1_1_forward_kinematics.html#a67467f6bc63fe04307dd6712a70cba93',1,'ackermann::ForwardKinematics']]],
   ['setup',['setUp',['../classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af20a71b1659314a5cc1093d77a673495',1,'gtest_filter_unittest::GTestFilterUnitTest']]],
-  ['solve',['solve',['../classackermann_1_1_controller.html#a9a816908099ab2703ecec4b2bb7dae5b',1,'ackermann::Controller']]],
+  ['solve',['solve',['../classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258',1,'ackermann::Controller']]],
   ['stripleadingwhitespace',['StripLeadingWhitespace',['../classcpp_1_1gmock__class__test_1_1_test_case.html#a366b15717eebc41e397357868c5734c5',1,'cpp::gmock_class_test::TestCase']]]
 ];

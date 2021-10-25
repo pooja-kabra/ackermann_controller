@@ -488,7 +488,7 @@ void DrawDigitCharacter(RGBABitmapImage *image, double topx, double topy, double
 std::vector<wchar_t> *GetPixelFontData();
 void DrawAsciiCharacter(RGBABitmapImage *image, double topx, double topy, wchar_t a, RGBA *color);
 double GetTextWidth(std::vector<wchar_t> *text);
-double GetTextHeight(std::vector<wchar_t> *text);
+double GetTextHeight();
 
 void AssertFalse(bool b, NumberReference *failures);
 void AssertTrue(bool b, NumberReference *failures);

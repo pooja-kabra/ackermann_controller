@@ -60,11 +60,12 @@ var searchData=
   ['assertequalignoreleadingwhitespace',['assertEqualIgnoreLeadingWhitespace',['../classcpp_1_1gmock__class__test_1_1_test_case.html#a68f88bba11511f8c582123d47bf80464',1,'cpp::gmock_class_test::TestCase']]],
   ['assertequivalentnodes',['AssertEquivalentNodes',['../classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case.html#a977273e8863f4f41d121bb5a64b08d32',1,'gtest_xml_test_utils::GTestXMLTestCase']]],
   ['asserthelper',['AssertHelper',['../classtesting_1_1internal_1_1_assert_helper.html',1,'testing::internal']]],
-  ['assertionresult',['AssertionResult',['../classmy__namespace_1_1testing_1_1_assertion_result.html',1,'my_namespace::testing::AssertionResult'],['../classtesting_1_1_assertion_result.html',1,'testing::AssertionResult']]],
+  ['assertionresult',['AssertionResult',['../classtesting_1_1_assertion_result.html',1,'testing::AssertionResult'],['../classmy__namespace_1_1testing_1_1_assertion_result.html',1,'my_namespace::testing::AssertionResult']]],
   ['assertpartitionisvalid',['AssertPartitionIsValid',['../classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#a87656eac0cf4136252eef43da0121381',1,'gtest_filter_unittest::GTestFilterUnitTest']]],
   ['assertsetequal',['AssertSetEqual',['../classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#aeebdbdcc59594ad0a69cf11eafe94997',1,'gtest_filter_unittest::GTestFilterUnitTest']]],
   ['assignaction',['AssignAction',['../classtesting_1_1internal_1_1_assign_action.html',1,'testing::internal']]],
   ['astbuilder',['AstBuilder',['../classcpp_1_1ast_1_1_ast_builder.html',1,'cpp::ast']]],
   ['astruct',['AStruct',['../structtesting_1_1gmock__matchers__test_1_1_a_struct.html',1,'testing::gmock_matchers_test']]],
-  ['advancedguide',['AdvancedGuide',['../md__home_markose_mid_term_proposal_ackermann_controller_vendor_googletest_googletest_docs__advanced_guide.html',1,'']]]
+  ['ackermann_20steering_20controller',['Ackermann Steering Controller',['../md__home_markose_ackermann_phase_2_ackermann_controller__r_e_a_d_m_e.html',1,'']]],
+  ['advancedguide',['AdvancedGuide',['../md__home_markose_ackermann_phase_2_ackermann_controller_vendor_googletest_googletest_docs__advanced_guide.html',1,'']]]
 ];

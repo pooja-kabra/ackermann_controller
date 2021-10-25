@@ -1,0 +1,4 @@
+<map id="ackermann::ForwardKinematics::getSpeedError" name="ackermann::ForwardKinematics::getSpeedError">
+<area shape="rect" id="node2" href="$classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+<area shape="rect" id="node3" href="$forwardkinematics__test_8cpp.html#a93e821bcf31ce613a50e83a6bc687d54" title="Testing getters and setters for speed_error. " alt="" coords="307,71,363,98"/>
+</map>

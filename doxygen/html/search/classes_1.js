@@ -57,7 +57,7 @@ var searchData=
   ['argsmatcher',['ArgsMatcher',['../classtesting_1_1internal_1_1_args_matcher.html',1,'testing::internal']]],
   ['argsmatcherimpl',['ArgsMatcherImpl',['../classtesting_1_1internal_1_1_args_matcher_impl.html',1,'testing::internal']]],
   ['asserthelper',['AssertHelper',['../classtesting_1_1internal_1_1_assert_helper.html',1,'testing::internal']]],
-  ['assertionresult',['AssertionResult',['../classmy__namespace_1_1testing_1_1_assertion_result.html',1,'my_namespace::testing::AssertionResult'],['../classtesting_1_1_assertion_result.html',1,'testing::AssertionResult']]],
+  ['assertionresult',['AssertionResult',['../classtesting_1_1_assertion_result.html',1,'testing::AssertionResult'],['../classmy__namespace_1_1testing_1_1_assertion_result.html',1,'my_namespace::testing::AssertionResult']]],
   ['assignaction',['AssignAction',['../classtesting_1_1internal_1_1_assign_action.html',1,'testing::internal']]],
   ['astbuilder',['AstBuilder',['../classcpp_1_1ast_1_1_ast_builder.html',1,'cpp::ast']]],
   ['astruct',['AStruct',['../structtesting_1_1gmock__matchers__test_1_1_a_struct.html',1,'testing::gmock_matchers_test']]]

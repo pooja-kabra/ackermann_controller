@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: ackermann::Controller Class Reference</title>
+<title>Ackermann Steering Controller: ackermann::Controller Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_controller.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,55 +57,73 @@ $(document).ready(function(){initNavTree('classackermann_1_1_controller.html',''
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_controller.html">Controller</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classackermann_1_1_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ackermann::Controller Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>controller class  
- <a href="classackermann_1_1_controller.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="controller_8hpp_source.html">controller.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for ackermann::Controller:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_controller__coll__graph.png" border="0" usemap="#ackermann_1_1_controller_coll__map" alt="Collaboration graph"/></div>
+<map name="ackermann_1_1_controller_coll__map" id="ackermann_1_1_controller_coll__map">
+<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html" title="Inverse Kinematics class. " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node3" href="classackermann_1_1_robot.html" title="Robot class. " alt="" coords="233,5,362,32"/>
+<area shape="rect" id="node4" href="classackermann_1_1_forward_kinematics.html" title="ForwardKinematics class. " alt="" coords="386,5,593,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a211c5c8779500f6e2615e80c8fd8d0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#a211c5c8779500f6e2615e80c8fd8d0b3">setGoalHeading</a> (double goalHeading)</td></tr>
-<tr class="memdesc:a211c5c8779500f6e2615e80c8fd8d0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getters and setters for the desired heading angle of the robot in the robot frame and desired linear speed of the robot.  <a href="#a211c5c8779500f6e2615e80c8fd8d0b3">More...</a><br /></td></tr>
+<tr class="memdesc:a211c5c8779500f6e2615e80c8fd8d0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classackermann_1_1_controller.html">Controller</a> class.  <a href="#a211c5c8779500f6e2615e80c8fd8d0b3">More...</a><br /></td></tr>
 <tr class="separator:a211c5c8779500f6e2615e80c8fd8d0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1574b51e0466aefa5e4a91d80e4b9c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#ab1574b51e0466aefa5e4a91d80e4b9c2">setGoalSpeed</a> (double goalSpeed)</td></tr>
-<tr class="memdesc:ab1574b51e0466aefa5e4a91d80e4b9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the desired linear speed of the robot.  <a href="#ab1574b51e0466aefa5e4a91d80e4b9c2">More...</a><br /></td></tr>
+<tr class="memdesc:ab1574b51e0466aefa5e4a91d80e4b9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to update the target speed of the robot with the user input.  <a href="#ab1574b51e0466aefa5e4a91d80e4b9c2">More...</a><br /></td></tr>
 <tr class="separator:ab1574b51e0466aefa5e4a91d80e4b9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94ee73b0e432956c7a06566c3a51c3c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#ad94ee73b0e432956c7a06566c3a51c3c">getGoalHeading</a> ()</td></tr>
-<tr class="memdesc:ad94ee73b0e432956c7a06566c3a51c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the desired heading angle of the robot in the robot frame.  <a href="#ad94ee73b0e432956c7a06566c3a51c3c">More...</a><br /></td></tr>
+<tr class="memdesc:ad94ee73b0e432956c7a06566c3a51c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the target heading of the robot with the user input.  <a href="#ad94ee73b0e432956c7a06566c3a51c3c">More...</a><br /></td></tr>
 <tr class="separator:ad94ee73b0e432956c7a06566c3a51c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c07a1ee681bf5e797b378c6e85048bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#a6c07a1ee681bf5e797b378c6e85048bd">getGoalSpeed</a> ()</td></tr>
-<tr class="memdesc:a6c07a1ee681bf5e797b378c6e85048bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the desired linear speed of the robot.  <a href="#a6c07a1ee681bf5e797b378c6e85048bd">More...</a><br /></td></tr>
+<tr class="memdesc:a6c07a1ee681bf5e797b378c6e85048bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the target speed of the robot with the user input.  <a href="#a6c07a1ee681bf5e797b378c6e85048bd">More...</a><br /></td></tr>
 <tr class="separator:a6c07a1ee681bf5e797b378c6e85048bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a2296b52fd11b2c7cda54ba163a1e2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#a9a2296b52fd11b2c7cda54ba163a1e2f">getKi</a> ()</td></tr>
-<tr class="memdesc:a9a2296b52fd11b2c7cda54ba163a1e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getters for controller gains.  <a href="#a9a2296b52fd11b2c7cda54ba163a1e2f">More...</a><br /></td></tr>
-<tr class="separator:a9a2296b52fd11b2c7cda54ba163a1e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb1a52ff206e0b4447ebcc65e3a9ebf9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#afb1a52ff206e0b4447ebcc65e3a9ebf9">getKp</a> ()</td></tr>
-<tr class="memdesc:afb1a52ff206e0b4447ebcc65e3a9ebf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get proportional gain of controller.  <a href="#afb1a52ff206e0b4447ebcc65e3a9ebf9">More...</a><br /></td></tr>
-<tr class="separator:afb1a52ff206e0b4447ebcc65e3a9ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a816908099ab2703ecec4b2bb7dae5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#a9a816908099ab2703ecec4b2bb7dae5b">solve</a> ()</td></tr>
-<tr class="memdesc:a9a816908099ab2703ecec4b2bb7dae5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method makes the output heading angle of the robot in the robot frame and its linear speed converge to goal values.  <a href="#a9a816908099ab2703ecec4b2bb7dae5b">More...</a><br /></td></tr>
-<tr class="separator:a9a816908099ab2703ecec4b2bb7dae5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6248846584b64bc2e9ef84d72e174df"><td class="memItemLeft" align="right" valign="top"><a id="af6248846584b64bc2e9ef84d72e174df"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#af6248846584b64bc2e9ef84d72e174df">Controller</a> (double goal_heading=0, double goal_speed=0, double ki=0.01, double kp=0.03)</td></tr>
-<tr class="memdesc:af6248846584b64bc2e9ef84d72e174df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object of the controller class. <br /></td></tr>
-<tr class="separator:af6248846584b64bc2e9ef84d72e174df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde759126f6993e22b11a56b5e782258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258">solve</a> (<a class="el" href="classackermann_1_1_sensor.html">Sensor</a> &amp;sen)</td></tr>
+<tr class="memdesc:adde759126f6993e22b11a56b5e782258"><td class="mdescLeft">&#160;</td><td class="mdescRight">solves for convergence. Makes use of other classes and methods till the heading and speed converges. This is the heart of the software.  <a href="#adde759126f6993e22b11a56b5e782258">More...</a><br /></td></tr>
+<tr class="separator:adde759126f6993e22b11a56b5e782258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b2fd88f29ea3dc6c476c7f6e013a9b"><td class="memItemLeft" align="right" valign="top"><a id="af0b2fd88f29ea3dc6c476c7f6e013a9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#af0b2fd88f29ea3dc6c476c7f6e013a9b">Controller</a> (double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, <a class="el" href="classackermann_1_1_robot.html">Robot</a> robo, <a class="el" href="classackermann_1_1_forward_kinematics.html">ForwardKinematics</a> forkin, <a class="el" href="classackermann_1_1_inverse_kinematics.html">InverseKinematics</a> inkin, char dir)</td></tr>
+<tr class="memdesc:af0b2fd88f29ea3dc6c476c7f6e013a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for controller class. <br /></td></tr>
+<tr class="separator:af0b2fd88f29ea3dc6c476c7f6e013a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c34c6c2a4c291e7bb5b76877a7559df"><td class="memItemLeft" align="right" valign="top"><a id="a4c34c6c2a4c291e7bb5b76877a7559df"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_controller.html#a4c34c6c2a4c291e7bb5b76877a7559df">~Controller</a> ()</td></tr>
 <tr class="memdesc:a4c34c6c2a4c291e7bb5b76877a7559df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an object of the controller class. <br /></td></tr>
 <tr class="separator:a4c34c6c2a4c291e7bb5b76877a7559df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2a25e05198a7494f28e33380f5add56b"><td class="memItemLeft" align="right" valign="top"><a id="a2a25e05198a7494f28e33380f5add56b"></a>
+<a class="el" href="classackermann_1_1_robot.html">Robot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>car</b></td></tr>
+<tr class="separator:a2a25e05198a7494f28e33380f5add56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6eb3d14a506900d5271debfa43107b"><td class="memItemLeft" align="right" valign="top"><a id="aeb6eb3d14a506900d5271debfa43107b"></a>
+<a class="el" href="classackermann_1_1_forward_kinematics.html">ForwardKinematics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fk</b></td></tr>
+<tr class="separator:aeb6eb3d14a506900d5271debfa43107b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5e4b4d82d1e0fb714c3aa2f327a3db"><td class="memItemLeft" align="right" valign="top"><a id="afe5e4b4d82d1e0fb714c3aa2f327a3db"></a>
+<a class="el" href="classackermann_1_1_inverse_kinematics.html">InverseKinematics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ik</b></td></tr>
+<tr class="separator:afe5e4b4d82d1e0fb714c3aa2f327a3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed15d9870b5ebce3df485dbbe9a0188"><td class="memItemLeft" align="right" valign="top"><a id="abed15d9870b5ebce3df485dbbe9a0188"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>direction</b></td></tr>
+<tr class="separator:abed15d9870b5ebce3df485dbbe9a0188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>controller class </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad94ee73b0e432956c7a06566c3a51c3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad94ee73b0e432956c7a06566c3a51c3c">&#9670;&nbsp;</a></span>getGoalHeading()</h2>
 
@@ -143,16 +139,22 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the desired heading angle of the robot in the robot frame. </p>
+<p>Getter function to get the target heading of the robot with the user input. </p>
+<p>Get the desired heading angle of the robot in the global frame.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>goalHeading_</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_ad94ee73b0e432956c7a06566c3a51c3c_icgraph.png" border="0" usemap="#classackermann_1_1_controller_ad94ee73b0e432956c7a06566c3a51c3c_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_ad94ee73b0e432956c7a06566c3a51c3c_icgraph" id="classackermann_1_1_controller_ad94ee73b0e432956c7a06566c3a51c3c_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#a78decbe79cd496d35e9171608510bdd0" title="Testing getters and setters for goal_heading. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -171,73 +173,22 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get the desired linear speed of the robot. </p>
+<p>Getter function to get the target speed of the robot with the user input. </p>
+<p>Get the desired linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>goalSpeed_</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_a6c07a1ee681bf5e797b378c6e85048bd_icgraph.png" border="0" usemap="#classackermann_1_1_controller_a6c07a1ee681bf5e797b378c6e85048bd_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_a6c07a1ee681bf5e797b378c6e85048bd_icgraph" id="classackermann_1_1_controller_a6c07a1ee681bf5e797b378c6e85048bd_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#a93d190fefd7df37124a9b21eecf563aa" title="Testing getters and setters for goal_speed. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9a2296b52fd11b2c7cda54ba163a1e2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a2296b52fd11b2c7cda54ba163a1e2f">&#9670;&nbsp;</a></span>getKi()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double ackermann::Controller::getKi </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Getters for controller gains. </p>
-<p>Get integral gain of controller.</p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_a9a2296b52fd11b2c7cda54ba163a1e2f_icgraph.png" border="0" usemap="#classackermann_1_1_controller_a9a2296b52fd11b2c7cda54ba163a1e2f_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_a9a2296b52fd11b2c7cda54ba163a1e2f_icgraph" id="classackermann_1_1_controller_a9a2296b52fd11b2c7cda54ba163a1e2f_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#afc15b530d69a5d8d27513163888579a0" title="Testing getters for Ki. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="afb1a52ff206e0b4447ebcc65e3a9ebf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb1a52ff206e0b4447ebcc65e3a9ebf9">&#9670;&nbsp;</a></span>getKp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double ackermann::Controller::getKp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get proportional gain of controller. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_afb1a52ff206e0b4447ebcc65e3a9ebf9_icgraph.png" border="0" usemap="#classackermann_1_1_controller_afb1a52ff206e0b4447ebcc65e3a9ebf9_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_afb1a52ff206e0b4447ebcc65e3a9ebf9_icgraph" id="classackermann_1_1_controller_afb1a52ff206e0b4447ebcc65e3a9ebf9_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#ac5681c8713bd3d878b89ef6b1b784518" title="Testing getters for Kp. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -257,22 +208,22 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Getters and setters for the desired heading angle of the robot in the robot frame and desired linear speed of the robot. </p>
-<p>Set the desired heading angle of the robot in the robot frame.</p>
+<p><a class="el" href="classackermann_1_1_controller.html">Controller</a> class. </p>
+<p>Set the desired heading angle of the robot in the global frame.</p>
+<p>Setter function to update the target heading of the robot with the user input. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">goalHeading</td><td>double </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_a211c5c8779500f6e2615e80c8fd8d0b3_icgraph.png" border="0" usemap="#classackermann_1_1_controller_a211c5c8779500f6e2615e80c8fd8d0b3_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_a211c5c8779500f6e2615e80c8fd8d0b3_icgraph" id="classackermann_1_1_controller_a211c5c8779500f6e2615e80c8fd8d0b3_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#a78decbe79cd496d35e9171608510bdd0" title="Testing getters and setters for goal_heading. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
+<dl class="section return"><dt>Returns</dt><dd>nil </dd></dl>
 
 </div>
 </div>
@@ -292,26 +243,27 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the desired linear speed of the robot. </p>
+<p>Setter function to update the target speed of the robot with the user input. </p>
+<p>Set the desired linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">goalSpeed</td><td>double </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_controller_ab1574b51e0466aefa5e4a91d80e4b9c2_icgraph.png" border="0" usemap="#classackermann_1_1_controller_ab1574b51e0466aefa5e4a91d80e4b9c2_icgraph" alt=""/></div>
-<map name="classackermann_1_1_controller_ab1574b51e0466aefa5e4a91d80e4b9c2_icgraph" id="classackermann_1_1_controller_ab1574b51e0466aefa5e4a91d80e4b9c2_icgraph">
-<area shape="rect" id="node2" href="controller__test_8cpp.html#a93d190fefd7df37124a9b21eecf563aa" title="Testing getters and setters for goal_speed. " alt="" coords="204,13,260,39"/>
-</map>
-</div>
+<dl class="section return"><dt>Returns</dt><dd>nil </dd></dl>
 
 </div>
 </div>
-<a id="a9a816908099ab2703ecec4b2bb7dae5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a816908099ab2703ecec4b2bb7dae5b">&#9670;&nbsp;</a></span>solve()</h2>
+<a id="adde759126f6993e22b11a56b5e782258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde759126f6993e22b11a56b5e782258">&#9670;&nbsp;</a></span>solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,36 +271,56 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ackermann::Controller::solve </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classackermann_1_1_sensor.html">Sensor</a> &amp;&#160;</td>
+          <td class="paramname"><em>sen</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method makes the output heading angle of the robot in the robot frame and its linear speed converge to goal values. </p>
+<p>solves for convergence. Makes use of other classes and methods till the heading and speed converges. This is the heart of the software. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">double</td><td></td></tr>
+    <tr><td class="paramname">sen</td><td>sensor </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>nil </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_controller_adde759126f6993e22b11a56b5e782258_cgraph.png" border="0" usemap="#classackermann_1_1_controller_adde759126f6993e22b11a56b5e782258_cgraph" alt=""/></div>
+<map name="classackermann_1_1_controller_adde759126f6993e22b11a56b5e782258_cgraph" id="classackermann_1_1_controller_adde759126f6993e22b11a56b5e782258_cgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_forward_kinematics.html#a4b1a1287dfdaf7821fb96c0534cabbaf" title="Setter function to update the error in heading of the robot. " alt="" coords="511,33,717,74"/>
+<area shape="rect" id="node3" href="classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba" title="Calculates the error in heading angle of the robot. " alt="" coords="226,62,433,103"/>
+<area shape="rect" id="node4" href="classackermann_1_1_sensor.html#ae6479b7cdbb4c1dfe708756fabb58792" title="Getter function to get the actual heading of the robot in global frame. " alt="" coords="258,127,401,169"/>
+<area shape="rect" id="node5" href="classackermann_1_1_forward_kinematics.html#a67467f6bc63fe04307dd6712a70cba93" title="Setter function to update the error in speed of the robot. " alt="" coords="226,193,433,234"/>
+<area shape="rect" id="node6" href="classackermann_1_1_forward_kinematics.html#a1844e4b1bf5fb827cc397b5bfc004134" title="Calculates the error in linear speed of the robot. " alt="" coords="226,258,433,299"/>
+<area shape="rect" id="node7" href="classackermann_1_1_sensor.html#a20636bd94e32a8d5fb84ad2da3df2fa4" title="Getter function to get the actual linear speed of the robot in global frame. " alt="" coords="258,323,401,365"/>
+<area shape="rect" id="node8" href="classackermann_1_1_forward_kinematics.html#ab8cffa1e58ffde0051aaa6a87d3dce03" title="Getter function to get the error in heading of the robot. " alt="" coords="226,389,433,430"/>
+<area shape="rect" id="node9" href="classackermann_1_1_forward_kinematics.html#a59c00c697e7e060299b94180ecc1053b" title="Getter function to get the error in speed of the robot. " alt="" coords="226,454,433,495"/>
+<area shape="rect" id="node10" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d" title="Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method..." alt="" coords="228,519,431,561"/>
+<area shape="rect" id="node13" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8" title="Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method..." alt="" coords="228,585,431,626"/>
+<area shape="rect" id="node16" href="classackermann_1_1_inverse_kinematics.html#a3d4b41caefb2238648fa7b6c95a79f37" title="Calculates the global heading in degrees and linear speed in m/s for the robot based on the heading a..." alt="" coords="204,650,455,691"/>
+<area shape="rect" id="node11" href="classackermann_1_1_robot.html#ab5793ef2defb20c5cf269c42b6ee48c3" title="Getter function to get the track length of the robot. " alt="" coords="520,475,708,517"/>
+<area shape="rect" id="node12" href="classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e" title="Getter function to get the wheel base of the robot. " alt="" coords="503,541,725,568"/>
+<area shape="rect" id="node14" href="classackermann_1_1_robot.html#a58810eb9ed72e8a3875e4dba8fe793a2" title="Getter function to get the maximum angular speed. " alt="" coords="512,592,716,619"/>
+<area shape="rect" id="node15" href="classackermann_1_1_robot.html#af9a599c7d4b875e8d1bb98345ed8be5f" title="Getter function to get the wheel radius of the robot. " alt="" coords="518,643,710,685"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/markose/mid_term_proposal/ackermann_controller/include/<a class="el" href="controller_8hpp_source.html">controller.hpp</a></li>
-<li>/home/markose/mid_term_proposal/ackermann_controller/app/controller.cpp</li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/include/<a class="el" href="controller_8hpp_source.html">controller.hpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/app/controller.cpp</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_controller.html">Controller</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

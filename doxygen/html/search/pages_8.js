@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../md__home_markose_mid_term_proposal_ackermann_controller__r_e_a_d_m_e.html',1,'']]]
+  ['samples',['Samples',['../md__home_markose_ackermann_phase_2_ackermann_controller_vendor_googletest_googletest_docs__samples.html',1,'']]]
 ];

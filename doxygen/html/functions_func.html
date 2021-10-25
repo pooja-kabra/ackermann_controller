@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: Class Members - Functions</title>
+<title>Ackermann Steering Controller: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -51,20 +44,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -122,14 +101,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>calculateHeadingError()
 : <a class="el" href="classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba">ackermann::ForwardKinematics</a>
 </li>
+<li>calculateNewRobotHeadingandSpeed()
+: <a class="el" href="classackermann_1_1_inverse_kinematics.html#a3d4b41caefb2238648fa7b6c95a79f37">ackermann::InverseKinematics</a>
+</li>
 <li>calculateSpeedError()
 : <a class="el" href="classackermann_1_1_forward_kinematics.html#a1844e4b1bf5fb827cc397b5bfc004134">ackermann::ForwardKinematics</a>
 </li>
-<li>calculateWheelAngles()
-: <a class="el" href="classackermann_1_1_inverse_kinematics.html#a8c2c5a6673f8e519548c2a0a790f3774">ackermann::InverseKinematics</a>
+<li>calculateWheelHeadings()
+: <a class="el" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d">ackermann::InverseKinematics</a>
 </li>
-<li>calculateWheelSpeed()
-: <a class="el" href="classackermann_1_1_inverse_kinematics.html#aa53c48c446e30f184b3a38cd16a381fa">ackermann::InverseKinematics</a>
+<li>calculateWheelSpeeds()
+: <a class="el" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8">ackermann::InverseKinematics</a>
 </li>
 <li>CheckForUnknownFiles()
 : <a class="el" href="classupload_1_1_version_control_system.html#ad2923d691a1b1047e9359c5b7c1c103f">upload.VersionControlSystem</a>
@@ -139,7 +121,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="classpump_1_1_token.html#abc0f2d2a0bcad953f5fc85a4e52076eb">pump.Token</a>
 </li>
 <li>Controller()
-: <a class="el" href="classackermann_1_1_controller.html#af6248846584b64bc2e9ef84d72e174df">ackermann::Controller</a>
+: <a class="el" href="classackermann_1_1_controller.html#af0b2fd88f29ea3dc6c476c7f6e013a9b">ackermann::Controller</a>
 </li>
 </ul>
 
@@ -182,17 +164,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getGoalSpeed()
 : <a class="el" href="classackermann_1_1_controller.html#a6c07a1ee681bf5e797b378c6e85048bd">ackermann::Controller</a>
 </li>
+<li>getHeadingError()
+: <a class="el" href="classackermann_1_1_forward_kinematics.html#ab8cffa1e58ffde0051aaa6a87d3dce03">ackermann::ForwardKinematics</a>
+</li>
 <li>getInnerWheelHeading()
 : <a class="el" href="classackermann_1_1_robot.html#abb31040b31f12d245d20b32b3c01dbf3">ackermann::Robot</a>
 </li>
+<li>getInnerWheelRps()
+: <a class="el" href="classackermann_1_1_robot.html#a45c0f119b5dc8868d0630ce170aaa2b7">ackermann::Robot</a>
+</li>
 <li>getInnerWheelSpeed()
 : <a class="el" href="classackermann_1_1_robot.html#a2fede7fc823ec44d6cf88d564c84c8b9">ackermann::Robot</a>
-</li>
-<li>getKi()
-: <a class="el" href="classackermann_1_1_controller.html#a9a2296b52fd11b2c7cda54ba163a1e2f">ackermann::Controller</a>
-</li>
-<li>getKp()
-: <a class="el" href="classackermann_1_1_controller.html#afb1a52ff206e0b4447ebcc65e3a9ebf9">ackermann::Controller</a>
 </li>
 <li>GetName()
 : <a class="el" href="classcpp_1_1ast_1_1_ast_builder.html#a327957c4228325fc5f64821b047bdc6f">cpp.ast.AstBuilder</a>
@@ -200,11 +182,26 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getOuterWheelHeading()
 : <a class="el" href="classackermann_1_1_robot.html#a5e312a79aa11c4026afd435edeb4f375">ackermann::Robot</a>
 </li>
+<li>getOuterWheelRps()
+: <a class="el" href="classackermann_1_1_robot.html#af3eb5e5a95b0913b33213208a7066124">ackermann::Robot</a>
+</li>
 <li>getOuterWheelSpeed()
 : <a class="el" href="classackermann_1_1_robot.html#a585f69aeea6570f82903df5d1c90adb4">ackermann::Robot</a>
 </li>
+<li>getRpsIncrPerSecMax()
+: <a class="el" href="classackermann_1_1_robot.html#a89e5ff023c559cd72d07a4c56fb4c903">ackermann::Robot</a>
+</li>
+<li>getRpsMax()
+: <a class="el" href="classackermann_1_1_robot.html#a58810eb9ed72e8a3875e4dba8fe793a2">ackermann::Robot</a>
+</li>
+<li>getSpeedError()
+: <a class="el" href="classackermann_1_1_forward_kinematics.html#a59c00c697e7e060299b94180ecc1053b">ackermann::ForwardKinematics</a>
+</li>
 <li>GetStatus()
 : <a class="el" href="classupload_1_1_subversion_v_c_s.html#ac3785eb1fa561088206d01570f9fe982">upload.SubversionVCS</a>
+</li>
+<li>getThetaIncrPerSecMax()
+: <a class="el" href="classackermann_1_1_robot.html#a0b1705a2ec3c0f4cc91127dc6188665c">ackermann::Robot</a>
 </li>
 <li>getThetaMax()
 : <a class="el" href="classackermann_1_1_robot.html#ad29399e8cb0428b2d6e88562c8c678c0">ackermann::Robot</a>
@@ -233,7 +230,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>InverseKinematics()
-: <a class="el" href="classackermann_1_1_inverse_kinematics.html#a1b066623d81871d8ba7d717cf840a231">ackermann::InverseKinematics</a>
+: <a class="el" href="classackermann_1_1_inverse_kinematics.html#aa23a0d28b96f15f7515fd92b21aa9acf">ackermann::InverseKinematics</a>
 </li>
 <li>IsDeclaration()
 : <a class="el" href="classcpp_1_1ast_1_1_node.html#ab3eca703a79fb65bc25dfbcb7547c79e">cpp.ast.Node</a>
@@ -265,7 +262,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classcpp_1_1ast_1_1_node.html#a31ae211f954a8c578ef16226df5ac8c8">cpp.ast.Node</a>
 </li>
 <li>Robot()
-: <a class="el" href="classackermann_1_1_robot.html#ac0bcd6aef17bce19c2c1e4ad942ab5a3">ackermann::Robot</a>
+: <a class="el" href="classackermann_1_1_robot.html#a69768038a5c0e05f5dbc5fab46d8a9e3">ackermann::Robot</a>
 </li>
 <li>RunAndVerify()
 : <a class="el" href="classgtest__break__on__failure__unittest_1_1_g_test_break_on_failure_unit_test.html#a0a66475873f545d88655b8bb14368f2e">gtest_break_on_failure_unittest.GTestBreakOnFailureUnitTest</a>
@@ -307,20 +304,29 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>setInnerWheelHeading()
 : <a class="el" href="classackermann_1_1_robot.html#ab04ae0e309e4ac263d0d64d5dd2520d2">ackermann::Robot</a>
 </li>
+<li>setInnerWheelRps()
+: <a class="el" href="classackermann_1_1_robot.html#ace83a71544905970ffad120de7560e3f">ackermann::Robot</a>
+</li>
 <li>setInnerWheelSpeed()
 : <a class="el" href="classackermann_1_1_robot.html#a54b2a316e3fe338023b728867f9139e1">ackermann::Robot</a>
 </li>
 <li>setOuterWheelHeading()
 : <a class="el" href="classackermann_1_1_robot.html#a906dc6b8680bb97d36a6b0fc281349fb">ackermann::Robot</a>
 </li>
+<li>setOuterWheelRps()
+: <a class="el" href="classackermann_1_1_robot.html#ad1a90000cc20a2586ac6d47a901316ab">ackermann::Robot</a>
+</li>
 <li>setOuterWheelSpeed()
 : <a class="el" href="classackermann_1_1_robot.html#aaaf408169f1a2f2ba0dfc59944a2cbf6">ackermann::Robot</a>
+</li>
+<li>setSpeedError()
+: <a class="el" href="classackermann_1_1_forward_kinematics.html#a67467f6bc63fe04307dd6712a70cba93">ackermann::ForwardKinematics</a>
 </li>
 <li>setUp()
 : <a class="el" href="classgtest__filter__unittest_1_1_g_test_filter_unit_test.html#af20a71b1659314a5cc1093d77a673495">gtest_filter_unittest.GTestFilterUnitTest</a>
 </li>
 <li>solve()
-: <a class="el" href="classackermann_1_1_controller.html#a9a816908099ab2703ecec4b2bb7dae5b">ackermann::Controller</a>
+: <a class="el" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258">ackermann::Controller</a>
 </li>
 <li>StripLeadingWhitespace()
 : <a class="el" href="classcpp_1_1gmock__class__test_1_1_test_case.html#a366b15717eebc41e397357868c5734c5">cpp.gmock_class_test.TestCase</a>
@@ -503,14 +509,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

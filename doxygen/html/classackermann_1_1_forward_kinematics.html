@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: ackermann::ForwardKinematics Class Reference</title>
+<title>Ackermann Steering Controller: ackermann::ForwardKinematics Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_forward_kinematics.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,6 +57,11 @@ $(document).ready(function(){initNavTree('classackermann_1_1_forward_kinematics.
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_forward_kinematics.html">ForwardKinematics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -88,37 +71,34 @@ $(document).ready(function(){initNavTree('classackermann_1_1_forward_kinematics.
 </div><!--header-->
 <div class="contents">
 
-<p>Forward Kinematics class.  
+<p><a class="el" href="classackermann_1_1_forward_kinematics.html" title="ForwardKinematics class. ">ForwardKinematics</a> class.  
  <a href="classackermann_1_1_forward_kinematics.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="forwardkinematics_8hpp_source.html">forwardkinematics.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a18bbc537a232248647df138e841fba"><td class="memItemLeft" align="right" valign="top"><a id="a8a18bbc537a232248647df138e841fba"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba">calculateHeadingError</a> (double desired_heading, double actual_heading)</td></tr>
-<tr class="memdesc:a8a18bbc537a232248647df138e841fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the error in heading angle of the robot in the robot frame. <br /></td></tr>
+<tr class="memitem:a8a18bbc537a232248647df138e841fba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba">calculateHeadingError</a> (double desired_heading, double actual_heading)</td></tr>
+<tr class="memdesc:a8a18bbc537a232248647df138e841fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the error in heading angle of the robot.  <a href="#a8a18bbc537a232248647df138e841fba">More...</a><br /></td></tr>
 <tr class="separator:a8a18bbc537a232248647df138e841fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1844e4b1bf5fb827cc397b5bfc004134"><td class="memItemLeft" align="right" valign="top"><a id="a1844e4b1bf5fb827cc397b5bfc004134"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a1844e4b1bf5fb827cc397b5bfc004134">calculateSpeedError</a> (double desired_speed, double actual_speed)</td></tr>
-<tr class="memdesc:a1844e4b1bf5fb827cc397b5bfc004134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the error in linear speed of the robot. <br /></td></tr>
+<tr class="memitem:a1844e4b1bf5fb827cc397b5bfc004134"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a1844e4b1bf5fb827cc397b5bfc004134">calculateSpeedError</a> (double desired_speed, double actual_speed)</td></tr>
+<tr class="memdesc:a1844e4b1bf5fb827cc397b5bfc004134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the error in linear speed of the robot.  <a href="#a1844e4b1bf5fb827cc397b5bfc004134">More...</a><br /></td></tr>
 <tr class="separator:a1844e4b1bf5fb827cc397b5bfc004134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b1a1287dfdaf7821fb96c0534cabbaf"><td class="memItemLeft" align="right" valign="top"><a id="a4b1a1287dfdaf7821fb96c0534cabbaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a4b1a1287dfdaf7821fb96c0534cabbaf">setHeadingError</a> (double)</td></tr>
-<tr class="memdesc:a4b1a1287dfdaf7821fb96c0534cabbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getters and setters for the errors in heading angle of the robot in the robot frame and its linear speed. <br /></td></tr>
+<tr class="memitem:a4b1a1287dfdaf7821fb96c0534cabbaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a4b1a1287dfdaf7821fb96c0534cabbaf">setHeadingError</a> (double)</td></tr>
+<tr class="memdesc:a4b1a1287dfdaf7821fb96c0534cabbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to update the error in heading of the robot.  <a href="#a4b1a1287dfdaf7821fb96c0534cabbaf">More...</a><br /></td></tr>
 <tr class="separator:a4b1a1287dfdaf7821fb96c0534cabbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67467f6bc63fe04307dd6712a70cba93"><td class="memItemLeft" align="right" valign="top"><a id="a67467f6bc63fe04307dd6712a70cba93"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeedError</b> (double)</td></tr>
+<tr class="memitem:a67467f6bc63fe04307dd6712a70cba93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a67467f6bc63fe04307dd6712a70cba93">setSpeedError</a> (double)</td></tr>
+<tr class="memdesc:a67467f6bc63fe04307dd6712a70cba93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to update the error in speed of the robot.  <a href="#a67467f6bc63fe04307dd6712a70cba93">More...</a><br /></td></tr>
 <tr class="separator:a67467f6bc63fe04307dd6712a70cba93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8cffa1e58ffde0051aaa6a87d3dce03"><td class="memItemLeft" align="right" valign="top"><a id="ab8cffa1e58ffde0051aaa6a87d3dce03"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getHeadingError</b> ()</td></tr>
+<tr class="memitem:ab8cffa1e58ffde0051aaa6a87d3dce03"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#ab8cffa1e58ffde0051aaa6a87d3dce03">getHeadingError</a> ()</td></tr>
+<tr class="memdesc:ab8cffa1e58ffde0051aaa6a87d3dce03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the error in heading of the robot.  <a href="#ab8cffa1e58ffde0051aaa6a87d3dce03">More...</a><br /></td></tr>
 <tr class="separator:ab8cffa1e58ffde0051aaa6a87d3dce03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c00c697e7e060299b94180ecc1053b"><td class="memItemLeft" align="right" valign="top"><a id="a59c00c697e7e060299b94180ecc1053b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getSpeedError</b> ()</td></tr>
+<tr class="memitem:a59c00c697e7e060299b94180ecc1053b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a59c00c697e7e060299b94180ecc1053b">getSpeedError</a> ()</td></tr>
+<tr class="memdesc:a59c00c697e7e060299b94180ecc1053b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the error in speed of the robot.  <a href="#a59c00c697e7e060299b94180ecc1053b">More...</a><br /></td></tr>
 <tr class="separator:a59c00c697e7e060299b94180ecc1053b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a68998c5fdf3209b56e7bd9b28d07f"><td class="memItemLeft" align="right" valign="top"><a id="aa2a68998c5fdf3209b56e7bd9b28d07f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#aa2a68998c5fdf3209b56e7bd9b28d07f">ForwardKinematics</a> (double heading_error=0, double speed_error=0)</td></tr>
-<tr class="memdesc:aa2a68998c5fdf3209b56e7bd9b28d07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object of Forward Kinematics class. <br /></td></tr>
+<tr class="memdesc:aa2a68998c5fdf3209b56e7bd9b28d07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classackermann_1_1_forward_kinematics.html" title="ForwardKinematics class. ">ForwardKinematics</a> class. <br /></td></tr>
 <tr class="separator:aa2a68998c5fdf3209b56e7bd9b28d07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01136355fd1aab9a561b46e26583919a"><td class="memItemLeft" align="right" valign="top"><a id="a01136355fd1aab9a561b46e26583919a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_forward_kinematics.html#a01136355fd1aab9a561b46e26583919a">~ForwardKinematics</a> ()</td></tr>
@@ -126,21 +106,298 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getSpeedError</b> (
 <tr class="separator:a01136355fd1aab9a561b46e26583919a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Forward Kinematics class. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/markose/mid_term_proposal/ackermann_controller/include/<a class="el" href="forwardkinematics_8hpp_source.html">forwardkinematics.hpp</a></li>
-<li>/home/markose/mid_term_proposal/ackermann_controller/app/<a class="el" href="forwardkinematics_8cpp.html">forwardkinematics.cpp</a></li>
+<div class="textblock"><p><a class="el" href="classackermann_1_1_forward_kinematics.html" title="ForwardKinematics class. ">ForwardKinematics</a> class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8a18bbc537a232248647df138e841fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a18bbc537a232248647df138e841fba">&#9670;&nbsp;</a></span>calculateHeadingError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::ForwardKinematics::calculateHeadingError </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>desired_heading</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual_heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the error in heading angle of the robot. </p>
+<p>Calculates the error in heading angle of the robot in the global frame.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired_heading</td><td>double. This the target heading for the robot </td></tr>
+    <tr><td class="paramname">actual_heading</td><td>double. This the current heading of the robot in global frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double. The error in heading</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired_heading</td><td></td></tr>
+    <tr><td class="paramname">actual_heading</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_cgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_cgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_cgraph" id="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_cgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_forward_kinematics.html#a4b1a1287dfdaf7821fb96c0534cabbaf" title="Setter function to update the error in heading of the robot. " alt="" coords="260,5,467,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_icgraph" id="classackermann_1_1_forward_kinematics_a8a18bbc537a232248647df138e841fba_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1844e4b1bf5fb827cc397b5bfc004134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1844e4b1bf5fb827cc397b5bfc004134">&#9670;&nbsp;</a></span>calculateSpeedError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::ForwardKinematics::calculateSpeedError </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>desired_speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual_speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the error in linear speed of the robot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired_speed</td><td>double. This the target linear speed in m/s for the robot </td></tr>
+    <tr><td class="paramname">actual_heading</td><td>double. This the current linear speed (m/s) of the robot in global frame </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double. The error in speed</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desired_speed</td><td></td></tr>
+    <tr><td class="paramname">actual_speed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a1844e4b1bf5fb827cc397b5bfc004134_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a1844e4b1bf5fb827cc397b5bfc004134_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a1844e4b1bf5fb827cc397b5bfc004134_icgraph" id="classackermann_1_1_forward_kinematics_a1844e4b1bf5fb827cc397b5bfc004134_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8cffa1e58ffde0051aaa6a87d3dce03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cffa1e58ffde0051aaa6a87d3dce03">&#9670;&nbsp;</a></span>getHeadingError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::ForwardKinematics::getHeadingError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the error in heading of the robot. </p>
+<p>Gets the error in heading angle of the robot in the global frame.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>heading_error. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_ab8cffa1e58ffde0051aaa6a87d3dce03_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_ab8cffa1e58ffde0051aaa6a87d3dce03_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_ab8cffa1e58ffde0051aaa6a87d3dce03_icgraph" id="classackermann_1_1_forward_kinematics_ab8cffa1e58ffde0051aaa6a87d3dce03_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+<area shape="rect" id="node3" href="forwardkinematics__test_8cpp.html#adf7ef51a0e313bf77878d25330c4c791" title="Testing getters and setters for heading_error. " alt="" coords="307,71,363,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a59c00c697e7e060299b94180ecc1053b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c00c697e7e060299b94180ecc1053b">&#9670;&nbsp;</a></span>getSpeedError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::ForwardKinematics::getSpeedError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the error in speed of the robot. </p>
+<p>Gets the error in linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>speed_error. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a59c00c697e7e060299b94180ecc1053b_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a59c00c697e7e060299b94180ecc1053b_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a59c00c697e7e060299b94180ecc1053b_icgraph" id="classackermann_1_1_forward_kinematics_a59c00c697e7e060299b94180ecc1053b_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+<area shape="rect" id="node3" href="forwardkinematics__test_8cpp.html#a93e821bcf31ce613a50e83a6bc687d54" title="Testing getters and setters for speed_error. " alt="" coords="307,71,363,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b1a1287dfdaf7821fb96c0534cabbaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1a1287dfdaf7821fb96c0534cabbaf">&#9670;&nbsp;</a></span>setHeadingError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ackermann::ForwardKinematics::setHeadingError </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>heading_error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter function to update the error in heading of the robot. </p>
+<p>Sets the error in heading angle of the robot in the global frame.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heading_error</td><td>double. The error in heading for each iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heading_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a4b1a1287dfdaf7821fb96c0534cabbaf_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a4b1a1287dfdaf7821fb96c0534cabbaf_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a4b1a1287dfdaf7821fb96c0534cabbaf_icgraph" id="classackermann_1_1_forward_kinematics_a4b1a1287dfdaf7821fb96c0534cabbaf_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="515,5,665,47"/>
+<area shape="rect" id="node3" href="classackermann_1_1_forward_kinematics.html#a8a18bbc537a232248647df138e841fba" title="Calculates the error in heading angle of the robot. " alt="" coords="260,35,467,76"/>
+<area shape="rect" id="node4" href="forwardkinematics__test_8cpp.html#adf7ef51a0e313bf77878d25330c4c791" title="Testing getters and setters for heading_error. " alt="" coords="335,101,391,127"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67467f6bc63fe04307dd6712a70cba93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67467f6bc63fe04307dd6712a70cba93">&#9670;&nbsp;</a></span>setSpeedError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ackermann::ForwardKinematics::setSpeedError </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed_error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter function to update the error in speed of the robot. </p>
+<p>Sets the error in linear speed of the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed_error</td><td>double. The error in speed for each iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_forward_kinematics_a67467f6bc63fe04307dd6712a70cba93_icgraph.png" border="0" usemap="#classackermann_1_1_forward_kinematics_a67467f6bc63fe04307dd6712a70cba93_icgraph" alt=""/></div>
+<map name="classackermann_1_1_forward_kinematics_a67467f6bc63fe04307dd6712a70cba93_icgraph" id="classackermann_1_1_forward_kinematics_a67467f6bc63fe04307dd6712a70cba93_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="260,5,411,47"/>
+<area shape="rect" id="node3" href="forwardkinematics__test_8cpp.html#a93e821bcf31ce613a50e83a6bc687d54" title="Testing getters and setters for speed_error. " alt="" coords="307,71,363,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/include/<a class="el" href="forwardkinematics_8hpp_source.html">forwardkinematics.hpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/app/<a class="el" href="forwardkinematics_8cpp.html">forwardkinematics.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_forward_kinematics.html">ForwardKinematics</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

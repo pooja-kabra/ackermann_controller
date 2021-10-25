@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: /home/markose/mid_term_proposal/ackermann_controller/include/sensor.hpp File Reference</title>
+<title>Ackermann Steering Controller: /home/markose/ackermann_phase_2/ackermann_controller/include/sensor.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('sensor_8hpp.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,6 +57,11 @@ $(document).ready(function(){initNavTree('sensor_8hpp.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
@@ -87,21 +70,27 @@ $(document).ready(function(){initNavTree('sensor_8hpp.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>This file declares the sensor that senses the Robot's heading in the global frame and linear speed.  
+<p>This is where the actual sensors of the robot will be added to. For now this class stores the actual heading and speed of the robot in global frame.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sensor.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="sensor_8hpp__incl.png" border="0" usemap="#_2home_2markose_2mid__term__proposal_2ackermann__controller_2include_2sensor_8hpp" alt=""/></div>
+<div class="center"><img src="sensor_8hpp__incl.png" border="0" usemap="#_2home_2markose_2ackermann__phase__2_2ackermann__controller_2include_2sensor_8hpp" alt=""/></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="sensor_8hpp__dep__incl.png" border="0" usemap="#_2home_2markose_2mid__term__proposal_2ackermann__controller_2include_2sensor_8hppdep" alt=""/></div>
-<map name="_2home_2markose_2mid__term__proposal_2ackermann__controller_2include_2sensor_8hppdep" id="_2home_2markose_2mid__term__proposal_2ackermann__controller_2include_2sensor_8hppdep">
-<area shape="rect" id="node2" href="sensor_8cpp.html" title="This file defines the sensor that senses the Robot&#39;s heading in the robot frame and linear speed..." alt="" coords="5,109,212,165"/>
-<area shape="rect" id="node3" href="sensor__test_8cpp.html" title="Unit tests for Sensor class. " alt="" coords="236,109,443,165"/>
+<div class="center"><img src="sensor_8hpp__dep__incl.png" border="0" usemap="#_2home_2markose_2ackermann__phase__2_2ackermann__controller_2include_2sensor_8hppdep" alt=""/></div>
+<map name="_2home_2markose_2ackermann__phase__2_2ackermann__controller_2include_2sensor_8hppdep" id="_2home_2markose_2ackermann__phase__2_2ackermann__controller_2include_2sensor_8hppdep">
+<area shape="rect" id="node2" href="controller_8hpp.html" title="This is the core of the software which makes use of other classes to calculate the headings and wheel..." alt="" coords="5,213,212,269"/>
+<area shape="rect" id="node4" href="inversekinematics_8hpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="213,109,420,165"/>
+<area shape="rect" id="node7" href="sensor_8cpp.html" title="This is where the actual sensors of the robot will be added to. For now this class stores the actual ..." alt="" coords="444,109,651,165"/>
+<area shape="rect" id="node8" href="sensor__test_8cpp.html" title="Unit tests for Sensor class. " alt="" coords="675,109,881,165"/>
+<area shape="rect" id="node3" href="controller__test_8cpp.html" title="Unit tests for controller class. " alt="" coords="5,317,212,373"/>
+<area shape="rect" id="node5" href="inversekinematics_8cpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="236,213,443,269"/>
+<area shape="rect" id="node6" href="inversekinematics__test_8cpp.html" title="This file tests the Inverse Kinematics class, checks if it calculates individual wheel angular speeds..." alt="" coords="467,213,678,269"/>
 </map>
 </div>
 </div>
@@ -114,21 +103,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file declares the sensor that senses the Robot's heading in the global frame and linear speed. </p>
+<div class="textblock"><p>This is where the actual sensors of the robot will be added to. For now this class stores the actual heading and speed of the robot in global frame. </p>
 <dl class="section author"><dt>Author</dt><dd>Markose Jacob, Pooja Kabra </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2021-10-16</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-10-24 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021</dd></dl>
+<h1><a class="anchor" id="Sensor"></a>
+class</h1>
 </div></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="sensor_8hpp.html">sensor.hpp</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

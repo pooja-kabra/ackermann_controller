@@ -1,6 +1,6 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/test/forwardkinematics_test.cpp" name="/home/markose/mid_term_proposal/ackermann_controller/test/forwardkinematics_test.cpp">
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/test/forwardkinematics_test.cpp" name="/home/markose/ackermann_phase_2/ackermann_controller/test/forwardkinematics_test.cpp">
 <area shape="rect" id="node2" href="$gtest_8h_source.html" title="gtest/gtest.h" alt="" coords="1205,109,1299,136"/>
-<area shape="rect" id="node50" href="$forwardkinematics_8hpp.html" title="This file declares the Forward Kinematics class. " alt="" coords="2417,355,2628,382"/>
+<area shape="rect" id="node50" href="$forwardkinematics_8hpp.html" title="This is where we are calculating the error between the traget heading and speed against the robots gl..." alt="" coords="2417,355,2628,382"/>
 <area shape="rect" id="node6" href="$gtest-internal_8h_source.html" title="gtest/internal/gtest\l&#45;internal.h" alt="" coords="992,527,1123,568"/>
 <area shape="rect" id="node31" href="$gtest-message_8h_source.html" title="gtest/gtest&#45;message.h" alt="" coords="1120,623,1272,650"/>
 <area shape="rect" id="node32" href="$gtest-string_8h_source.html" title="gtest/internal/gtest\l&#45;string.h" alt="" coords="864,705,995,747"/>

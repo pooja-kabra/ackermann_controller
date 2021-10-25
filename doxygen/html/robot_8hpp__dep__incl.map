@@ -1,6 +1,8 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/include/robot.hpp" name="/home/markose/mid_term_proposal/ackermann_controller/include/robot.hpp">
-<area shape="rect" id="node2" href="$inversekinematics_8hpp_source.html" title="/home/markose/mid_term\l_proposal/ackermann_controller\l/include/inversekinematics.hpp" alt="" coords="97,109,304,165"/>
-<area shape="rect" id="node4" href="$inversekinematics__test_8cpp.html" title="This file tests the Inverse Kinematics class, checks if it calculates individual wheel angular speeds..." alt="" coords="237,213,447,269"/>
-<area shape="rect" id="node5" href="$robot_8cpp.html" title="This file defines the Robot class. " alt="" coords="380,109,587,165"/>
-<area shape="rect" id="node3" href="$inversekinematics_8cpp.html" title="This file defines the Inverse Kinematics class, it calculates individual wheel angular speeds and whe..." alt="" coords="5,213,212,269"/>
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp" name="/home/markose/ackermann_phase_2/ackermann_controller/include/robot.hpp">
+<area shape="rect" id="node2" href="$controller_8hpp.html" title="This is the core of the software which makes use of other classes to calculate the headings and wheel..." alt="" coords="5,213,212,269"/>
+<area shape="rect" id="node4" href="$inversekinematics_8hpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="236,109,443,165"/>
+<area shape="rect" id="node6" href="$inversekinematics__test_8cpp.html" title="This file tests the Inverse Kinematics class, checks if it calculates individual wheel angular speeds..." alt="" coords="467,213,678,269"/>
+<area shape="rect" id="node7" href="$robot_8cpp.html" title="This file defines the Robot class. " alt="" coords="519,109,725,165"/>
+<area shape="rect" id="node3" href="$controller__test_8cpp.html" title="Unit tests for controller class. " alt="" coords="5,317,212,373"/>
+<area shape="rect" id="node5" href="$inversekinematics_8cpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="236,213,443,269"/>
 </map>

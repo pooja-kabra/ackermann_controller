@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: ackermann::InverseKinematics Class Reference</title>
+<title>Ackermann Steering Controller: ackermann::InverseKinematics Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,8 +57,14 @@ $(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_inverse_kinematics.html">InverseKinematics</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classackermann_1_1_inverse_kinematics-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -93,20 +77,28 @@ $(document).ready(function(){initNavTree('classackermann_1_1_inverse_kinematics.
 
 <p><code>#include &lt;<a class="el" href="inversekinematics_8hpp_source.html">inversekinematics.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1headings.html">headings</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1speed.html">speed</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa53c48c446e30f184b3a38cd16a381fa"><td class="memItemLeft" align="right" valign="top"><a id="aa53c48c446e30f184b3a38cd16a381fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aa53c48c446e30f184b3a38cd16a381fa">calculateWheelSpeed</a> ()</td></tr>
-<tr class="memdesc:aa53c48c446e30f184b3a38cd16a381fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the individual wheel angular speeds. <br /></td></tr>
-<tr class="separator:aa53c48c446e30f184b3a38cd16a381fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2c5a6673f8e519548c2a0a790f3774"><td class="memItemLeft" align="right" valign="top"><a id="a8c2c5a6673f8e519548c2a0a790f3774"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a8c2c5a6673f8e519548c2a0a790f3774">calculateWheelAngles</a> ()</td></tr>
-<tr class="memdesc:a8c2c5a6673f8e519548c2a0a790f3774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the wheel angles w.r.t. robot axis. <br /></td></tr>
-<tr class="separator:a8c2c5a6673f8e519548c2a0a790f3774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b066623d81871d8ba7d717cf840a231"><td class="memItemLeft" align="right" valign="top"><a id="a1b066623d81871d8ba7d717cf840a231"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a1b066623d81871d8ba7d717cf840a231">InverseKinematics</a> (<a class="el" href="classackermann_1_1_robot.html">Robot</a> robot, double desired_heading, double desired_speed)</td></tr>
-<tr class="memdesc:a1b066623d81871d8ba7d717cf840a231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object of Inverse Kinematics class. <br /></td></tr>
-<tr class="separator:a1b066623d81871d8ba7d717cf840a231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680e278cbe2c36ede82888122f8ef09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1headings.html">headings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d">calculateWheelHeadings</a> (double actual_heading, double dt, char direction, <a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;car)</td></tr>
+<tr class="memdesc:a680e278cbe2c36ede82888122f8ef09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method. This also takes into consideration the physical limits of the robot.  <a href="#a680e278cbe2c36ede82888122f8ef09d">More...</a><br /></td></tr>
+<tr class="separator:a680e278cbe2c36ede82888122f8ef09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5077f051c0a3036d5bba066208c45bb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1speed.html">speed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8">calculateWheelSpeeds</a> (double actual_heading, double actual_speed, double dt, char direction, <a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;car)</td></tr>
+<tr class="memdesc:a5077f051c0a3036d5bba066208c45bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method. This also takes into consideration the physical limits of the robot.  <a href="#a5077f051c0a3036d5bba066208c45bb8">More...</a><br /></td></tr>
+<tr class="separator:a5077f051c0a3036d5bba066208c45bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4b41caefb2238648fa7b6c95a79f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#a3d4b41caefb2238648fa7b6c95a79f37">calculateNewRobotHeadingandSpeed</a> (double inner_heading_incr, double outer_heading_incr, <a class="el" href="classackermann_1_1_sensor.html">Sensor</a> &amp;sensor, <a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;car, double dt)</td></tr>
+<tr class="memdesc:a3d4b41caefb2238648fa7b6c95a79f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the global heading in degrees and linear speed in m/s for the robot based on the heading and speeds of the front wheels.  <a href="#a3d4b41caefb2238648fa7b6c95a79f37">More...</a><br /></td></tr>
+<tr class="separator:a3d4b41caefb2238648fa7b6c95a79f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23a0d28b96f15f7515fd92b21aa9acf"><td class="memItemLeft" align="right" valign="top"><a id="aa23a0d28b96f15f7515fd92b21aa9acf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aa23a0d28b96f15f7515fd92b21aa9acf">InverseKinematics</a> (double desired_heading=0, double desired_speed=0)</td></tr>
+<tr class="memdesc:aa23a0d28b96f15f7515fd92b21aa9acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classackermann_1_1_inverse_kinematics.html" title="Inverse Kinematics class. ">InverseKinematics</a> class. <br /></td></tr>
+<tr class="separator:aa23a0d28b96f15f7515fd92b21aa9acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff55e17de53baaa526a3ca80a2169d79"><td class="memItemLeft" align="right" valign="top"><a id="aff55e17de53baaa526a3ca80a2169d79"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_inverse_kinematics.html#aff55e17de53baaa526a3ca80a2169d79">~InverseKinematics</a> ()</td></tr>
 <tr class="memdesc:aff55e17de53baaa526a3ca80a2169d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an object of Inverse Kinematics class. <br /></td></tr>
@@ -114,20 +106,264 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Inverse Kinematics class. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/markose/mid_term_proposal/ackermann_controller/include/<a class="el" href="inversekinematics_8hpp_source.html">inversekinematics.hpp</a></li>
-<li>/home/markose/mid_term_proposal/ackermann_controller/app/<a class="el" href="inversekinematics_8cpp.html">inversekinematics.cpp</a></li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3d4b41caefb2238648fa7b6c95a79f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4b41caefb2238648fa7b6c95a79f37">&#9670;&nbsp;</a></span>calculateNewRobotHeadingandSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ackermann::InverseKinematics::calculateNewRobotHeadingandSpeed </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inner_heading_incr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>outer_heading_incr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classackermann_1_1_sensor.html">Sensor</a> &amp;&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;&#160;</td>
+          <td class="paramname"><em>car</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the global heading in degrees and linear speed in m/s for the robot based on the heading and speeds of the front wheels. </p>
+<p>This method calculates updates for global heading and speed and updates the sensor with those values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inner_heading_incr</td><td>double. Increment in heading for inner wheel for each iteration </td></tr>
+    <tr><td class="paramname">outer_heading_incr</td><td>double. Increment in heading for outer wheel for each iteration. </td></tr>
+    <tr><td class="paramname">senor</td><td><a class="el" href="classackermann_1_1_sensor.html" title="Sensor class. ">Sensor</a>. Passing object sensor by reference to set parameters like actualheading and actualspeed </td></tr>
+    <tr><td class="paramname">car</td><td><a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>. Passing object car by reference to access parameters of the car like wheelbase, radius of wheel etc and also to set the wheel speed based on ackermann method. </td></tr>
+    <tr><td class="paramname">dt</td><td>double. Time step for which PID gave the output </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inner_heading_incr</td><td>increase in inner wheel heading in dt time in degrees </td></tr>
+    <tr><td class="paramname">outer_heading_incr</td><td>increase in inner wheel heading in dt time in degrees </td></tr>
+    <tr><td class="paramname">sensor</td><td>sensor (passsed by reference in call) </td></tr>
+    <tr><td class="paramname">car</td><td>robot (passsed by reference in call) </td></tr>
+    <tr><td class="paramname">dt</td><td>time step duration of the iteration in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_inverse_kinematics_a3d4b41caefb2238648fa7b6c95a79f37_icgraph.png" border="0" usemap="#classackermann_1_1_inverse_kinematics_a3d4b41caefb2238648fa7b6c95a79f37_icgraph" alt=""/></div>
+<map name="classackermann_1_1_inverse_kinematics_a3d4b41caefb2238648fa7b6c95a79f37_icgraph" id="classackermann_1_1_inverse_kinematics_a3d4b41caefb2238648fa7b6c95a79f37_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="304,5,455,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a680e278cbe2c36ede82888122f8ef09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680e278cbe2c36ede82888122f8ef09d">&#9670;&nbsp;</a></span>calculateWheelHeadings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1headings.html">ackermann::InverseKinematics::headings</a> ackermann::InverseKinematics::calculateWheelHeadings </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual_heading</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;&#160;</td>
+          <td class="paramname"><em>car</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method. This also takes into consideration the physical limits of the robot. </p>
+<p>This method calculates individual wheel headings in degree by processing the heading PID output and caps them if not feasible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_heading</td><td>double. The PID output for heading </td></tr>
+    <tr><td class="paramname">dt</td><td>double. Time step for which PID gave the output </td></tr>
+    <tr><td class="paramname">diection</td><td>char. Stores the direction of turn </td></tr>
+    <tr><td class="paramname">car</td><td><a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>. Passing object car by reference to access parameters of the car like wheelbase, radius of wheel etc and also to set the wheel headings based on ackermann method. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>headings struct. Returns the heading for each of the wheel with respect to robot frame for each iteration.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_heading</td><td>Heading PID output in degree </td></tr>
+    <tr><td class="paramname">dt</td><td>time step </td></tr>
+    <tr><td class="paramname">direction</td><td>turn direction left, right, straight if neither </td></tr>
+    <tr><td class="paramname">car</td><td>robot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structackermann_1_1_inverse_kinematics_1_1headings.html">ackermann::InverseKinematics::headings</a> contains inner and outer heading </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_cgraph.png" border="0" usemap="#classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_cgraph" alt=""/></div>
+<map name="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_cgraph" id="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_cgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_robot.html#ab5793ef2defb20c5cf269c42b6ee48c3" title="Getter function to get the track length of the robot. " alt="" coords="273,5,461,47"/>
+<area shape="rect" id="node3" href="classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e" title="Getter function to get the wheel base of the robot. " alt="" coords="256,71,479,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_icgraph.png" border="0" usemap="#classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_icgraph" alt=""/></div>
+<map name="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_icgraph" id="classackermann_1_1_inverse_kinematics_a680e278cbe2c36ede82888122f8ef09d_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="256,5,407,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5077f051c0a3036d5bba066208c45bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5077f051c0a3036d5bba066208c45bb8">&#9670;&nbsp;</a></span>calculateWheelSpeeds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structackermann_1_1_inverse_kinematics_1_1speed.html">ackermann::InverseKinematics::speed</a> ackermann::InverseKinematics::calculateWheelSpeeds </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual_heading</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual_speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classackermann_1_1_robot.html">Robot</a> &amp;&#160;</td>
+          <td class="paramname"><em>car</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method. This also takes into consideration the physical limits of the robot. </p>
+<p>This method calculates inner and outer wheel speeds, both linear in m/s and angular in rps for the robot, by processing the heading PID output and capping them if not feasible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_heading</td><td>double. The PID output for heading </td></tr>
+    <tr><td class="paramname">actual_speed</td><td>double. The PID output for speed </td></tr>
+    <tr><td class="paramname">dt</td><td>double. Time step for which PID gave the output </td></tr>
+    <tr><td class="paramname">diection</td><td>char. Stores the direction of turn </td></tr>
+    <tr><td class="paramname">car</td><td><a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>. Passing object car by reference to access parameters of the car like wheelbase, radius of wheel etc and also to set the wheel speed based on ackermann method. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>speed struct. Returns the speed for each of the wheel with respect to robot frame for each iteration.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actual_heading</td><td>Heading PID output in degree </td></tr>
+    <tr><td class="paramname">actual_speed</td><td>Speed PID output in degree </td></tr>
+    <tr><td class="paramname">dt</td><td>time step </td></tr>
+    <tr><td class="paramname">direction</td><td>turn direction left, right, straight if neither </td></tr>
+    <tr><td class="paramname">car</td><td>robot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structackermann_1_1_inverse_kinematics_1_1speed.html">ackermann::InverseKinematics::speed</a> contains inner and outer linear speeds </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_cgraph.png" border="0" usemap="#classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_cgraph" alt=""/></div>
+<map name="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_cgraph" id="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_cgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_robot.html#a58810eb9ed72e8a3875e4dba8fe793a2" title="Getter function to get the maximum angular speed. " alt="" coords="265,5,469,32"/>
+<area shape="rect" id="node3" href="classackermann_1_1_robot.html#af9a599c7d4b875e8d1bb98345ed8be5f" title="Getter function to get the wheel radius of the robot. " alt="" coords="271,57,463,98"/>
+<area shape="rect" id="node4" href="classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e" title="Getter function to get the wheel base of the robot. " alt="" coords="256,123,479,149"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_icgraph.png" border="0" usemap="#classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_icgraph" alt=""/></div>
+<map name="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_icgraph" id="classackermann_1_1_inverse_kinematics_a5077f051c0a3036d5bba066208c45bb8_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="256,5,407,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/include/<a class="el" href="inversekinematics_8hpp_source.html">inversekinematics.hpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/app/<a class="el" href="inversekinematics_8cpp.html">inversekinematics.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_inverse_kinematics.html">InverseKinematics</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

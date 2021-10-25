@@ -5,17 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann controller iteration 1: ackermann::Robot Class Reference</title>
+<title>Ackermann Steering Controller: ackermann::Robot Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Ackermann controller iteration 1
-   &#160;<span id="projectnumber">iteration 1</span>
+   <div id="projectname">Ackermann Steering Controller
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -50,21 +43,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classackermann_1_1_robot.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,9 +57,15 @@ $(document).ready(function(){initNavTree('classackermann_1_1_robot.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_robot.html">Robot</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classackermann_1_1_robot-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ackermann::Robot Class Reference</div>  </div>
@@ -96,52 +80,94 @@ $(document).ready(function(){initNavTree('classackermann_1_1_robot.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5793ef2defb20c5cf269c42b6ee48c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ab5793ef2defb20c5cf269c42b6ee48c3">getTrackLength</a> ()</td></tr>
-<tr class="memdesc:ab5793ef2defb20c5cf269c42b6ee48c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getters and Setters for <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> properties.  <a href="#ab5793ef2defb20c5cf269c42b6ee48c3">More...</a><br /></td></tr>
+<tr class="memdesc:ab5793ef2defb20c5cf269c42b6ee48c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the track length of the robot.  <a href="#ab5793ef2defb20c5cf269c42b6ee48c3">More...</a><br /></td></tr>
 <tr class="separator:ab5793ef2defb20c5cf269c42b6ee48c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66552db3c1cb519e6a52edb35d755f9e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e">getWheelBase</a> ()</td></tr>
-<tr class="memdesc:a66552db3c1cb519e6a52edb35d755f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Wheel <a class="el" href="class_base.html">Base</a> of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>.  <a href="#a66552db3c1cb519e6a52edb35d755f9e">More...</a><br /></td></tr>
+<tr class="memdesc:a66552db3c1cb519e6a52edb35d755f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the wheel base of the robot.  <a href="#a66552db3c1cb519e6a52edb35d755f9e">More...</a><br /></td></tr>
 <tr class="separator:a66552db3c1cb519e6a52edb35d755f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a599c7d4b875e8d1bb98345ed8be5f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#af9a599c7d4b875e8d1bb98345ed8be5f">getWheelRadius</a> ()</td></tr>
-<tr class="memdesc:af9a599c7d4b875e8d1bb98345ed8be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius for wheels of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>.  <a href="#af9a599c7d4b875e8d1bb98345ed8be5f">More...</a><br /></td></tr>
+<tr class="memdesc:af9a599c7d4b875e8d1bb98345ed8be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the wheel radius of the robot.  <a href="#af9a599c7d4b875e8d1bb98345ed8be5f">More...</a><br /></td></tr>
 <tr class="separator:af9a599c7d4b875e8d1bb98345ed8be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438b31f2c488c6e3443e6f9251fafa5e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a438b31f2c488c6e3443e6f9251fafa5e">getTurningRadius</a> ()</td></tr>
-<tr class="memdesc:a438b31f2c488c6e3443e6f9251fafa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the desired turning radius.  <a href="#a438b31f2c488c6e3443e6f9251fafa5e">More...</a><br /></td></tr>
+<tr class="memdesc:a438b31f2c488c6e3443e6f9251fafa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the turning radius of the robot.  <a href="#a438b31f2c488c6e3443e6f9251fafa5e">More...</a><br /></td></tr>
 <tr class="separator:a438b31f2c488c6e3443e6f9251fafa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb31040b31f12d245d20b32b3c01dbf3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#abb31040b31f12d245d20b32b3c01dbf3">getInnerWheelHeading</a> ()</td></tr>
-<tr class="memdesc:abb31040b31f12d245d20b32b3c01dbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inner wheel angle with respect to robot axis.  <a href="#abb31040b31f12d245d20b32b3c01dbf3">More...</a><br /></td></tr>
+<tr class="memdesc:abb31040b31f12d245d20b32b3c01dbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the inner wheel heading of the robot.  <a href="#abb31040b31f12d245d20b32b3c01dbf3">More...</a><br /></td></tr>
 <tr class="separator:abb31040b31f12d245d20b32b3c01dbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab04ae0e309e4ac263d0d64d5dd2520d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ab04ae0e309e4ac263d0d64d5dd2520d2">setInnerWheelHeading</a> (double inner_wheel_heading)</td></tr>
-<tr class="memdesc:ab04ae0e309e4ac263d0d64d5dd2520d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inner wheel angle with respect to robot axis.  <a href="#ab04ae0e309e4ac263d0d64d5dd2520d2">More...</a><br /></td></tr>
+<tr class="memdesc:ab04ae0e309e4ac263d0d64d5dd2520d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the inner wheel heading.  <a href="#ab04ae0e309e4ac263d0d64d5dd2520d2">More...</a><br /></td></tr>
 <tr class="separator:ab04ae0e309e4ac263d0d64d5dd2520d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e312a79aa11c4026afd435edeb4f375"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a5e312a79aa11c4026afd435edeb4f375">getOuterWheelHeading</a> ()</td></tr>
-<tr class="memdesc:a5e312a79aa11c4026afd435edeb4f375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the outer wheel angle with respect to robot axis.  <a href="#a5e312a79aa11c4026afd435edeb4f375">More...</a><br /></td></tr>
+<tr class="memdesc:a5e312a79aa11c4026afd435edeb4f375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the outer wheel heading of the robot.  <a href="#a5e312a79aa11c4026afd435edeb4f375">More...</a><br /></td></tr>
 <tr class="separator:a5e312a79aa11c4026afd435edeb4f375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a906dc6b8680bb97d36a6b0fc281349fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a906dc6b8680bb97d36a6b0fc281349fb">setOuterWheelHeading</a> (double outer_wheel_heading)</td></tr>
-<tr class="memdesc:a906dc6b8680bb97d36a6b0fc281349fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the outer wheel angle with respect to robot axis.  <a href="#a906dc6b8680bb97d36a6b0fc281349fb">More...</a><br /></td></tr>
+<tr class="memdesc:a906dc6b8680bb97d36a6b0fc281349fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the outter wheel heading.  <a href="#a906dc6b8680bb97d36a6b0fc281349fb">More...</a><br /></td></tr>
 <tr class="separator:a906dc6b8680bb97d36a6b0fc281349fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fede7fc823ec44d6cf88d564c84c8b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a2fede7fc823ec44d6cf88d564c84c8b9">getInnerWheelSpeed</a> ()</td></tr>
-<tr class="memdesc:a2fede7fc823ec44d6cf88d564c84c8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get angular speed of inner wheel.  <a href="#a2fede7fc823ec44d6cf88d564c84c8b9">More...</a><br /></td></tr>
+<tr class="memdesc:a2fede7fc823ec44d6cf88d564c84c8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the inner wheel speed of the robot.  <a href="#a2fede7fc823ec44d6cf88d564c84c8b9">More...</a><br /></td></tr>
 <tr class="separator:a2fede7fc823ec44d6cf88d564c84c8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b2a316e3fe338023b728867f9139e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a54b2a316e3fe338023b728867f9139e1">setInnerWheelSpeed</a> (double inner_wheel_speed)</td></tr>
-<tr class="memdesc:a54b2a316e3fe338023b728867f9139e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the angular speed of inner wheel.  <a href="#a54b2a316e3fe338023b728867f9139e1">More...</a><br /></td></tr>
+<tr class="memdesc:a54b2a316e3fe338023b728867f9139e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the inner wheel speed.  <a href="#a54b2a316e3fe338023b728867f9139e1">More...</a><br /></td></tr>
 <tr class="separator:a54b2a316e3fe338023b728867f9139e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585f69aeea6570f82903df5d1c90adb4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a585f69aeea6570f82903df5d1c90adb4">getOuterWheelSpeed</a> ()</td></tr>
-<tr class="memdesc:a585f69aeea6570f82903df5d1c90adb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get angular speed of outer wheel.  <a href="#a585f69aeea6570f82903df5d1c90adb4">More...</a><br /></td></tr>
+<tr class="memdesc:a585f69aeea6570f82903df5d1c90adb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the outer wheel speed of the robot.  <a href="#a585f69aeea6570f82903df5d1c90adb4">More...</a><br /></td></tr>
 <tr class="separator:a585f69aeea6570f82903df5d1c90adb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf408169f1a2f2ba0dfc59944a2cbf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#aaaf408169f1a2f2ba0dfc59944a2cbf6">setOuterWheelSpeed</a> (double outer_wheel_speed)</td></tr>
-<tr class="memdesc:aaaf408169f1a2f2ba0dfc59944a2cbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the angular speed of outer wheel.  <a href="#aaaf408169f1a2f2ba0dfc59944a2cbf6">More...</a><br /></td></tr>
+<tr class="memdesc:aaaf408169f1a2f2ba0dfc59944a2cbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the outer wheel speed.  <a href="#aaaf408169f1a2f2ba0dfc59944a2cbf6">More...</a><br /></td></tr>
 <tr class="separator:aaaf408169f1a2f2ba0dfc59944a2cbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c0f119b5dc8868d0630ce170aaa2b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a45c0f119b5dc8868d0630ce170aaa2b7">getInnerWheelRps</a> ()</td></tr>
+<tr class="memdesc:a45c0f119b5dc8868d0630ce170aaa2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the inner wheel angular speed of the robot.  <a href="#a45c0f119b5dc8868d0630ce170aaa2b7">More...</a><br /></td></tr>
+<tr class="separator:a45c0f119b5dc8868d0630ce170aaa2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace83a71544905970ffad120de7560e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ace83a71544905970ffad120de7560e3f">setInnerWheelRps</a> (double inner_wheel_rps)</td></tr>
+<tr class="memdesc:ace83a71544905970ffad120de7560e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the inner wheel rps.  <a href="#ace83a71544905970ffad120de7560e3f">More...</a><br /></td></tr>
+<tr class="separator:ace83a71544905970ffad120de7560e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3eb5e5a95b0913b33213208a7066124"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#af3eb5e5a95b0913b33213208a7066124">getOuterWheelRps</a> ()</td></tr>
+<tr class="memdesc:af3eb5e5a95b0913b33213208a7066124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the outer wheel angular speed of the robot.  <a href="#af3eb5e5a95b0913b33213208a7066124">More...</a><br /></td></tr>
+<tr class="separator:af3eb5e5a95b0913b33213208a7066124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a90000cc20a2586ac6d47a901316ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ad1a90000cc20a2586ac6d47a901316ab">setOuterWheelRps</a> (double outer_wheel_rps)</td></tr>
+<tr class="memdesc:ad1a90000cc20a2586ac6d47a901316ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter function to set the outer wheel rps.  <a href="#ad1a90000cc20a2586ac6d47a901316ab">More...</a><br /></td></tr>
+<tr class="separator:ad1a90000cc20a2586ac6d47a901316ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29399e8cb0428b2d6e88562c8c678c0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ad29399e8cb0428b2d6e88562c8c678c0">getThetaMax</a> ()</td></tr>
-<tr class="memdesc:ad29399e8cb0428b2d6e88562c8c678c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum angle wheel can turn with respect to robot axis.  <a href="#ad29399e8cb0428b2d6e88562c8c678c0">More...</a><br /></td></tr>
+<tr class="memdesc:ad29399e8cb0428b2d6e88562c8c678c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the maximum turning angle for front wheels.  <a href="#ad29399e8cb0428b2d6e88562c8c678c0">More...</a><br /></td></tr>
 <tr class="separator:ad29399e8cb0428b2d6e88562c8c678c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bcd6aef17bce19c2c1e4ad942ab5a3"><td class="memItemLeft" align="right" valign="top"><a id="ac0bcd6aef17bce19c2c1e4ad942ab5a3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#ac0bcd6aef17bce19c2c1e4ad942ab5a3">Robot</a> (double track_length=1, double wheel_base=1, double wheel_radius=1, double turning_radius=1, double inner_wheel_heading=1, double outer_wheel_heading=1, double inner_wheel_speed=1, double outer_wheel_speed=1, double theta_max=45)</td></tr>
-<tr class="memdesc:ac0bcd6aef17bce19c2c1e4ad942ab5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> object. <br /></td></tr>
-<tr class="separator:ac0bcd6aef17bce19c2c1e4ad942ab5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1705a2ec3c0f4cc91127dc6188665c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a0b1705a2ec3c0f4cc91127dc6188665c">getThetaIncrPerSecMax</a> ()</td></tr>
+<tr class="memdesc:a0b1705a2ec3c0f4cc91127dc6188665c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the maximum angle by which the front wheels can turn by per second.  <a href="#a0b1705a2ec3c0f4cc91127dc6188665c">More...</a><br /></td></tr>
+<tr class="separator:a0b1705a2ec3c0f4cc91127dc6188665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58810eb9ed72e8a3875e4dba8fe793a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a58810eb9ed72e8a3875e4dba8fe793a2">getRpsMax</a> ()</td></tr>
+<tr class="memdesc:a58810eb9ed72e8a3875e4dba8fe793a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the maximum angular speed.  <a href="#a58810eb9ed72e8a3875e4dba8fe793a2">More...</a><br /></td></tr>
+<tr class="separator:a58810eb9ed72e8a3875e4dba8fe793a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e5ff023c559cd72d07a4c56fb4c903"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a89e5ff023c559cd72d07a4c56fb4c903">getRpsIncrPerSecMax</a> ()</td></tr>
+<tr class="memdesc:a89e5ff023c559cd72d07a4c56fb4c903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function to get the maximum angular acceleration for the front wheels per second.  <a href="#a89e5ff023c559cd72d07a4c56fb4c903">More...</a><br /></td></tr>
+<tr class="separator:a89e5ff023c559cd72d07a4c56fb4c903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69768038a5c0e05f5dbc5fab46d8a9e3"><td class="memItemLeft" align="right" valign="top"><a id="a69768038a5c0e05f5dbc5fab46d8a9e3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a69768038a5c0e05f5dbc5fab46d8a9e3">Robot</a> (double track_length=2, double wheel_base=4, double wheel_radius=0.3, double inner_wheel_heading=0, double outer_wheel_heading=0, double inner_wheel_speed=0, double outer_wheel_speed=0, double inner_wheel_rps=0, double outer_wheel_rps=0, double theta_max=45, double rps_max=16.667, double theta_inc_per_sec_max=15, double rps_incr_per_sec_max=1)</td></tr>
+<tr class="memdesc:a69768038a5c0e05f5dbc5fab46d8a9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> object. <br /></td></tr>
+<tr class="separator:a69768038a5c0e05f5dbc5fab46d8a9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73f0fa64ca1c0a8fc1b5fce7332718c6"><td class="memItemLeft" align="right" valign="top"><a id="a73f0fa64ca1c0a8fc1b5fce7332718c6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classackermann_1_1_robot.html#a73f0fa64ca1c0a8fc1b5fce7332718c6">~Robot</a> ()</td></tr>
 <tr class="memdesc:a73f0fa64ca1c0a8fc1b5fce7332718c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> object. <br /></td></tr>
 <tr class="separator:a73f0fa64ca1c0a8fc1b5fce7332718c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af31d554ab388ac5064854adf1fe3323f"><td class="memItemLeft" align="right" valign="top"><a id="af31d554ab388ac5064854adf1fe3323f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>inner</b> = 0</td></tr>
+<tr class="separator:af31d554ab388ac5064854adf1fe3323f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006df3afdcc651a7bd62a6368a12cc99"><td class="memItemLeft" align="right" valign="top"><a id="a006df3afdcc651a7bd62a6368a12cc99"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>outer</b> = 0</td></tr>
+<tr class="separator:a006df3afdcc651a7bd62a6368a12cc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6d832f8848007ebf51d958c94d6ce8"><td class="memItemLeft" align="right" valign="top"><a id="a4f6d832f8848007ebf51d958c94d6ce8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>xl</b> = 0</td></tr>
+<tr class="separator:a4f6d832f8848007ebf51d958c94d6ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205eb318d4b4f16e8d42957cb145edf2"><td class="memItemLeft" align="right" valign="top"><a id="a205eb318d4b4f16e8d42957cb145edf2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>yl</b> = 0</td></tr>
+<tr class="separator:a205eb318d4b4f16e8d42957cb145edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1808642c50a189439d86c58c79bfe787"><td class="memItemLeft" align="right" valign="top"><a id="a1808642c50a189439d86c58c79bfe787"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>xr</b> = 0</td></tr>
+<tr class="separator:a1808642c50a189439d86c58c79bfe787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971e6c0505db108cd024012c37991bf7"><td class="memItemLeft" align="right" valign="top"><a id="a971e6c0505db108cd024012c37991bf7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>yr</b> = -2</td></tr>
+<tr class="separator:a971e6c0505db108cd024012c37991bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> class. </p>
@@ -161,8 +187,54 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the inner wheel angle with respect to robot axis. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the inner wheel heading of the robot. </p>
+<p>Get the inner wheel angle with respect to robot longitudinal axis in degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>inner_wheel_heading_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_abb31040b31f12d245d20b32b3c01dbf3_icgraph.png" border="0" usemap="#classackermann_1_1_robot_abb31040b31f12d245d20b32b3c01dbf3_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_abb31040b31f12d245d20b32b3c01dbf3_icgraph" id="classackermann_1_1_robot_abb31040b31f12d245d20b32b3c01dbf3_icgraph">
+<area shape="rect" id="node2" href="inversekinematics__test_8cpp.html#a0e27298b92054db74d6a167042ec659d" title="This test checks for correct individual wheel angles w.r.t. the robot axis. " alt="" coords="237,13,293,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45c0f119b5dc8868d0630ce170aaa2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c0f119b5dc8868d0630ce170aaa2b7">&#9670;&nbsp;</a></span>getInnerWheelRps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::Robot::getInnerWheelRps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the inner wheel angular speed of the robot. </p>
+<p>Get angular speed of inner wheel in rps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>inner_wheel_rps_. double</dd>
+<dd>
+double </dd></dl>
 
 </div>
 </div>
@@ -181,8 +253,25 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get angular speed of inner wheel. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the inner wheel speed of the robot. </p>
+<p>Get linear speed of inner wheel in m/s.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>inner_wheel_speed_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_a2fede7fc823ec44d6cf88d564c84c8b9_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a2fede7fc823ec44d6cf88d564c84c8b9_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_a2fede7fc823ec44d6cf88d564c84c8b9_icgraph" id="classackermann_1_1_robot_a2fede7fc823ec44d6cf88d564c84c8b9_icgraph">
+<area shape="rect" id="node2" href="inversekinematics__test_8cpp.html#a8a7a2c4ec557b3534d1fd2dd5e774a9b" title="This test checks for correct individual wheel speeds. " alt="" coords="237,13,293,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -201,8 +290,54 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the outer wheel angle with respect to robot axis. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the outer wheel heading of the robot. </p>
+<p>Get the outer wheel angle with respect to robot longitudinal axis in degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>outer_wheel_heading_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_a5e312a79aa11c4026afd435edeb4f375_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a5e312a79aa11c4026afd435edeb4f375_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_a5e312a79aa11c4026afd435edeb4f375_icgraph" id="classackermann_1_1_robot_a5e312a79aa11c4026afd435edeb4f375_icgraph">
+<area shape="rect" id="node2" href="inversekinematics__test_8cpp.html#a0e27298b92054db74d6a167042ec659d" title="This test checks for correct individual wheel angles w.r.t. the robot axis. " alt="" coords="240,13,296,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3eb5e5a95b0913b33213208a7066124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3eb5e5a95b0913b33213208a7066124">&#9670;&nbsp;</a></span>getOuterWheelRps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::Robot::getOuterWheelRps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the outer wheel angular speed of the robot. </p>
+<p>Get angular speed of outer wheel in rps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>outer_wheel_rps_. double</dd>
+<dd>
+double </dd></dl>
 
 </div>
 </div>
@@ -221,8 +356,121 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get angular speed of outer wheel. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the outer wheel speed of the robot. </p>
+<p>Get linear speed of outer wheel in m/s.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>outer_wheel_speed_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_a585f69aeea6570f82903df5d1c90adb4_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a585f69aeea6570f82903df5d1c90adb4_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_a585f69aeea6570f82903df5d1c90adb4_icgraph" id="classackermann_1_1_robot_a585f69aeea6570f82903df5d1c90adb4_icgraph">
+<area shape="rect" id="node2" href="inversekinematics__test_8cpp.html#a8a7a2c4ec557b3534d1fd2dd5e774a9b" title="This test checks for correct individual wheel speeds. " alt="" coords="240,13,296,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89e5ff023c559cd72d07a4c56fb4c903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e5ff023c559cd72d07a4c56fb4c903">&#9670;&nbsp;</a></span>getRpsIncrPerSecMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::Robot::getRpsIncrPerSecMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the maximum angular acceleration for the front wheels per second. </p>
+<p>Get the maximum the wheel motor rps can increase in a sec.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rps_inc_per_sec_max_. double</dd>
+<dd>
+double </dd></dl>
+
+</div>
+</div>
+<a id="a58810eb9ed72e8a3875e4dba8fe793a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58810eb9ed72e8a3875e4dba8fe793a2">&#9670;&nbsp;</a></span>getRpsMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::Robot::getRpsMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the maximum angular speed. </p>
+<p>Get the maximum speed with which the robot can move in km/hr.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rps_max_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_a58810eb9ed72e8a3875e4dba8fe793a2_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a58810eb9ed72e8a3875e4dba8fe793a2_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_a58810eb9ed72e8a3875e4dba8fe793a2_icgraph" id="classackermann_1_1_robot_a58810eb9ed72e8a3875e4dba8fe793a2_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8" title="Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method..." alt="" coords="257,5,460,47"/>
+<area shape="rect" id="node3" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="508,5,659,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0b1705a2ec3c0f4cc91127dc6188665c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1705a2ec3c0f4cc91127dc6188665c">&#9670;&nbsp;</a></span>getThetaIncrPerSecMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ackermann::Robot::getThetaIncrPerSecMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter function to get the maximum angle by which the front wheels can turn by per second. </p>
+<p>Get the maximum angle wheel can turn with respect to robot axis in a sec.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>theta_inc_per_sec_max_. double</dd>
+<dd>
+double </dd></dl>
 
 </div>
 </div>
@@ -241,8 +489,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the maximum angle wheel can turn with respect to robot axis. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the maximum turning angle for front wheels. </p>
+<p>Get the maximum angle wheel can turn with respect to robot longitudinal axis in degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>theta_max_. double</dd>
+<dd>
+double </dd></dl>
 
 </div>
 </div>
@@ -261,9 +518,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Getters and Setters for <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> properties. </p>
-<p>Get the Track length of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the track length of the robot. </p>
+<p>Get the Track length of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> in meters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>track_length_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_ab5793ef2defb20c5cf269c42b6ee48c3_icgraph.png" border="0" usemap="#classackermann_1_1_robot_ab5793ef2defb20c5cf269c42b6ee48c3_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_ab5793ef2defb20c5cf269c42b6ee48c3_icgraph" id="classackermann_1_1_robot_ab5793ef2defb20c5cf269c42b6ee48c3_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d" title="Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method..." alt="" coords="241,5,444,47"/>
+<area shape="rect" id="node3" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="492,5,643,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -282,8 +556,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the desired turning radius. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the turning radius of the robot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wheel_base_. double </dd></dl>
 
 </div>
 </div>
@@ -302,8 +582,27 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the Wheel <a class="el" href="class_base.html">Base</a> of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the wheel base of the robot. </p>
+<p>Get the Wheel <a class="el" href="class_base.html">Base</a> of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> in meters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wheel_base_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_a66552db3c1cb519e6a52edb35d755f9e_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a66552db3c1cb519e6a52edb35d755f9e_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_a66552db3c1cb519e6a52edb35d755f9e_icgraph" id="classackermann_1_1_robot_a66552db3c1cb519e6a52edb35d755f9e_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a680e278cbe2c36ede82888122f8ef09d" title="Calculates the individual wheel headings in degrees for front two wheels using the Ackermann method..." alt="" coords="276,5,479,47"/>
+<area shape="rect" id="node4" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8" title="Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method..." alt="" coords="276,71,479,112"/>
+<area shape="rect" id="node3" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="527,39,677,80"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -322,8 +621,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the radius for wheels of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+<p>Getter function to get the wheel radius of the robot. </p>
+<p>Get the radius for wheels of the <a class="el" href="classackermann_1_1_robot.html" title="Robot class. ">Robot</a> in meters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>wheel_radius_. double</dd>
+<dd>
+double </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classackermann_1_1_robot_af9a599c7d4b875e8d1bb98345ed8be5f_icgraph.png" border="0" usemap="#classackermann_1_1_robot_af9a599c7d4b875e8d1bb98345ed8be5f_icgraph" alt=""/></div>
+<map name="classackermann_1_1_robot_af9a599c7d4b875e8d1bb98345ed8be5f_icgraph" id="classackermann_1_1_robot_af9a599c7d4b875e8d1bb98345ed8be5f_icgraph">
+<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8" title="Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method..." alt="" coords="245,5,448,47"/>
+<area shape="rect" id="node3" href="classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="496,5,647,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -343,21 +660,55 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the inner wheel angle with respect to robot axis. </p>
+<p>Setter function to set the inner wheel heading. </p>
+<p>Set the inner wheel angle with respect to longitudinal axis in degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inner_wheel_heading</td><td>double. inner wheel heading </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_robot_ab04ae0e309e4ac263d0d64d5dd2520d2_icgraph.png" border="0" usemap="#classackermann_1_1_robot_ab04ae0e309e4ac263d0d64d5dd2520d2_icgraph" alt=""/></div>
-<map name="classackermann_1_1_robot_ab04ae0e309e4ac263d0d64d5dd2520d2_icgraph" id="classackermann_1_1_robot_ab04ae0e309e4ac263d0d64d5dd2520d2_icgraph">
-<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a8c2c5a6673f8e519548c2a0a790f3774" title="Calculates the wheel angles w.r.t. robot axis. " alt="" coords="237,5,440,47"/>
-</map>
+
 </div>
+</div>
+<a id="ace83a71544905970ffad120de7560e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace83a71544905970ffad120de7560e3f">&#9670;&nbsp;</a></span>setInnerWheelRps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ackermann::Robot::setInnerWheelRps </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inner_wheel_rps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter function to set the inner wheel rps. </p>
+<p>Set the inner wheel angular velocity in rps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inner_wheel_rps</td><td>double. inner wheel rps </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -377,21 +728,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the angular speed of inner wheel. </p>
+<p>Setter function to set the inner wheel speed. </p>
+<p>Set the linear speed of inner wheel in m/s.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inner_wheel_speed</td><td>double. inner wheel speed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_robot_a54b2a316e3fe338023b728867f9139e1_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a54b2a316e3fe338023b728867f9139e1_icgraph" alt=""/></div>
-<map name="classackermann_1_1_robot_a54b2a316e3fe338023b728867f9139e1_icgraph" id="classackermann_1_1_robot_a54b2a316e3fe338023b728867f9139e1_icgraph">
-<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#aa53c48c446e30f184b3a38cd16a381fa" title="Calculates the individual wheel angular speeds. " alt="" coords="237,5,440,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -411,21 +762,55 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the outer wheel angle with respect to robot axis. </p>
+<p>Setter function to set the outter wheel heading. </p>
+<p>Set the outer wheel angle with respect to longitudinal axis in degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outter_wheel_heading</td><td>double. outter wheel heading </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_robot_a906dc6b8680bb97d36a6b0fc281349fb_icgraph.png" border="0" usemap="#classackermann_1_1_robot_a906dc6b8680bb97d36a6b0fc281349fb_icgraph" alt=""/></div>
-<map name="classackermann_1_1_robot_a906dc6b8680bb97d36a6b0fc281349fb_icgraph" id="classackermann_1_1_robot_a906dc6b8680bb97d36a6b0fc281349fb_icgraph">
-<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#a8c2c5a6673f8e519548c2a0a790f3774" title="Calculates the wheel angles w.r.t. robot axis. " alt="" coords="240,5,443,47"/>
-</map>
+
 </div>
+</div>
+<a id="ad1a90000cc20a2586ac6d47a901316ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a90000cc20a2586ac6d47a901316ab">&#9670;&nbsp;</a></span>setOuterWheelRps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ackermann::Robot::setOuterWheelRps </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>outer_wheel_rps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter function to set the outer wheel rps. </p>
+<p>Set the outer wheel angular velocity in rps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outer_wheel_rps</td><td>double. outer wheel rps </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -445,38 +830,34 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Set the angular speed of outer wheel. </p>
+<p>Setter function to set the outer wheel speed. </p>
+<p>Set the linear speed of outer wheel in m/s.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outer_wheel_speed</td><td>double. outer wheel speed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nil</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classackermann_1_1_robot_aaaf408169f1a2f2ba0dfc59944a2cbf6_icgraph.png" border="0" usemap="#classackermann_1_1_robot_aaaf408169f1a2f2ba0dfc59944a2cbf6_icgraph" alt=""/></div>
-<map name="classackermann_1_1_robot_aaaf408169f1a2f2ba0dfc59944a2cbf6_icgraph" id="classackermann_1_1_robot_aaaf408169f1a2f2ba0dfc59944a2cbf6_icgraph">
-<area shape="rect" id="node2" href="classackermann_1_1_inverse_kinematics.html#aa53c48c446e30f184b3a38cd16a381fa" title="Calculates the individual wheel angular speeds. " alt="" coords="240,5,443,47"/>
-</map>
-</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/markose/mid_term_proposal/ackermann_controller/include/<a class="el" href="robot_8hpp_source.html">robot.hpp</a></li>
-<li>/home/markose/mid_term_proposal/ackermann_controller/app/<a class="el" href="robot_8cpp.html">robot.cpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/include/<a class="el" href="robot_8hpp_source.html">robot.hpp</a></li>
+<li>/home/markose/ackermann_phase_2/ackermann_controller/app/<a class="el" href="robot_8cpp.html">robot.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><b>ackermann</b></li><li class="navelem"><a class="el" href="classackermann_1_1_robot.html">Robot</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
 </body>
 </html>

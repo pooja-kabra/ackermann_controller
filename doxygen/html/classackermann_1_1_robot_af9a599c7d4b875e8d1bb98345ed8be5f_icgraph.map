@@ -1,0 +1,4 @@
+<map id="ackermann::Robot::getWheelRadius" name="ackermann::Robot::getWheelRadius">
+<area shape="rect" id="node2" href="$classackermann_1_1_inverse_kinematics.html#a5077f051c0a3036d5bba066208c45bb8" title="Calculates the individual wheel linear speeds in m/s for front two wheels using the Ackermann method..." alt="" coords="245,5,448,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_controller.html#adde759126f6993e22b11a56b5e782258" title="solves for convergence. Makes use of other classes and methods till the heading and speed converges..." alt="" coords="496,5,647,47"/>
+</map>

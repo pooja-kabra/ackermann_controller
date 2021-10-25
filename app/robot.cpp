@@ -2,9 +2,14 @@
  * @file robot.cpp
  * @author Markose Jacob, Pooja Kabra
  * @brief This file defines the Robot class
- * @version 0.1
- * @date 2021-10-16
+ * @version 2.0
+ * @date 2021-10-24
  * @copyright Copyright (c) 2021
+ * 
+ * @section Robot class
+ * 
+ * @brief This class contains all the physical parametes of the robot as well and 
+ * stores the heading and speed for the fornt wheels
  */
 
 #include "../include/robot.hpp"
@@ -14,8 +19,7 @@
  * 
  * @return double
  */
-double ackermann::Robot::getTrackLength()
-{
+double ackermann::Robot::getTrackLength() {
     return track_length_;
 }
 
@@ -24,8 +28,7 @@ double ackermann::Robot::getTrackLength()
  *      
  * @return double
  */
-double ackermann::Robot::getWheelBase()
-{
+double ackermann::Robot::getWheelBase() {
     return wheel_base_;
 }
 
@@ -34,8 +37,7 @@ double ackermann::Robot::getWheelBase()
  * 
  * @return double
  */
-double ackermann::Robot::getWheelRadius()
-{
+double ackermann::Robot::getWheelRadius() {
     return wheel_radius_;
 }
 
@@ -44,8 +46,7 @@ double ackermann::Robot::getWheelRadius()
  * 
  * @return double
  */
-double ackermann::Robot::getInnerWheelHeading()
-{
+double ackermann::Robot::getInnerWheelHeading() {
     return inner_wheel_heading_;
 }
 
@@ -54,8 +55,7 @@ double ackermann::Robot::getInnerWheelHeading()
  * 
  * @return double
  */
-double ackermann::Robot::getOuterWheelHeading()
-{
+double ackermann::Robot::getOuterWheelHeading() {
     return outer_wheel_heading_;
 }
 
@@ -64,8 +64,7 @@ double ackermann::Robot::getOuterWheelHeading()
  * 
  * @return double
  */
-double ackermann::Robot::getInnerWheelSpeed()
-{
+double ackermann::Robot::getInnerWheelSpeed() {
     return inner_wheel_speed_;
 }
 
@@ -74,8 +73,7 @@ double ackermann::Robot::getInnerWheelSpeed()
  * 
  * @return double
  */
-double ackermann::Robot::getOuterWheelSpeed()
-{
+double ackermann::Robot::getOuterWheelSpeed() {
     return outer_wheel_speed_;
 }
 
@@ -84,8 +82,7 @@ double ackermann::Robot::getOuterWheelSpeed()
  * 
  * @return double
  */
-double ackermann::Robot::getInnerWheelRps()
-{
+double ackermann::Robot::getInnerWheelRps() {
     return rps_max_;
 }
 
@@ -94,8 +91,7 @@ double ackermann::Robot::getInnerWheelRps()
  * 
  * @return double
  */
-double ackermann::Robot::getOuterWheelRps()
-{
+double ackermann::Robot::getOuterWheelRps() {
     return outer_wheel_rps_;
 }
 
@@ -104,8 +100,7 @@ double ackermann::Robot::getOuterWheelRps()
  * 
  * @return double
  */
-double ackermann::Robot::getThetaMax()
-{
+double ackermann::Robot::getThetaMax() {
     return theta_max_;
 }
 
@@ -114,8 +109,7 @@ double ackermann::Robot::getThetaMax()
  * 
  * @return double
  */
-double ackermann::Robot::getRpsMax()
-{
+double ackermann::Robot::getRpsMax() {
     return rps_max_;
 }
 
@@ -124,8 +118,7 @@ double ackermann::Robot::getRpsMax()
  * 
  * @return double
  */
-double ackermann::Robot::getThetaIncrPerSecMax()
-{
+double ackermann::Robot::getThetaIncrPerSecMax() {
     return theta_inc_per_sec_max_;
 }
 
@@ -134,8 +127,7 @@ double ackermann::Robot::getThetaIncrPerSecMax()
  * 
  * @return double
  */
-double ackermann::Robot::getRpsIncrPerSecMax()
-{
+double ackermann::Robot::getRpsIncrPerSecMax() {
     return rps_incr_per_sec_max_;
 }
 
@@ -144,8 +136,7 @@ double ackermann::Robot::getRpsIncrPerSecMax()
  *    
  * @param double
  */
-void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps)
-{
+void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps) {
     inner_wheel_rps_ = inner_wheel_rps;
 }
 
@@ -154,8 +145,7 @@ void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps)
  *    
  * @param double
  */
-void ackermann::Robot::setOuterWheelRps(double outer_wheel_rps)
-{
+void ackermann::Robot::setOuterWheelRps(double outer_wheel_rps) {
     outer_wheel_rps_ = outer_wheel_rps;
 }
 
@@ -164,8 +154,7 @@ void ackermann::Robot::setOuterWheelRps(double outer_wheel_rps)
  *    
  * @param double
  */
-void ackermann::Robot::setInnerWheelHeading(double inner_wheel_heading)
-{
+void ackermann::Robot::setInnerWheelHeading(double inner_wheel_heading) {
     inner_wheel_heading_ = inner_wheel_heading;
 }
 
@@ -174,8 +163,7 @@ void ackermann::Robot::setInnerWheelHeading(double inner_wheel_heading)
  *
  * @param double
  */
-void ackermann::Robot::setOuterWheelHeading(double outer_wheel_heading)
-{
+void ackermann::Robot::setOuterWheelHeading(double outer_wheel_heading) {
     outer_wheel_heading_ = outer_wheel_heading;
 }
 
@@ -184,8 +172,7 @@ void ackermann::Robot::setOuterWheelHeading(double outer_wheel_heading)
  *      
  * @param double
  */
-void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed)
-{
+void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed) {
     inner_wheel_speed_ = inner_wheel_speed;
 }
 
@@ -194,7 +181,6 @@ void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed)
  *      
  * @param double
  */
-void ackermann::Robot::setOuterWheelSpeed(double outer_wheel_speed)
-{
+void ackermann::Robot::setOuterWheelSpeed(double outer_wheel_speed) {
     outer_wheel_speed_ = outer_wheel_speed;
 }

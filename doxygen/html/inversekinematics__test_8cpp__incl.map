@@ -1,26 +1,26 @@
-<map id="/home/markose/mid_term_proposal/ackermann_controller/test/inversekinematics_test.cpp" name="/home/markose/mid_term_proposal/ackermann_controller/test/inversekinematics_test.cpp">
-<area shape="rect" id="node2" href="$gtest_8h_source.html" title="gtest/gtest.h" alt="" coords="1154,109,1249,136"/>
-<area shape="rect" id="node49" href="$inversekinematics_8hpp_source.html" title="../include/inversekinematics.hpp" alt="" coords="2355,109,2565,136"/>
-<area shape="rect" id="node50" href="$robot_8hpp.html" title="This file declares the Robot class. " alt="" coords="2341,184,2475,211"/>
-<area shape="rect" id="node6" href="$gtest-internal_8h_source.html" title="gtest/internal/gtest\l&#45;internal.h" alt="" coords="931,527,1061,568"/>
-<area shape="rect" id="node31" href="$gtest-message_8h_source.html" title="gtest/gtest&#45;message.h" alt="" coords="1187,623,1339,650"/>
-<area shape="rect" id="node32" href="$gtest-string_8h_source.html" title="gtest/internal/gtest\l&#45;string.h" alt="" coords="533,705,664,747"/>
-<area shape="rect" id="node35" href="$gtest-death-test_8h_source.html" title="gtest/gtest&#45;death&#45;test.h" alt="" coords="264,266,421,293"/>
-<area shape="rect" id="node37" href="$gtest-param-test_8h_source.html" title="gtest/gtest&#45;param&#45;test.h" alt="" coords="1938,184,2099,211"/>
-<area shape="rect" id="node41" href="$gtest-printers_8h_source.html" title="gtest/gtest&#45;printers.h" alt="" coords="1326,445,1469,471"/>
-<area shape="rect" id="node44" href="$gtest__prod_8h_source.html" title="gtest/gtest_prod.h" alt="" coords="1605,184,1731,211"/>
-<area shape="rect" id="node45" href="$gtest-test-part_8h_source.html" title="gtest/gtest&#45;test&#45;part.h" alt="" coords="59,445,205,471"/>
-<area shape="rect" id="node47" href="$gtest-typed-test_8h_source.html" title="gtest/gtest&#45;typed&#45;test.h" alt="" coords="1704,534,1861,561"/>
-<area shape="rect" id="node48" href="$gtest__pred__impl_8h_source.html" title="gtest/gtest_pred_impl.h" alt="" coords="1755,184,1914,211"/>
-<area shape="rect" id="node7" href="$gtest-port_8h_source.html" title="gtest/internal/gtest\l&#45;port.h" alt="" coords="1515,795,1645,836"/>
-<area shape="rect" id="node33" href="$gtest-filepath_8h_source.html" title="gtest/internal/gtest\l&#45;filepath.h" alt="" coords="829,616,960,657"/>
-<area shape="rect" id="node34" href="$gtest-type-util_8h_source.html" title="gtest/internal/gtest\l&#45;type&#45;util.h" alt="" coords="1629,616,1760,657"/>
-<area shape="rect" id="node20" href="$gtest-port-arch_8h_source.html" title="gtest/internal/gtest\l&#45;port&#45;arch.h" alt="" coords="1743,884,1873,925"/>
-<area shape="rect" id="node21" href="$custom_2gtest-port_8h_source.html" title="gtest/internal/custom\l/gtest&#45;port.h" alt="" coords="792,884,936,925"/>
-<area shape="rect" id="node26" href="$gtest-tuple_8h_source.html" title="gtest/internal/gtest\l&#45;tuple.h" alt="" coords="1948,884,2079,925"/>
-<area shape="rect" id="node36" href="$gtest-death-test-internal_8h_source.html" title="gtest/internal/gtest\l&#45;death&#45;test&#45;internal.h" alt="" coords="280,437,421,479"/>
-<area shape="rect" id="node38" href="$gtest-param-util_8h_source.html" title="gtest/internal/gtest\l&#45;param&#45;util.h" alt="" coords="1833,348,1964,389"/>
-<area shape="rect" id="node43" href="$gtest-param-util-generated_8h_source.html" title="gtest/internal/gtest\l&#45;param&#45;util&#45;generated.h" alt="" coords="1941,259,2096,300"/>
-<area shape="rect" id="node40" href="$gtest-linked__ptr_8h_source.html" title="gtest/internal/gtest\l&#45;linked_ptr.h" alt="" coords="2047,705,2177,747"/>
-<area shape="rect" id="node42" href="$internal_2custom_2gtest-printers_8h_source.html" title="gtest/internal/custom\l/gtest&#45;printers.h" alt="" coords="1195,527,1339,568"/>
+<map id="/home/markose/ackermann_phase_2/ackermann_controller/test/inversekinematics_test.cpp" name="/home/markose/ackermann_phase_2/ackermann_controller/test/inversekinematics_test.cpp">
+<area shape="rect" id="node2" href="$gtest_8h_source.html" title="gtest/gtest.h" alt="" coords="1357,109,1452,136"/>
+<area shape="rect" id="node48" href="$inversekinematics_8hpp.html" title="This class uses the Ackermann method to calculte the headings and speed for each of the front wheels ..." alt="" coords="2405,713,2615,739"/>
+<area shape="rect" id="node49" href="$robot_8hpp.html" title="This class contains all the physical parametes of the robot as well and stores the heading and speed ..." alt="" coords="2639,802,2773,829"/>
+<area shape="rect" id="node6" href="$gtest-internal_8h_source.html" title="gtest/internal/gtest\l&#45;internal.h" alt="" coords="786,527,917,568"/>
+<area shape="rect" id="node31" href="$gtest-message_8h_source.html" title="gtest/gtest&#45;message.h" alt="" coords="991,623,1143,650"/>
+<area shape="rect" id="node32" href="$gtest-string_8h_source.html" title="gtest/internal/gtest\l&#45;string.h" alt="" coords="889,705,1019,747"/>
+<area shape="rect" id="node35" href="$gtest-death-test_8h_source.html" title="gtest/gtest&#45;death&#45;test.h" alt="" coords="46,266,203,293"/>
+<area shape="rect" id="node37" href="$gtest-param-test_8h_source.html" title="gtest/gtest&#45;param&#45;test.h" alt="" coords="949,184,1111,211"/>
+<area shape="rect" id="node40" href="$gtest-printers_8h_source.html" title="gtest/gtest&#45;printers.h" alt="" coords="1772,445,1915,471"/>
+<area shape="rect" id="node43" href="$gtest__prod_8h_source.html" title="gtest/gtest_prod.h" alt="" coords="1215,184,1341,211"/>
+<area shape="rect" id="node44" href="$gtest-test-part_8h_source.html" title="gtest/gtest&#45;test&#45;part.h" alt="" coords="1319,445,1466,471"/>
+<area shape="rect" id="node46" href="$gtest-typed-test_8h_source.html" title="gtest/gtest&#45;typed&#45;test.h" alt="" coords="1573,534,1730,561"/>
+<area shape="rect" id="node47" href="$gtest__pred__impl_8h_source.html" title="gtest/gtest_pred_impl.h" alt="" coords="1468,184,1627,211"/>
+<area shape="rect" id="node7" href="$gtest-port_8h_source.html" title="gtest/internal/gtest\l&#45;port.h" alt="" coords="1318,795,1449,836"/>
+<area shape="rect" id="node33" href="$gtest-filepath_8h_source.html" title="gtest/internal/gtest\l&#45;filepath.h" alt="" coords="786,616,917,657"/>
+<area shape="rect" id="node34" href="$gtest-type-util_8h_source.html" title="gtest/internal/gtest\l&#45;type&#45;util.h" alt="" coords="1573,616,1703,657"/>
+<area shape="rect" id="node20" href="$gtest-port-arch_8h_source.html" title="gtest/internal/gtest\l&#45;port&#45;arch.h" alt="" coords="1674,884,1805,925"/>
+<area shape="rect" id="node21" href="$custom_2gtest-port_8h_source.html" title="gtest/internal/custom\l/gtest&#45;port.h" alt="" coords="635,884,779,925"/>
+<area shape="rect" id="node26" href="$gtest-tuple_8h_source.html" title="gtest/internal/gtest\l&#45;tuple.h" alt="" coords="1829,884,1959,925"/>
+<area shape="rect" id="node36" href="$gtest-death-test-internal_8h_source.html" title="gtest/internal/gtest\l&#45;death&#45;test&#45;internal.h" alt="" coords="54,437,195,479"/>
+<area shape="rect" id="node38" href="$gtest-param-util_8h_source.html" title="gtest/internal/gtest\l&#45;param&#45;util.h" alt="" coords="957,348,1087,389"/>
+<area shape="rect" id="node42" href="$gtest-param-util-generated_8h_source.html" title="gtest/internal/gtest\l&#45;param&#45;util&#45;generated.h" alt="" coords="1039,259,1194,300"/>
+<area shape="rect" id="node41" href="$internal_2custom_2gtest-printers_8h_source.html" title="gtest/internal/custom\l/gtest&#45;printers.h" alt="" coords="1906,527,2050,568"/>
+<area shape="rect" id="node50" href="$sensor_8hpp.html" title="This is where the actual sensors of the robot will be added to. For now this class stores the actual ..." alt="" coords="2421,802,2564,829"/>
 </map>

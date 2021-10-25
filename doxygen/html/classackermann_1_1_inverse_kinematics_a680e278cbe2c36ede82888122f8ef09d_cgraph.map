@@ -1,0 +1,4 @@
+<map id="ackermann::InverseKinematics::calculateWheelHeadings" name="ackermann::InverseKinematics::calculateWheelHeadings">
+<area shape="rect" id="node2" href="$classackermann_1_1_robot.html#ab5793ef2defb20c5cf269c42b6ee48c3" title="Getter function to get the track length of the robot. " alt="" coords="273,5,461,47"/>
+<area shape="rect" id="node3" href="$classackermann_1_1_robot.html#a66552db3c1cb519e6a52edb35d755f9e" title="Getter function to get the wheel base of the robot. " alt="" coords="256,71,479,98"/>
+</map>
