@@ -170,30 +170,19 @@ class Robot {
     double xr = 0;     // x2-coordinate of Robot in global frame
     double yr = -2;    // y2-coordinate of Robot in global frame
 
+    Robot();
     /**
     * @brief Construct a new Robot object
     * 
     */
-    Robot(double track_length = 2, double wheel_base = 4,
-    double wheel_radius = 0.3,
-        double inner_wheel_heading = 0, double outer_wheel_heading = 0,
-        double inner_wheel_speed = 0, double outer_wheel_speed = 0,
-        double inner_wheel_rps = 0,
-        double outer_wheel_rps = 0, double theta_max = 45,
-        double rps_max = 16.667,
-        double theta_inc_per_sec_max = 15, double rps_incr_per_sec_max = 1) :
-
-        track_length_{track_length}, wheel_base_{wheel_base},
-        wheel_radius_{wheel_radius},
-        inner_wheel_heading_{inner_wheel_heading},
-        outer_wheel_heading_{outer_wheel_heading},
-        inner_wheel_speed_{inner_wheel_speed},
-        outer_wheel_speed_{outer_wheel_speed},
-        inner_wheel_rps_{inner_wheel_rps}, outer_wheel_rps_{outer_wheel_rps},
-        theta_max_{theta_max}, rps_max_{rps_max},
-        theta_inc_per_sec_max_{theta_inc_per_sec_max},
-        rps_incr_per_sec_max_{rps_incr_per_sec_max} {
-        };
+    Robot(double track_length, double wheel_base,
+    double wheel_radius,
+        double inner_wheel_heading, double outer_wheel_heading ,
+        double inner_wheel_speed, double outer_wheel_speed,
+        double inner_wheel_rps,
+        double outer_wheel_rps, double theta_max,
+        double rps_max,
+        double theta_inc_per_sec_max, double rps_incr_per_sec_max);
 
     /**
     * @brief Destroy the Robot object
