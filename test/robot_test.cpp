@@ -80,14 +80,7 @@ TEST(test_robotkinematics_7, check_get_wheel_radius)
   EXPECT_EQ(rk.getWheelRadius(), 7);
 }
 
-/**
- * @brief Testing getter turing_radius
- * @return none
- **/
-TEST(test_robotkinematics_8, check_get_turning_radius)
-{
-  EXPECT_EQ(rk.getTurningRadius(), 8);
-}
+
 
 /**
  * @brief Testing getter theata_max

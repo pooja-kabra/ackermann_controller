@@ -10,7 +10,7 @@
 #include "../include/robot.hpp"
 
 /**
- * @brief Get the Track length of the Robot 
+ * @brief Get the Track length of the Robot in meters
  * 
  * @return double
  */
@@ -20,7 +20,7 @@ double ackermann::Robot::getTrackLength()
 }
 
 /**
- * @brief Get the Wheel Base of the Robot
+ * @brief Get the Wheel Base of the Robot in meters
  *      
  * @return double
  */
@@ -30,7 +30,7 @@ double ackermann::Robot::getWheelBase()
 }
 
 /**
- * @brief Get the radius for wheels of the Robot
+ * @brief Get the radius for wheels of the Robot in meters
  * 
  * @return double
  */
@@ -40,17 +40,7 @@ double ackermann::Robot::getWheelRadius()
 }
 
 /**
- * @brief Get the desired turning radius
- * 
- * @return double
- */
-double ackermann::Robot::getTurningRadius()
-{
-    return turning_radius_;
-}
-
-/**
- * @brief Get the inner wheel angle with respect to robot axis
+ * @brief Get the inner wheel angle with respect to robot longitudinal axis in degrees
  * 
  * @return double
  */
@@ -60,7 +50,7 @@ double ackermann::Robot::getInnerWheelHeading()
 }
 
 /**
- * @brief Get the outer wheel angle with respect to robot axis
+ * @brief Get the outer wheel angle with respect to robot longitudinal axis in degrees
  * 
  * @return double
  */
@@ -70,7 +60,7 @@ double ackermann::Robot::getOuterWheelHeading()
 }
 
 /**
- * @brief Get angular speed of inner wheel
+ * @brief Get linear speed of inner wheel in m/s
  * 
  * @return double
  */
@@ -80,7 +70,7 @@ double ackermann::Robot::getInnerWheelSpeed()
 }
 
 /**
- * @brief Get angular speed of outer wheel
+ * @brief Get linear speed of outer wheel in m/s
  * 
  * @return double
  */
@@ -110,7 +100,7 @@ double ackermann::Robot::getOuterWheelRps()
 }
 
 /**
- * @brief Get the maximum angle wheel can turn with respect to robot axis in degrees
+ * @brief Get the maximum angle wheel can turn with respect to robot longitudinal axis in degrees
  * 
  * @return double
  */
@@ -150,7 +140,7 @@ double ackermann::Robot::getRpsIncrPerSecMax()
 }
 
 /**
- * @brief Set the inner wheel angular velocity
+ * @brief Set the inner wheel angular velocity in rps
  *    
  * @param double
  */
@@ -160,7 +150,7 @@ void ackermann::Robot::setInnerWheelRps(double inner_wheel_rps)
 }
 
 /**
- * @brief Set the outer wheel angular velocity
+ * @brief Set the outer wheel angular velocity in rps
  *    
  * @param double
  */
@@ -170,7 +160,7 @@ void ackermann::Robot::setOuterWheelRps(double outer_wheel_rps)
 }
 
 /**
- * @brief Set the inner wheel angle with respect to robot axis
+ * @brief Set the inner wheel angle with respect to longitudinal axis in degrees 
  *    
  * @param double
  */
@@ -180,7 +170,7 @@ void ackermann::Robot::setInnerWheelHeading(double inner_wheel_heading)
 }
 
 /**
- * @brief Set the outer wheel angle with respect to robot axis
+ * @brief Set the outer wheel angle with respect to longitudinal axis in degrees
  *
  * @param double
  */
@@ -190,7 +180,7 @@ void ackermann::Robot::setOuterWheelHeading(double outer_wheel_heading)
 }
 
 /**
- * @brief Set the angular speed of inner wheel
+ * @brief Set the linear speed of inner wheel in m/s
  *      
  * @param double
  */
@@ -200,7 +190,7 @@ void ackermann::Robot::setInnerWheelSpeed(double inner_wheel_speed)
 }
 
 /**
- * @brief Set the angular speed of outer wheel
+ * @brief Set the linear speed of outer wheel in m/s
  *      
  * @param double
  */

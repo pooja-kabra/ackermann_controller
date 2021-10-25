@@ -22,62 +22,60 @@ namespace ackermann
  * @brief controller class
  * 
  */
-    class Controller
-    {
-    public:
+class Controller {
+ public:
         /**
-     * @brief Getters and setters for the desired heading angle of the robot in the robot frame and 
-     *        desired linear speed of the robot
-     * 
-     */
+         * @brief Getters and setters for the desired heading angle of the robot in the robot frame and 
+         *        desired linear speed of the robot
+         * 
+         */
         void setGoalHeading(double goalHeading);
         void setGoalSpeed(double goalSpeed);
         double getGoalHeading();
         double getGoalSpeed();
+        /**
+         * @brief solves for convergence
+         * 
+         * @param sen sensor
+         */
         void solve(Sensor &sen);
 
         Robot car;
-        // Sensor sensor;
         ForwardKinematics fk;
         InverseKinematics ik;
         char direction;
-        
+        Controller() {}
 
-        Controller(){};
-       
-
-        /**
+    /**
      * @brief Create an object of the controller class
      */
-        Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step, Robot robo, ForwardKinematics forkin, InverseKinematics inkin, char dir)
-        {
-            goal_heading_ = goal_heading;
-            goal_speed_ = goal_speed;
-            kp_ = kp;
-            ki_ = ki;
-            kd_ = kd;
-            time_step_ = time_step;
-            car = robo;
-            // sensor = sen;
-            fk = forkin;
-            ik = inkin;
-            direction = dir;
-        };
+    Controller(double goal_heading, double goal_speed, double kp, double ki, double kd, double time_step,
+                                Robot robo, ForwardKinematics forkin, InverseKinematics inkin, char dir) {
+        goal_heading_ = goal_heading;
+        goal_speed_ = goal_speed;
+        kp_ = kp;
+        ki_ = ki;
+        kd_ = kd;
+        time_step_ = time_step;
+        car = robo;
+        fk = forkin;  // forward kinematics object for the robot
+        ik = inkin;   // inverse kinematics object for the robot
+        direction = dir;
+    }
 
-        /**
+    /**
      * @brief Destroys an object of the controller class
      */
-        ~Controller()
-        {
-            // std::cout << "Destructor for Controller class called" << std::endl;
-        }
+    ~Controller() {
+        // std::cout << "Destructor for Controller class called" << std::endl;
+     }
 
-    private:
-        double goal_heading_; // desired heading angle of the robot in the robot frame
-        double goal_speed_;   // desired linear speed of the robot
-        double kp_;           // integral gain
-        double ki_;           // proportional gain
-        double kd_;
-        double time_step_;
-    };
-} // namespace ackermann
+ private:
+    double goal_heading_;  // desired heading angle of the robot in the robot frame
+    double goal_speed_;    // desired linear speed of the robot
+    double kp_;            // integral gain
+    double ki_;            // proportional gain
+    double kd_;            // derivative gain
+    double time_step_;     // in sec
+};
+}  // namespace ackermann

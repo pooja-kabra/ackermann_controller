@@ -13,14 +13,14 @@
  * @brief This method makes the output heading angle of the robot in the robot frame
  *        and its linear speed converge to goal values
  *
- * @param double
+ * @param sen sensor
  */
 void ackermann::Controller::solve(Sensor &sen) {
-    bool flag1 = true;
-    bool flag2 = true;
+    bool flag_h = true;  // flag for global heading
+    bool flag_s = true;  // flag for global speed
     char direction = 'u';
-    double pid_heading, pid_speed, cumilative_error_heading,
-    cumilative_error_speed, pre_error_heading, pre_error_speed, i;
+    double pid_heading, pid_speed, cumilative_error_heading,         // pid variables
+    cumilative_error_speed, pre_error_heading, pre_error_speed, i;   // and iteration counter
     pid_heading = 0;
     pid_speed = 0;
     cumilative_error_speed = 0;
@@ -29,26 +29,18 @@ void ackermann::Controller::solve(Sensor &sen) {
     pre_error_heading = 0;
     i = 0;
 
-    while ((flag1 == true) || (flag2 == true)) {
-        // if (i > 5) {
-        //     break;
-        // }
-        i = i + 1;
-        std::cout << "\n"
-                  << std::endl;
-        std::cout << "iteration - " << i << std::endl;
+    while ((flag_h == true) || (flag_s == true)) {  // flag is true indicates not converged
+        std::cout << "\n\n------------Iteration " << i << "------------------------" << std::endl;
         pid_heading = 0;
         pid_speed = 0;
 
-        // Calculating error
-        fk.setHeadingError(fk.calculateHeadingError(goal_heading_,
-        sen.getActualHeading()));
-        std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
-        fk.setSpeedError(fk.calculateSpeedError(goal_speed_,
-        sen.getActualSpeed()));
-        std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
+        /* Calculating error */
+        fk.setHeadingError(fk.calculateHeadingError(goal_heading_, sen.getActualHeading()));
+        std::cout << "Error in heading(deg): " << fk.getHeadingError() << std::endl;
+        fk.setSpeedError(fk.calculateSpeedError(goal_speed_, sen.getActualSpeed()));
+        std::cout  << "Error in speed(m/s): " << fk.getSpeedError() << std::endl;
 
-        // Checking if its a left or right turn
+        /* Checking turn */
         if (fk.getHeadingError() > 0) {
             direction = 'l';
         } else if (fk.getHeadingError() < 0) {
@@ -58,32 +50,31 @@ void ackermann::Controller::solve(Sensor &sen) {
         }
 
         if (fk.getHeadingError() < 0.8 && fk.getHeadingError() > -0.8) {
-        // if (fk.getHeadingError() < 0.2) {
-            std::cout << "Heading error threshold reached. Done!" << std::endl;
-            flag1 = false;
+            std::cout << "HEADING ERROR WITHIN THRESHHOLD ... HEADING CONVERGED." << std::endl;
+            flag_h = false;
         }
         if (fk.getSpeedError() < 0.10 && fk.getSpeedError() > -0.10) {
-            std::cout << "speed error threshold reached. Done!" << std::endl;
-            flag2 = false;
+            std::cout << "SPEED ERROR WITHIN THRESHHOLD ... SPEED CONVERGED." << std::endl;
+            flag_s = false;
         }
 
-        // Calculating PID output for heading
-        if (flag1 == true) {
+        /* Calculating PID output for heading */
+        if (flag_h == true) {
             cumilative_error_heading += fk.getHeadingError();
             pid_heading = kp_ * (fk.getHeadingError()) +
-            cumilative_error_heading * ki_ + (fk.getHeadingError()
-            - pre_error_heading) * kd_;
+            cumilative_error_heading * ki_ + (fk.getHeadingError()- pre_error_heading) * kd_;
             pre_error_heading = fk.getHeadingError();
         }
 
-        // Calculating PID output for speed
-        if (flag2 == true) {
+        /* Calculating PID output for speed */
+        if (flag_s == true) {
             cumilative_error_speed += fk.getSpeedError();
-            pid_speed = kp_ * (fk.getSpeedError()) + cumilative_error_speed
-            * ki_ + (fk.getSpeedError() - pre_error_speed) * kd_;
+            pid_speed = kp_ * (fk.getSpeedError()) +
+            cumilative_error_speed * ki_ + (fk.getSpeedError() - pre_error_speed) * kd_;
             pre_error_speed = fk.getSpeedError();
         }
 
+        /* Calling IK to find heading for each of the front wheels */
         double head_inner_increment;
         double head_outer_increment;
 
@@ -92,30 +83,31 @@ void ackermann::Controller::solve(Sensor &sen) {
                             direction, car);
         head_inner_increment = head_res_increment.inner;
         head_outer_increment = head_res_increment.outer;
-        std::cout << "inner heading increment is: " << head_inner_increment <<
-                  " and " << "outer heading increment is: "
-                  << head_outer_increment << std::endl;
+        std::cout << "Inner heading increment(deg): " << head_inner_increment <<
+          " and " << "outer heading increment(deg): "<< head_outer_increment << std::endl;
 
+        /* Calling IK to find speed for each of the front wheels */
         double spd_inner_increment;
         double spd_outer_increment;
-        ackermann::InverseKinematics::speed spd_res_increment;
 
-        // Calculating IK to find speed for each of the front wheels
+        ackermann::InverseKinematics::speed spd_res_increment;
         spd_res_increment = ik.calculateWheelSpeeds(pid_heading, pid_speed,
         time_step_, direction, car);
         spd_inner_increment = spd_res_increment.inner_speed;
         spd_outer_increment = spd_res_increment.outer_speed;
-        std::cout << "inner speed increment is: " << spd_inner_increment <<
-                  " and " << "outer speed increment is: "
-                  << spd_outer_increment << std::endl;
+        std::cout << "Inner speed increment(m/s): " << spd_inner_increment <<
+          " and " << "Outer speed increment(m/s): " << spd_outer_increment << std::endl;
 
+        /* Calling IK to update sensor for new global heading and speed */
         ik.calculateNewRobotHeadingandSpeed(head_inner_increment,
         head_outer_increment, sen, car, time_step_);
+
+        i = i + 1;
     }
 }
 
 /**
- * @brief Set the desired heading angle of the robot in the robot frame
+ * @brief Set the desired heading angle of the robot in the global frame
  *
  * @param double
  */
@@ -133,7 +125,7 @@ void ackermann::Controller::setGoalSpeed(double goal_speed) {
 }
 
 /**
- * @brief Get the desired heading angle of the robot in the robot frame
+ * @brief Get the desired heading angle of the robot in the global frame
  *
  * 
  * @return double

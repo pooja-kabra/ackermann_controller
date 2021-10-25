@@ -2,7 +2,7 @@
  * @file sensor.cpp
  * @author Markose Jacob, Pooja Kabra
  * @brief This file defines the sensor that senses the Robot's 
- *        heading in the robot frame and linear speed
+ *        heading and linear speed in global frame
  * @version 0.1
  * @date 2021-10-16
  * 
