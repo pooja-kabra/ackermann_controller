@@ -28,13 +28,13 @@ script:
   - export CXX=$COMPILER;
   - mkdir build
   - cd build
-  - cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../
+  - cmake -DCOVERAGE=ON -DCMAKE_BUILD_TYPE=Debug ../ 
   - make
   - make code_coverage
   - test/cpp-test
 
 after_success:
-  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"  -E ".*app/main.cpp.*" -E ".*app/supportLib.cpp.*" -E ".*include/supportLib.hpp.*" -E ".*app/pbPlots.cpp.*" -E ".*include/pbPlots.hpp.*"
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"  -E ".*app/main.cpp" -E ".*app/supportLib.cpp" -E ".*include/supportLib.hpp" -E ".*app/pbPlots.cpp" -E ".*include/pbPlots.hpp"
 
 notifications:
   email: false
