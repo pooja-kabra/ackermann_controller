@@ -26,7 +26,6 @@ class Robot {
         double getTrackLength();
         double getWheelBase();
         double getWheelRadius();
-        double getTurningRadius();
         double getInnerWheelHeading();
         void setInnerWheelHeading(double inner_wheel_heading);
         double getOuterWheelHeading();

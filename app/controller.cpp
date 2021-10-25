@@ -74,7 +74,7 @@ void ackermann::Controller::solve(Sensor &sen) {
             cumilative_error_speed * ki_ + (fk.getSpeedError() - pre_error_speed) * kd_;
             pre_error_speed = fk.getSpeedError();
         }
-
+        
         /* Calling IK to find heading for each of the front wheels */
         double head_inner_increment;
         double head_outer_increment;

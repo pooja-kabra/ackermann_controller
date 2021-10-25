@@ -12,8 +12,6 @@
 
 ackermann::ForwardKinematics fk;
 
-// need to write test case for solve method
-
 /**
  * @brief Testing getters and setters for heading_error
  * @return none

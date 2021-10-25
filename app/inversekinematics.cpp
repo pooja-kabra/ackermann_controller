@@ -90,7 +90,8 @@ ackermann::InverseKinematics::calculateWheelHeadings(double actual_heading, doub
     headings head;
     head.inner = inner_inc;
     head.outer = outer_inc;
-
+    std::cout << "Inner wheel heading inc(deg): " << inner_inc << std::endl;
+    std::cout << "Outer wheel heading inc(deg): " << outer_inc << std::endl;
     return head;
 }
 
@@ -172,6 +173,8 @@ ackermann::InverseKinematics::calculateWheelSpeeds(double actual_heading, double
     spd.inner_speed = iws_inc;
     spd.outer_speed = ows_inc;
 
+    std::cout << "Inner wheel speed inc(deg): " << iws_inc << std::endl;
+    std::cout << "Outer wheel speed inc(deg): " << ows_inc << std::endl;
     return spd;
 }
 

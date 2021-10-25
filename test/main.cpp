@@ -8,9 +8,9 @@
  **/
 
 #include <gtest/gtest.h>
-
-int main(int argc, char **argv)
-{
+#define TEST
+int main(int argc, char **argv) {
+  std::cout.setstate(std::ios_base::failbit);
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
