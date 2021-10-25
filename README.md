@@ -55,6 +55,9 @@ Output : inner wheel heading : 52.5
 <p align="center">
   <img  height="500" src="images/actual heading(deg) vs time(ms).png">
 </p>
+<p align="center">
+  <img  height="500" src="images/actual speed(meter per sec) vs time(ms).png">
+</p>
 
 Case 2:
 User input : target heading = 70
@@ -67,6 +70,13 @@ Output : inner wheel heading : 39
 	 Actual heading of robot is : 71.3576
 	 Actual speed of robot is : 8.08352
 
+<p align="center">
+  <img  height="500" src="images/case_2_actual heading(deg) vs time(ms).png">
+</p>
+<p align="center">
+  <img  height="500" src="images/case_2_actual speed(meter per sec) vs time(ms).png">
+</p>
+
 Case 3:
 User input : target heading = 80
 	     target speed = 9
@@ -77,6 +87,13 @@ Output : inner wheel heading : 43.5
 	 Outer linear speed : 9.50019
 	 Actual heading of robot is : 79.6783
 	 Actual speed of robot is : 9.0369
+
+<p align="center">
+  <img  height="500" src="images/case_3_actual heading(deg) vs time(ms).png">
+</p>
+<p align="center">
+  <img  height="500" src="images/case_3_actual speed(meter per sec) vs time(ms).png">
+</p>
 
 
 
