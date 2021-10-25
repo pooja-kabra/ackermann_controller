@@ -43,6 +43,41 @@ System Output: inner wheel linear speed(m/s), outer wheel linear speed(m/s), inn
 7. Maximum acceleration possible is 1 m/s^2
 8. Robot cannot go in reverse
 
+## Results
+Case 1: 
+User input : target heading = 90
+	     target speed = 10
+
+Output : inner wheel heading : 52.5
+	 outer wheel heading : 47.2444
+	 Inner linear speed : 9.48192
+	 Outer linear speed : 10.5002
+	 Actual heading of robot is : 89.7774
+	 Actual speed of robot is : 9.99107
+
+Case 2:
+User input : target heading = 70
+	     target speed = 8
+
+Output : inner wheel heading : 39
+	 outer wheel heading : 35.0959
+	 Inner linear speed : 7.66687
+	 Outer linear speed : 8.50017
+	 Actual heading of robot is : 71.3576
+	 Actual speed of robot is : 8.08352
+
+Case 3:
+User input : target heading = 80
+	     target speed = 9
+
+Output : inner wheel heading : 43.5
+	 outer wheel heading : 39.1454
+	 Inner linear speed : 8.5736
+	 Outer linear speed : 9.50019
+	 Actual heading of robot is : 79.6783
+	 Actual speed of robot is : 9.0369
+
+
 
 ## API Google spread sheet
 https://docs.google.com/spreadsheets/d/1yhOUowKENOIwfs4re1dwxyGSYlhCP-KEqHWIA955CD0/edit#gid=0

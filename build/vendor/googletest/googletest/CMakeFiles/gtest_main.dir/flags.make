@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -Wpedantic -g   -Wall -Wextra -Wpedantic -g -Wall -Wsh
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/poo/808x/ackermann_controller/vendor/googletest/googletest/include -I/home/poo/808x/ackermann_controller/vendor/googletest/googletest 
+CXX_INCLUDES = -I/home/markose/ackermann_phase_2/ackermann_controller/vendor/googletest/googletest/include -I/home/markose/ackermann_phase_2/ackermann_controller/vendor/googletest/googletest 
 
