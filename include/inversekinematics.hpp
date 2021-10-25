@@ -100,7 +100,7 @@ class InverseKinematics {
     /**
      * @brief Constructor for InverseKinematics class
      */
-    explicit InverseKinematics(double desired_heading = 0,
+    InverseKinematics(double desired_heading = 0,
     double desired_speed = 0) :
     desired_heading_{desired_heading}, desired_speed_{desired_speed} {
     }

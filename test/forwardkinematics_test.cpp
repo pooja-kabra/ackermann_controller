@@ -28,6 +28,8 @@ TEST(test_forwardKinematics_1, check_set_heading_error)
  **/
 TEST(test_forwardKinematics_2, check_set_speed_error)
 {
-  fk.setSpeedError(27.54);
-  EXPECT_EQ(fk.getSpeedError(), 27.54);
+  ackermann::ForwardKinematics* fk = new ackermann::ForwardKinematics(0, 0);
+  fk->setSpeedError(27.54);
+  EXPECT_EQ(fk->getSpeedError(), 27.54);
+  delete fk;
 }

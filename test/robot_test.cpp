@@ -144,4 +144,5 @@ TEST(test_robot_13, check_get_rps_increase_per_second_max)
 {
   ackermann::Robot* rk = new ackermann::Robot(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0);
   EXPECT_EQ(rk->getRpsIncrPerSecMax(), 13.0);
+  delete rk;
 }

@@ -68,7 +68,7 @@ class ForwardKinematics {
    /**
     * @brief Constructor for ForwardKinematics class
     */
-    explicit ForwardKinematics(double heading_error = 0,
+    ForwardKinematics(double heading_error = 0,
     double speed_error = 0) : heading_error_{heading_error},
     speed_error_{speed_error} {
     }

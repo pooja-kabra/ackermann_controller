@@ -64,7 +64,7 @@ class Sensor {
     /**
      * @brief Constructor for Sensor class
      */
-    explicit Sensor(double actualHeading = 1, double actualSpeed = 1):
+    Sensor(double actualHeading = 1, double actualSpeed = 1):
     actual_heading_{actualHeading}, actual_speed_{actualSpeed} {
     };
 
