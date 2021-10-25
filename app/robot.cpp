@@ -29,7 +29,6 @@ ackermann::Robot::Robot() {
     rps_max_ = 16.667;
     theta_inc_per_sec_max_ = 15;
     rps_incr_per_sec_max_ = 1;
-
 }
 
 /**
@@ -125,8 +124,7 @@ double ackermann::Robot::getOuterWheelSpeed() {
  * 
  * @return double
  */
-double ackermann::Robot::getInnerWheelRps()
-{
+double ackermann::Robot::getInnerWheelRps() {
     return inner_wheel_rps_;
 }
 

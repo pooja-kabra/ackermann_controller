@@ -47,7 +47,8 @@ int main() {
     ackermann::ForwardKinematics forkin(0, 0);  // fk
     ackermann::InverseKinematics inkin(goal_heading, goal_speed);  // ik
 
-    // controller - goal_heading, goal_speed, kp, ki, kd, time step, robot, fk, ik, turn direction
+    // controller - goal_heading, goal_speed, kp, ki, kd, time step, robot,
+    // fk, ik, turn direction
     ackermann::Controller control(goal_heading, goal_speed, 0.5, 0.1, 0.1,
                                             0.1, robo, forkin, inkin, 's');
 

@@ -93,7 +93,7 @@ void ackermann::Controller::solve(Sensor &sen) {
             pre_error_speed) * kd_;
             pre_error_speed = fk.getSpeedError();
         }
-        
+
         /* Calling IK to find heading for each of the front wheels */
         ackermann::InverseKinematics::headings head_res_increment;
         head_res_increment = ik.calculateWheelHeadings(pid_heading, time_step_,
