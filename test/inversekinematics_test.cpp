@@ -24,6 +24,7 @@ TEST(test_inverseKinematics_1, check_calculated_wheel_angles)
   head_res_increment = ik.calculateWheelHeadings(59.3438, 0.1, 'l', robot);
   EXPECT_NEAR(head_res_increment.inner, 1.5, 0.1);
   EXPECT_NEAR(head_res_increment.outer, 1.34984, 0.1);
+
 }
 
 /**
@@ -46,7 +47,10 @@ TEST(test_inverseKinematics_3, check_new_robot_heading_and_speed)
 {
   ackermann::Robot robot(2, 4, 0.3, 2.69968, 2.69968, 0.899961, 1.00002, 2.99987, 3.3334, 45, 16.667, 15, 1);
   ackermann::Sensor sensor(0.223182, 0.474988);
-  ik.calculateNewRobotHeadingandSpeed(1.5, 1.34984, sensor, robot, 0.1);
+  ackermann::InverseKinematics* ik = new ackermann::InverseKinematics(59.3438, 7.36751);
+  ik->calculateNewRobotHeadingandSpeed(1.5, 1.34984, sensor, robot, 0.1);
   EXPECT_NEAR(sensor.getActualHeading(), 0.447228, 0.1);
   EXPECT_NEAR(sensor.getActualSpeed(), 0.94999, 0.1);
+
+  delete ik;
 }

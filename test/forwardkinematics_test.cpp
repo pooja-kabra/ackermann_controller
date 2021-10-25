@@ -10,7 +10,7 @@
 #include <gtest/gtest.h>
 #include "../include/forwardkinematics.hpp"
 
-ackermann::ForwardKinematics fk;
+ackermann::ForwardKinematics fk(0, 0);
 
 /**
  * @brief Testing getters and setters for heading_error
