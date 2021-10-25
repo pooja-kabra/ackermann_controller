@@ -39,7 +39,9 @@ int main() {
     ackermann::ForwardKinematics forkin(0, 0);
     ackermann::InverseKinematics inkin(goal_heading, goal_speed);
     ackermann::Controller control(goal_heading, goal_speed, 0.5, 0.1, 0.1,
-    0.1, robo, sen, forkin, inkin);
+    0.1, robo, sen, forkin, inkin, 's');
+    control.setGoalHeading(goal_heading);
+    control.setGoalSpeed(goal_speed);
     std::cout << "\n \n" << std::endl;
     control.solve();
     std::cout << "\n \n" << std::endl;
