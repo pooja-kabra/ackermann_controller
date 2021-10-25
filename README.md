@@ -3,8 +3,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/markosej11/ackermann_controller/badge.svg?branch=main)](https://coveralls.io/github/markosej11/ackermann_controller?branch=main)
 
 # Authors
-Markose Jacob - markj11@terpmail.umd.edu
-Pooja Kabra - pkabra@umd.edu
+Markose Jacob - markj11@terpmail.umd.edu (Graduate Student in Robotics at the University of Maryland College Park, Dec 2021)
+Pooja Kabra - pkabra@umd.edu (Graduate Student in Robotics at the University of Maryland College Park, May 2022)
 
 # License
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -95,7 +95,9 @@ Output : inner wheel heading : 43.5
   <img  height="500" src="images/case_3_actual speed(meter per sec) vs time(ms).png">
 </p>
 
-
+# Known issues
+1. Does not work well for right turns
+2. works only when the robot is facing has zero speed and heading
 
 # API Google spread sheet
 https://docs.google.com/spreadsheets/d/1yhOUowKENOIwfs4re1dwxyGSYlhCP-KEqHWIA955CD0/edit#gid=0
@@ -103,19 +105,27 @@ https://docs.google.com/spreadsheets/d/1yhOUowKENOIwfs4re1dwxyGSYlhCP-KEqHWIA955
 # Sprint notes 
 https://docs.google.com/document/d/1CDC3BQAcqqWPXwyzGGFP_2MjMRhd2xdqWWC8LeXDoHQ/edit
 
-# Standard install via command-line
-```
+# How to build
+'''
 git clone --recursive https://github.com/pooja-kabra/ackermann_controller/tree/second_phase
 cd <path to repository>
 mkdir build
 cd build
 cmake ..
 make
-Run tests: ./test/cpp-test
-Run program: ./app/shell-app
-```
+'''
 
-# Running instructions
+# How to run tests
+'''
+cd build
+./test/cpp-test
+'''
+
+# How to run demo
+'''
+cd build
+./app/shell--app
+'''
 Enter the target heading in degrees. To turn left enter +ve rotation in degrees and for right turn enter -ve rotation in degrees
 Enter the target speed in m/s
 
