@@ -1,4 +1,4 @@
-# Install script for directory: /home/poo/808x/ackermann_controller
+# Install script for directory: /home/markose/ackermann_phase_2/ackermann_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/poo/808x/ackermann_controller/build/app/cmake_install.cmake")
-  include("/home/poo/808x/ackermann_controller/build/test/cmake_install.cmake")
-  include("/home/poo/808x/ackermann_controller/build/vendor/googletest/googletest/cmake_install.cmake")
+  include("/home/markose/ackermann_phase_2/ackermann_controller/build/app/cmake_install.cmake")
+  include("/home/markose/ackermann_phase_2/ackermann_controller/build/test/cmake_install.cmake")
+  include("/home/markose/ackermann_phase_2/ackermann_controller/build/vendor/googletest/googletest/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/poo/808x/ackermann_controller/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/markose/ackermann_phase_2/ackermann_controller/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

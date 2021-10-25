@@ -43,10 +43,10 @@ void ackermann::Controller::solve(Sensor &sen) {
         // Calculating error
         fk.setHeadingError(fk.calculateHeadingError(goal_heading_,
         sen.getActualHeading()));
-        std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
+        // std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
         fk.setSpeedError(fk.calculateSpeedError(goal_speed_,
         sen.getActualSpeed()));
-        std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
+        // std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
 
         // Checking if its a left or right turn
         if (fk.getHeadingError() > 0) {
@@ -59,11 +59,11 @@ void ackermann::Controller::solve(Sensor &sen) {
 
         if (fk.getHeadingError() < 0.8 && fk.getHeadingError() > -0.8) {
         // if (fk.getHeadingError() < 0.2) {
-            std::cout << "Heading error threshold reached. Done!" << std::endl;
+            // std::cout << "Heading error threshold reached. Done!" << std::endl;
             flag1 = false;
         }
         if (fk.getSpeedError() < 0.10 && fk.getSpeedError() > -0.10) {
-            std::cout << "speed error threshold reached. Done!" << std::endl;
+            // std::cout << "speed error threshold reached. Done!" << std::endl;
             flag2 = false;
         }
 
@@ -92,22 +92,22 @@ void ackermann::Controller::solve(Sensor &sen) {
                             direction, car);
         head_inner_increment = head_res_increment.inner;
         head_outer_increment = head_res_increment.outer;
-        std::cout << "inner heading increment is: " << head_inner_increment <<
-                  " and " << "outer heading increment is: "
-                  << head_outer_increment << std::endl;
+        // std::cout << "inner heading increment is: " << head_inner_increment <<
+        //           " and " << "outer heading increment is: "
+        //           << head_outer_increment << std::endl;
 
-        double spd_inner_increment;
-        double spd_outer_increment;
+        // double spd_inner_increment;
+        // double spd_outer_increment;
         ackermann::InverseKinematics::speed spd_res_increment;
 
         // Calculating IK to find speed for each of the front wheels
         spd_res_increment = ik.calculateWheelSpeeds(pid_heading, pid_speed,
         time_step_, direction, car);
-        spd_inner_increment = spd_res_increment.inner_speed;
-        spd_outer_increment = spd_res_increment.outer_speed;
-        std::cout << "inner speed increment is: " << spd_inner_increment <<
-                  " and " << "outer speed increment is: "
-                  << spd_outer_increment << std::endl;
+        // spd_inner_increment = spd_res_increment.inner_speed;
+        // spd_outer_increment = spd_res_increment.outer_speed;
+        // std::cout << "inner speed increment is: " << spd_inner_increment <<
+        //           " and " << "outer speed increment is: "
+        //           << spd_outer_increment << std::endl;
 
         ik.calculateNewRobotHeadingandSpeed(head_inner_increment,
         head_outer_increment, sen, car, time_step_);

@@ -129,8 +129,8 @@ ackermann::InverseKinematics::calculateWheelSpeeds(double actual_heading, double
     car.setInnerWheelSpeed(car.getInnerWheelSpeed() + iws);
     car.setOuterWheelSpeed(car.getOuterWheelSpeed() + ows);
 
-    std::cout << "Inner linear speed ::: " << car.getInnerWheelSpeed() << std::endl;
-    std::cout << "Outer linear speed ::: " << car.getOuterWheelSpeed() << std::endl;
+    std::cout << "Inner linear speed : " << car.getInnerWheelSpeed() << std::endl;
+    std::cout << "Outer linear speed : " << car.getOuterWheelSpeed() << std::endl;
 
     speed spd;
     spd.inner_speed = iws;
@@ -158,7 +158,7 @@ void ackermann::InverseKinematics::calculateNewRobotHeadingandSpeed(double inner
     // std::cout << "yrdot : " << car.yrdot << std::endl;
     // std::cout << "xrdot : " << car.xrdot << std::endl;
     theta = 180 - 180 / PI * atan2(car.xrdot - car.xldot, car.yrdot - car.yldot);
-    std::cout << "Slope : " << theta << std::endl;
+    // std::cout << "Slope : " << theta << std::endl;
     car.yl = car.yldot;
     car.xr = car.xrdot;
     car.xl = car.xldot;
