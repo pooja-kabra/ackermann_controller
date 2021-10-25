@@ -34,11 +34,21 @@ void ackermann::Controller::solve(Sensor &sen) {
         pid_heading = 0;
         pid_speed = 0;
 
+<<<<<<< HEAD
         /* Calculating error */
         fk.setHeadingError(fk.calculateHeadingError(goal_heading_, sen.getActualHeading()));
         std::cout << "Error in heading(deg): " << fk.getHeadingError() << std::endl;
         fk.setSpeedError(fk.calculateSpeedError(goal_speed_, sen.getActualSpeed()));
         std::cout  << "Error in speed(m/s): " << fk.getSpeedError() << std::endl;
+=======
+        // Calculating error
+        fk.setHeadingError(fk.calculateHeadingError(goal_heading_,
+        sen.getActualHeading()));
+        // std::cout<<"Error in heading : "<<fk.getHeadingError()<<std::endl;
+        fk.setSpeedError(fk.calculateSpeedError(goal_speed_,
+        sen.getActualSpeed()));
+        // std::cout<<"Error in speed : "<<fk.getSpeedError()<<std::endl;
+>>>>>>> d3084c58705327c8609967fe4ca6d9bd558b7564
 
         /* Checking turn */
         if (fk.getHeadingError() > 0) {
@@ -50,12 +60,22 @@ void ackermann::Controller::solve(Sensor &sen) {
         }
 
         if (fk.getHeadingError() < 0.8 && fk.getHeadingError() > -0.8) {
+<<<<<<< HEAD
             std::cout << "HEADING ERROR WITHIN THRESHHOLD ... HEADING CONVERGED." << std::endl;
             flag_h = false;
         }
         if (fk.getSpeedError() < 0.10 && fk.getSpeedError() > -0.10) {
             std::cout << "SPEED ERROR WITHIN THRESHHOLD ... SPEED CONVERGED." << std::endl;
             flag_s = false;
+=======
+        // if (fk.getHeadingError() < 0.2) {
+            // std::cout << "Heading error threshold reached. Done!" << std::endl;
+            flag1 = false;
+        }
+        if (fk.getSpeedError() < 0.10 && fk.getSpeedError() > -0.10) {
+            // std::cout << "speed error threshold reached. Done!" << std::endl;
+            flag2 = false;
+>>>>>>> d3084c58705327c8609967fe4ca6d9bd558b7564
         }
 
         /* Calculating PID output for heading */
@@ -83,20 +103,38 @@ void ackermann::Controller::solve(Sensor &sen) {
                             direction, car);
         head_inner_increment = head_res_increment.inner;
         head_outer_increment = head_res_increment.outer;
+<<<<<<< HEAD
         std::cout << "Inner heading increment(deg): " << head_inner_increment <<
           " and " << "outer heading increment(deg): "<< head_outer_increment << std::endl;
 
         /* Calling IK to find speed for each of the front wheels */
         double spd_inner_increment;
         double spd_outer_increment;
+=======
+        // std::cout << "inner heading increment is: " << head_inner_increment <<
+        //           " and " << "outer heading increment is: "
+        //           << head_outer_increment << std::endl;
+
+        // double spd_inner_increment;
+        // double spd_outer_increment;
+        ackermann::InverseKinematics::speed spd_res_increment;
+>>>>>>> d3084c58705327c8609967fe4ca6d9bd558b7564
 
         ackermann::InverseKinematics::speed spd_res_increment;
         spd_res_increment = ik.calculateWheelSpeeds(pid_heading, pid_speed,
         time_step_, direction, car);
+<<<<<<< HEAD
         spd_inner_increment = spd_res_increment.inner_speed;
         spd_outer_increment = spd_res_increment.outer_speed;
         std::cout << "Inner speed increment(m/s): " << spd_inner_increment <<
           " and " << "Outer speed increment(m/s): " << spd_outer_increment << std::endl;
+=======
+        // spd_inner_increment = spd_res_increment.inner_speed;
+        // spd_outer_increment = spd_res_increment.outer_speed;
+        // std::cout << "inner speed increment is: " << spd_inner_increment <<
+        //           " and " << "outer speed increment is: "
+        //           << spd_outer_increment << std::endl;
+>>>>>>> d3084c58705327c8609967fe4ca6d9bd558b7564
 
         /* Calling IK to update sensor for new global heading and speed */
         ik.calculateNewRobotHeadingandSpeed(head_inner_increment,
